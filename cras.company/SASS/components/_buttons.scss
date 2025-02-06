@@ -1,0 +1,565 @@
+// Основное меню хедера
+.header__button {
+  padding: 0;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--pure-white);
+
+  cursor: pointer;
+
+  &--burger {
+    padding: 3px;
+
+    border: 2px solid var(--link-color);
+    border-radius: var(--border-radius);
+
+    transition: transform 0.05s var(--timing-function);
+  }
+
+  &--burger:hover,
+  &--burger:focus,
+  &--burger:active {
+    transform: scale(0.9);
+  }
+
+  &--header-margin {
+    margin-left: 15px;
+  }
+
+  &--size {
+    width: 40px;
+    height: 40px;
+
+    @media screen and (min-width: 480px) {
+      width: 50px;
+      height: 50px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.header__button .icon {
+  width: 30px;
+  height: 30px;
+
+  @media screen and (min-width: 480px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.modal__button-close {
+  position: absolute;
+  top: 3px;
+  right: -20%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50px;
+  height: 50px;
+  padding: 0;
+
+  background-color: var(--pure-white);
+  border: none;
+  border-radius: 50px;
+
+  transition: fill 250ms var(--timing-function);
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--link-color);
+  }
+
+  @media (min-width: 480px) {
+    right: -15%;
+  }
+
+  @media (min-width: 768px) {
+    right: -10%;
+  }
+
+  @media (min-width: 1024px) {
+    right: -13%;
+  }
+
+  @media (min-width: 1500px) {
+    right: -10%;
+  }
+
+  &--login {
+    top: 5px;
+    right: 5px;
+
+    width: 40px;
+    height: 40px;
+  }
+}
+
+// Кнопка поиска
+.search__button {
+  padding: 5px;
+
+  border: none;
+
+  display: flex;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 50px;
+    height: 50px;
+  }
+
+  background-color: var(--pure-white);
+
+  cursor: pointer;
+
+  @media screen and (max-width: 1023px) {
+    border: 2px solid var(--link-color);
+    border-radius: var(--border-radius);
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid var(--link-color);
+    border-radius: var(--border-radius);
+  }
+
+  &--margin {
+    margin-left: 10px;
+  }
+}
+
+// Кнопка регистрации
+.reg-login__button,
+.button-next {
+  position: relative;
+  display: block;
+
+  padding: 0;
+
+  min-width: 181px;
+  height: 40px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: var(--pure-white);
+
+  border: none;
+  border-radius: var(--border-radius);
+
+  z-index: 10;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+  }
+
+  &::before {
+    width: 100%;
+    height: 100%;
+    background-image: var(--buttons-gradient);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-radius: var(--border-radius);
+    background-color: var(--pure-white);
+    opacity: 0;
+    transition: 250ms;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 10;
+  }
+
+  &--header {
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+  }
+
+  &--burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--burger {
+    min-width: 35vw;
+
+    @media (min-width: 480px) {
+      min-width: 33vw;
+    }
+
+    @media (min-width: 1024px) {
+      min-width: 20vw;
+    }
+
+    @media (min-width: 1280px) {
+      min-width: 16vw;
+    }
+}
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+}
+
+.reg-login__button:hover,
+.reg-login__button:focus,
+.reg-login__button:active,
+.button-next:hover,
+.button-next:focus,
+.button-next:active {
+  color: var(--link-color);
+}
+
+.reg-login__button--margin {
+  margin-top: 10px;
+}
+
+.button-next {
+  margin: 20px auto;
+}
+
+.header__button-basket {
+  padding: 5px;
+  
+  &:hover,
+  &:focus {
+    border: 2px solid var(--link-color);
+    border-radius: var(--border-radius);
+  }
+}
+
+.burger-menu-br {
+  @media (min-width: 480px) {
+    display: none;
+  }
+}
+
+.reg-login__button-eye {
+  position: absolute;
+  padding: 0;
+
+  top: 4px;
+  right: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+
+  background-color: var(--pure-white);
+
+  fill: var(--secondary-link-color);
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: var(--link-color)
+  }
+}
+
+.form__button {
+  position: relative;
+  display: block;
+
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 181px;
+  min-height: 42px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: var(--pure-white);
+
+  border: none;
+  border-radius: var(--border-radius);
+
+  z-index: 10;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+  }
+
+  &::after {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-radius: var(--border-radius);
+    background-color: var(--pure-white);
+    opacity: 0;
+    transition: 250ms;
+  }
+
+  &::before {
+    width: 100%;
+    height: 100%;
+    background-image: var(--buttons-gradient);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 10;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+  }
+
+  &--margin {
+    margin-top: 30px;
+  }
+}
+
+.form__button:disabled {
+  color: var(--primary-text-color);
+
+  &::after {
+    background-color: lightgrey;
+    opacity: 1;
+  }
+
+  cursor: auto;
+}
+
+.basket-clear-all {
+  display: flex;
+
+  position: absolute;
+  top: 2%;
+
+  padding: 3px;
+
+  border: 2px solid var(--link-color);
+  border-radius: var(--border-radius);
+
+  background-color: var(--pure-white);
+
+  cursor: pointer;
+
+  @media screen and (min-width: 480px) {
+    top: 6.1%;
+    right: 12%;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 3%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    top: 4.3%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 3.8%;
+  }
+
+  @media screen and (min-width: 1500px) {
+    top: 4%;
+  }
+}
+
+.basket-clear-all__text {
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 1.14;
+
+  color: var(--link-color);
+
+  @media screen and (min-width: 340px) {
+    font-size: 10px;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.price-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3px;
+  margin: 0;
+
+  border: transparent;
+
+  background-color: var(--pure-white);
+
+  cursor: pointer;
+
+  &--rotate {
+    transform: rotate(180deg);
+  }
+}
+
+.price-arrow svg {
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
+.price-arrow:active svg {
+  transform: scale(0.8);
+}
+
+.item-quantity {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.14;
+  font-family: Cinzel, serif;
+
+  color: var(--link-color);
+}
+
+.button__copy {
+  display: flex;
+  align-items: center;
+
+  padding: 0;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: none;
+
+  background-color: var(--pure-white);
+
+  cursor: pointer;
+}
+
+.cras-block__button {
+  padding: 0;
+
+  border: none;
+
+  background-color: var(--pure-white);
+
+  cursor: pointer;
+}
+
+.cras-block__button-busket {
+  padding: 0;
+
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 35px;
+  height: 35px;
+
+  background-color: var(--pure-white);
+
+  cursor: pointer;
+
+  position: relative;
+
+  &--reset {
+    margin: 0 0 0 10px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.basket__icon-in {
+  position: absolute;
+
+  opacity: 1;
+
+  @media screen and (min-width: 480px) {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.basket__icon-out {
+  position: absolute;
+
+  opacity: 0;
+
+  @media screen and (min-width: 480px) {
+    width: 45px;
+    height: 45px;
+  }
+}

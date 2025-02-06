@@ -1,0 +1,42 @@
+.tranding-slide {
+    border-radius: 20px;
+
+    border: 6px solid var(--link-color);
+    border-radius: 20px;
+
+    background-color: var(--link-color);
+}
+
+.swiper--width {
+    width: 270px;
+
+    @media screen and (min-width: 400px) {
+        width: 310px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin: 0;
+    }
+}
+
+// --------------------------------------
+// Кнопки слайдера лота
+// --------------------------------------
+
+.swiper-lot-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.swiper-lot-button-next,
+.swiper-lot-button-prev {
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.swiper__icon {
+    fill: var(--link-color);
+    transition: fill 250ms var(--timing-function);
+}

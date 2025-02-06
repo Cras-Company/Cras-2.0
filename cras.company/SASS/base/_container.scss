@@ -1,0 +1,61 @@
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+
+  @media screen and (min-width: 480px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.section {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1024px) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+  }
+}
+
+.section-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.section-shop {
+  @media screen and (min-width: 1280px) {
+    padding-left: 105px;
+    padding-right: 105px;
+  }
+}
+
+.section--padding-about-us {
+    padding-top: 95px;
+    
+    @media screen and (min-width: 768px) {
+      padding-top: 110px;
+    }
+  
+    @media screen and (min-width: 1024px) {
+      padding-top: 110px;
+    }
+}

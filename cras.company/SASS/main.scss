@@ -1,0 +1,24 @@
+@import "./utils/variables";
+@import "./utils/hidden";
+
+@import "./base/common";
+@import "./base/titles";
+@import "./base/reset";
+@import "./base/container";
+
+@import "./utils/variables";
+@import "./utils/hidden";
+
+@import "./layouts/header";
+@import "./layouts/basket-menu";
+@import "./layouts/hero";
+@import "./layouts/lots";
+@import "./layouts/search";
+@import "./layouts/footer";
+
+@import "./components/buttons";
+@import "./components/logo";
+@import "./components/modal";
+@import "./components/modal-burger-menu";
+@import "./components/modal-reg-login";
+@import "./components/slider";

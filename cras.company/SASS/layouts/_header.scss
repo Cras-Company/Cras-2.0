@@ -1,0 +1,24 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    background-color: var(--pure-white);
+    border-bottom: 3px solid #ececec;
+
+    z-index: 200;
+
+    &--flex {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.header__login-basket {
+    display: flex;
+    align-items: center;
+    
+    margin-left: auto;
+}

@@ -1,0 +1,127 @@
+.logo {
+  font-family: Cinzel, serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+
+  color: var(--link-color);
+
+  // @media screen and (min-width: 480px) {
+  //   font-size: 35px;
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   font-size: 25px;
+  // }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 35px;
+  }
+
+  &--head {
+    color: var(--secondary-link-color);
+
+    // @media screen and (min-width: 480px) {
+    //   font-size: 25px;
+    // }
+
+    // @media screen and (min-width: 768px) {
+    //   font-size: 15px;
+    // }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 25px;
+    }
+  }
+
+  &--footer {
+    font-size: 20px;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 25px;
+    }
+  }
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--margin-left {
+    margin-left: 15px;
+  }
+}
+
+.logo-link__img {
+  max-width: 40px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 80px;
+  }
+}
+
+// .logo-link__img-footer {
+//   max-width: 100px;
+
+//   @media screen and (min-width: 1024px) and (max-width: 1279px) {
+//     max-width: 70px;
+//   }
+// }
+
+.logo-link--flex {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  margin-left: 10px;
+}
+
+.logo-link--footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  margin-left: 10px;
+}
+
+.logo-link--footer-color {
+  color: var(--pure-white);
+
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    font-size: 20px;
+  }
+}
+
+.logo-link--footer-margin {
+  margin-bottom: 10px;
+}
+
+.footer-color-slogan {
+  color: var(--hero-text-color);
+}

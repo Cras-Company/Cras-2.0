@@ -1,0 +1,234 @@
+.contacts {
+  color: var(--pure-white);
+  background-color: var(--bg-color-footer);
+
+  &--color {
+    padding: 15px;
+    background-color: var(--bg-color-footer);
+  }
+}
+
+.contacts--flex {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+  .contacts--flex {
+    grid-template-columns: 1fr 1fr;
+    /* Два столбца */
+  }
+
+  .contacts--flex .contacts__case:nth-child(1) {
+    grid-column: 1 / span 2;
+    /* Первый элемент занимает всю ширину */
+  }
+
+  .contacts--flex .contacts__case:nth-child(4) {
+    grid-column: 1 / span 2;
+    /* Первый элемент занимает всю ширину */
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts--flex {
+    grid-template-columns: 1fr 1fr;
+    /* Два столбца */
+    grid-template-rows: auto auto;
+    /* Два ряда */
+  }
+
+  .contacts--flex .contacts__case:nth-child(1) {
+    grid-column: 1;
+    /* Первый элемент в первом столбце первого ряда */
+    grid-row: 1;
+  }
+
+  .contacts--flex .contacts__case:nth-child(4) {
+    grid-column: 2;
+    /* Четвертый элемент во втором столбце первого ряда */
+    grid-row: 1;
+  }
+
+  .contacts--flex .contacts__case:nth-child(2) {
+    grid-column: 1;
+    /* Второй элемент в первом столбце второго ряда */
+    grid-row: 2;
+  }
+
+  .contacts--flex .contacts__case:nth-child(3) {
+    grid-column: 2;
+    /* Третий элемент во втором столбце второго ряда */
+    grid-row: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contacts--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contacts__title {
+  color: var(--link-color);
+
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.21;
+  text-align: center;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts__item {
+  margin-top: 13px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: var(--pure-white);
+
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
+}
+
+.contacts__icon {
+  margin-right: 10px;
+
+  fill: var(--pure-white);
+
+  transition: fill 250ms var(--timing-function);
+
+  .contacts__link:hover > &,
+  .contacts__link:focus > & {
+    fill: var(--link-color);
+  }
+}
+
+.contacts__social {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 13px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1024px) {
+    justify-content: space-between;
+  }
+
+  &--basket {
+    justify-content: center;
+  }
+}
+
+.contacts__list--basket-margin {
+  margin-right: 40px;
+}
+
+.contacts__title--center {
+  text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.contacts__list--margin {
+  @media screen and (max-width: 1023px) {
+    margin-right: 40px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    margin-right: 10px;
+  }
+}
+
+.contacts-town {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.21;
+
+  text-align: center;
+
+  color: var(--hero-text-color);
+}
+
+// -----------------------------------
+// Социалки
+// -----------------------------------
+
+.social-icon {
+  border-radius: 50%;
+
+  background-image: var(--buttons-gradient);
+}
+
+.social-icon__main {
+  transition: 400ms;
+
+  .socials-link:hover .social-icon & {
+    opacity: 0;
+  }
+}
+
+.social-icon__hover {
+  opacity: 0;
+  transition: 400ms;
+
+  .socials-link:hover .social-icon & {
+    opacity: 1;
+  }
+}
+
+// -----------------------------------
+// Футер
+// -----------------------------------
+
+.footer {
+  z-index: 10;
+
+  border-top: 1px solid var(--pure-white);
+
+  background-color: var(--bg-color-footer);
+}
+
+.footer__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.21;
+
+  color: var(--pure-white);
+
+  @media screen and (min-width: 480px) {
+    font-size: 16px;
+  }
+}
+
+.br-footer {
+  @media screen and (min-width: 1024px) {
+      display: none;
+  }
+}
+
