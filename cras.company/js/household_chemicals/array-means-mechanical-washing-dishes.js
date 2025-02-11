@@ -2,6 +2,7 @@ export const shopLotsMeansMechanicalWashingDishes = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "dishwashing-detergents",
         url: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/denkmit_classic_pulver_1.5.jpg",
         alt: "denkmit_classic_pulver_1.5",
         url1: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/denkmit_classic_pulver_1.5-01.jpg",
@@ -32,6 +33,7 @@ export const shopLotsMeansMechanicalWashingDishes = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "dishwashing-detergents",
         url: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/denkmit_classic_tabs_65.jpg",
         alt: "denkmit_classic_tabs_65",
         url1: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/denkmit_classic_tabs_65-01.jpg",
@@ -64,6 +66,7 @@ export const shopLotsMeansMechanicalWashingDishes = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "dishwashing-detergents",
         url: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/denkmit_klarspuler_1l.jpg",
         alt: "denkmit_klarspuler_1l",
         url1: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/denkmit_klarspuler_1l-01.jpg",
@@ -90,6 +93,7 @@ export const shopLotsMeansMechanicalWashingDishes = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "dishwashing-detergents",
         url: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/finish_powerball_quantum_lemon_60.jpg",
         alt: "finish_powerball_quantum_lemon_60",
         url1: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/finish_powerball_quantum_lemon_60-01.jpg",
@@ -116,6 +120,7 @@ export const shopLotsMeansMechanicalWashingDishes = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "dishwashing-detergents",
         url: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/finish_powerball_quantum_powerful_clean_shine_fresh_60.jpg",
         alt: "finish_powerball_quantum_powerful_clean_shine_fresh_60",
         url1: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/finish_powerball_quantum_powerful_clean_shine_fresh_60-01.jpg",
@@ -142,6 +147,7 @@ export const shopLotsMeansMechanicalWashingDishes = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "dishwashing-detergents",
     // url: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/finish_powerball_quantum_35.jpg",
     //     alt: "finish_powerball_quantum_35",
     //     url1: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/finish_powerball_quantum_35-01.jpg",
@@ -168,6 +174,7 @@ export const shopLotsMeansMechanicalWashingDishes = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "dishwashing-detergents",
     // url: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/finish_powerball_ultimate_60.jpg",
     //     alt: "finish_powerball_ultimate_60",
     //     url1: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/finish_powerball_ultimate_60-01.jpg",
@@ -194,6 +201,7 @@ export const shopLotsMeansMechanicalWashingDishes = [
     // {
     //     type: "only-wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "dishwashing-detergents",
     // url: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/gut_gunstig_allin1_40.jpg",
     //     alt: "gut_gunstig_allin1_40",
     //     url1: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/gut_gunstig_allin1_40.jpg",
@@ -218,6 +226,7 @@ export const shopLotsMeansMechanicalWashingDishes = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "dishwashing-detergents",
     // url: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/gut_gunstig_classic_60.jpg",
     //     alt: "gut_gunstig_classic_60",
     //     url1: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/gut_gunstig_classic_60-01.jpg",
@@ -246,6 +255,7 @@ export const shopLotsMeansMechanicalWashingDishes = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "dishwashing-detergents",
     // url: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/gut_gunstig_classic_60.jpg",
     //     alt: "gut_gunstig_classic_60",
     //     url1: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/gut_gunstig_classic_60-01.jpg",
@@ -274,6 +284,7 @@ export const shopLotsMeansMechanicalWashingDishes = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "dishwashing-detergents",
     // url: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/gut_gunstig_klarspuler_1l.jpg",
     //     alt: "gut_gunstig_klarspuler_1l",
     //     url1: "./images/shop/household_chemicals/means_for_washing_dishes/mechanical/gut_gunstig_klarspuler_1l-01.jpg",

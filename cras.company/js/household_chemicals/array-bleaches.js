@@ -2,6 +2,7 @@ export const shopLotsBleaches = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_classica_3l.jpg",
         alt: "ace_candeggina_classica_3l",
         url1: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_classica_3l-01.jpg",
@@ -32,6 +33,7 @@ export const shopLotsBleaches = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_classica_5l.jpg",
         alt: "ace_candeggina_classica_5l",
         url1: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_classica_5l-01.jpg",
@@ -62,6 +64,7 @@ export const shopLotsBleaches = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_piu_armonie_2.5.jpg",
         alt: "ace_candeggina_piu_armonie_2.5",
         url1: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_piu_armonie_2.5-01.jpg",
@@ -92,6 +95,7 @@ export const shopLotsBleaches = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_piu_fresco_2.5.jpg",
         alt: "ace_candeggina_piu_fresco_2.5",
         url1: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_piu_fresco_2.5-01.jpg",
@@ -122,6 +126,7 @@ export const shopLotsBleaches = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_piu_fresco_3.jpg",
         alt: "ace_candeggina_piu_fresco_3",
         url1: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_piu_fresco_3-01.jpg",
@@ -152,6 +157,7 @@ export const shopLotsBleaches = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/universal_tools/ace_for_whites_3l.jpg",
     //     alt: "ace_for_whites_3l",
     //     url1: "./images/shop/household_chemicals/universal_tools/ace_for_whites_3l-01.jpg",
@@ -182,6 +188,7 @@ export const shopLotsBleaches = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_1l.jpg",
         alt: "ace_gentile_1l",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_1l-01.jpg",
@@ -208,6 +215,7 @@ export const shopLotsBleaches = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_2l.jpg",
         alt: "ace_gentile_2l",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_2l-01.jpg",
@@ -234,6 +242,7 @@ export const shopLotsBleaches = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_fresco_profumo_2.3.jpg",
         alt: "ace_gentile_fresco_profumo_2.3",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_fresco_profumo_2.3-01.jpg",
@@ -260,6 +269,7 @@ export const shopLotsBleaches = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_lavanda_e_muschio_bianco_2.3.jpg",
         alt: "ace_gentile_lavanda_e_muschio_bianco_2.3",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_lavanda_e_muschio_bianco_2.3-01.jpg",
@@ -286,6 +296,7 @@ export const shopLotsBleaches = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_con_candeggina_450.jpg",
     //     alt: "chanteclair_sgrassatore_con_candeggina_450",
     //     url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_con_candeggina_450-01.jpg",
@@ -312,6 +323,7 @@ export const shopLotsBleaches = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_con_candeggina_625.jpg",
         alt: "chanteclair_sgrassatore_con_candeggina_625",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_con_candeggina_625-01.jpg",
@@ -338,6 +350,7 @@ export const shopLotsBleaches = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/gallus_fleckentferner_weiss.jpg",
         alt: "gallus_fleckentferner_weiss",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/gallus_fleckentferner_weiss-01.jpg",
@@ -366,6 +379,7 @@ export const shopLotsBleaches = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/neo_blanc_gentil_1l.jpg",
         alt: "neo_blanc_gentil_1l",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/neo_blanc_gentil_1l-01.jpg",
@@ -392,6 +406,7 @@ export const shopLotsBleaches = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/universal_tools/neo_blanc_lixivia densa_1l.jpg",
         alt: "neo_blanc_lixivia densa_1l",
         url1: "./images/shop/household_chemicals/universal_tools/neo_blanc_lixivia densa_1l-01.jpg",
@@ -418,6 +433,7 @@ export const shopLotsBleaches = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/power_wash_fleckentferner_color.jpg",
     //     alt: "power_wash_fleckentferner_color",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/power_wash_fleckentferner_color-01.jpg",

@@ -2,6 +2,7 @@ export const shopLotsSofteners = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_fiori_50.jpg",
     //     alt: "chanteclair_iconcentrati_fiori_50",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_fiori_50-01.jpg",
@@ -28,6 +29,7 @@ export const shopLotsSofteners = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_bianco_50.jpg",
     //     alt: "chanteclair_iconcentrati_bianco_50",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_bianco_50-01.jpg",
@@ -54,6 +56,7 @@ export const shopLotsSofteners = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_peonia_magnolia_50.jpg",
     //     alt: "chanteclair_iconcentrati_peonia_magnolia_50",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_peonia_magnolia_50-01.jpg",
@@ -80,6 +83,7 @@ export const shopLotsSofteners = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_marini_50.jpg",
     //     alt: "chanteclair_iconcentrati_marini_50",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_marini_50-01.jpg",
@@ -106,6 +110,7 @@ export const shopLotsSofteners = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_fiori_57.jpg",
         alt: "chanteclair_iconcentrati_fiori_57",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_fiori_57-01.jpg",
@@ -132,6 +137,7 @@ export const shopLotsSofteners = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_bianco_57.jpg",
         alt: "chanteclair_iconcentrati_bianco_57",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_bianco_57-01.jpg",
@@ -158,6 +164,7 @@ export const shopLotsSofteners = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_orchidea_fico_57.jpg",
         alt: "chanteclair_iconcentrati_orchidea_fico_57",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_orchidea_fico_57-01.jpg",
@@ -184,6 +191,7 @@ export const shopLotsSofteners = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_peonia_magnolia_57.jpg",
         alt: "chanteclair_iconcentrati_peonia_magnolia_57",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_peonia_magnolia_57-01.jpg",
@@ -210,6 +218,7 @@ export const shopLotsSofteners = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_marini_57.jpg",
         alt: "chanteclair_iconcentrati_marini_57",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_marini_57-01.jpg",
@@ -236,6 +245,7 @@ export const shopLotsSofteners = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_vaniglia_e_argan_57.jpg",
         alt: "chanteclair_iconcentrati_vaniglia_e_argan_57",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/chanteclair_iconcentrati_vaniglia_e_argan_57-01.jpg",
@@ -262,6 +272,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_blue_splash_1700.jpg",
         alt: "coccolino_blue_splash_1700",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_blue_splash_1700-01.jpg",
@@ -290,6 +301,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_happy_yellow_1700.jpg",
         alt: "coccolino_happy_yellow_1700",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_happy_yellow_1700-01.jpg",
@@ -318,6 +330,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_orange_rush_1700.jpg",
         alt: "coccolino_orange_rush_1700",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_orange_rush_1700-01.jpg",
@@ -346,6 +359,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_silk_lily_1700.jpg",
         alt: "coccolino_silk_lily_1700",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_silk_lily_1700-01.jpg",
@@ -374,6 +388,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_sensitive_1700.jpg",
         alt: "coccolino_sensitive_1700",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_sensitive_1700-01.jpg",
@@ -402,6 +417,7 @@ export const shopLotsSofteners = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_blue_splash_1800.jpg",
     //     alt: "coccolino_blue_splash_1800",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_blue_splash_1800-01.jpg",
@@ -430,6 +446,7 @@ export const shopLotsSofteners = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_orange_rush_1800.jpg",
     //     alt: "coccolino_orange_rush_1800",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_orange_rush_1800-01.jpg",
@@ -458,6 +475,7 @@ export const shopLotsSofteners = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_sensitive_pure_1800.jpg",
     //     alt: "coccolino_sensitive_pure_1800",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/softeners/coccolino_sensitive_pure_1800-01.jpg",
@@ -486,6 +504,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/denkmit_weichspuler_himmlische_frische_1l.jpg",
         alt: "denkmit_weichspuler_himmlische_frische_1l",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/denkmit_weichspuler_himmlische_frische_1l-01.jpg",
@@ -512,6 +531,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/denkmit_weichspuler_sanfte_frische_1l.jpg",
         alt: "denkmit_weichspuler_sanfte_frische_1l",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/denkmit_weichspuler_sanfte_frische_1l-01.jpg",
@@ -538,6 +558,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_amber_40.jpg",
         alt: "felce_azzurra_amber_40",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_amber_40-01.jpg",
@@ -564,6 +585,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_lavender_iris_40.jpg",
         alt: "felce_azzurra_lavender_iris_40",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_lavender_iris_40-01.jpg",
@@ -590,6 +612,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_original_40.jpg",
         alt: "felce_azzurra_original_40",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_original_40-01.jpg",
@@ -616,6 +639,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_pure_freshness_40.jpg",
         alt: "felce_azzurra_pure_freshness_40",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_pure_freshness_40-01.jpg",
@@ -642,6 +666,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_rose_lotus_40.jpg",
         alt: "felce_azzurra_rose_lotus_40",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_rose_lotus_40-01.jpg",
@@ -668,6 +693,7 @@ export const shopLotsSofteners = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_amber_45.jpg",
         alt: "felce_azzurra_amber_45",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_amber_45-01.jpg",
@@ -694,6 +720,7 @@ export const shopLotsSofteners = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_lavanda_iris_45.jpg",
         alt: "felce_azzurra_lavanda_iris_45",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_lavanda_iris_45-01.jpg",
@@ -720,6 +747,7 @@ export const shopLotsSofteners = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_original_45.jpg",
         alt: "felce_azzurra_original_45",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_original_45-01.jpg",
@@ -746,6 +774,7 @@ export const shopLotsSofteners = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_pura_freschezza_45.jpg",
         alt: "felce_azzurra_pura_freschezza_45",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_pura_freschezza_45-01.jpg",
@@ -772,6 +801,7 @@ export const shopLotsSofteners = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_rose_lotus_45.jpg",
         alt: "felce_azzurra_rose_lotus_45",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/felce_azzurra_rose_lotus_45-01.jpg",
@@ -798,6 +828,7 @@ export const shopLotsSofteners = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/frosch_zero_750.jpg",
         alt: "frosch_zero_750",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/frosch_zero_750-01.jpg",
@@ -824,6 +855,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/gallus_frisch_1l.jpg",
         alt: "gallus_frisch_1l",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/gallus_frisch_1l-01.jpg",
@@ -852,6 +884,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/gallus_orchidee_1l.jpg",
         alt: "gallus_orchidee_1l",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/gallus_orchidee_1l-01.jpg",
@@ -880,6 +913,7 @@ export const shopLotsSofteners = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/gallus_frisch_2l.jpg",
         alt: "gallus_frisch_2l",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/gallus_frisch_2l-01.jpg",
@@ -906,6 +940,7 @@ export const shopLotsSofteners = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/gallus_orchidee_2l.jpg",
         alt: "gallus_orchidee_2l",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/gallus_orchidee_2l-01.jpg",
@@ -932,6 +967,7 @@ export const shopLotsSofteners = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/gallus_frisch_4l.jpg",
         alt: "gallus_frisch_4l",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/gallus_frisch_4l-01.jpg",
@@ -958,6 +994,7 @@ export const shopLotsSofteners = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/gallus_orchidee_4l.jpg",
         alt: "gallus_orchidee_4l",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/gallus_orchidee_4l-01.jpg",
@@ -984,6 +1021,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/la_salud_nature_aloe_1350.jpg",
         alt: "la_salud_nature_aloe_1350",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/la_salud_nature_aloe_1350-01.jpg",
@@ -1012,6 +1050,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/la_salud_esencia_azul_1350.jpg",
         alt: "la_salud_esencia_azul_1350",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/la_salud_esencia_azul_1350-01.jpg",
@@ -1040,6 +1079,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/la_salud_dolce_1350.jpg",
         alt: "la_salud_dolce_1350",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/la_salud_dolce_1350-01.jpg",
@@ -1068,6 +1108,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/la_salud_jardin_floral_1350.jpg",
         alt: "la_salud_jardin_floral_1350",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/la_salud_jardin_floral_1350-01.jpg",
@@ -1096,6 +1137,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/la_salud_rose_1350.jpg",
         alt: "la_salud_rose_1350",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/la_salud_rose_1350-01.jpg",
@@ -1124,6 +1166,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/la_salud_spa_1350.jpg",
         alt: "la_salud_spa_1350",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/la_salud_spa_1350-01.jpg",
@@ -1152,6 +1195,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_38.jpg",
         alt: "tesori_d'oriente_38",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_38-01.jpg",
@@ -1178,6 +1222,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_ayurveda_38.jpg",
         alt: "tesori_d'oriente_ayurveda_38",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_ayurveda_38-01.jpg",
@@ -1204,6 +1249,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_byzantium_38.jpg",
         alt: "tesori_d'oriente_byzantium_38",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_byzantium_38-01.jpg",
@@ -1230,6 +1276,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_fior_di_loto_38.jpg",
         alt: "tesori_d'oriente_fior_di_loto_38",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_fior_di_loto_38-01.jpg",
@@ -1256,6 +1303,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_hammam_38.jpg",
         alt: "tesori_d'oriente_hammam_38",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_hammam_38-01.jpg",
@@ -1282,6 +1330,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_japanese_rituals_38.jpg",
         alt: "tesori_d'oriente_japanese_rituals_38",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_japanese_rituals_38-01.jpg",
@@ -1308,6 +1357,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_persian_dream_38.jpg",
         alt: "tesori_d'oriente_persian_dream_38",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_persian_dream_38-01.jpg",
@@ -1334,6 +1384,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_thalasso_therapy_38.jpg",
         alt: "tesori_d'oriente_thalasso_therapy_38",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/tesori_d'oriente_thalasso_therapy_38-01.jpg",
@@ -1360,6 +1411,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/vir_magnetisch_37.jpg",
         alt: "vir_magnetisch_37",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/vir_magnetisch_37-01.jpg",
@@ -1386,6 +1438,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/vir_muse_37.jpg",
         alt: "vir_muse_37",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/vir_muse_37-01.jpg",
@@ -1412,6 +1465,7 @@ export const shopLotsSofteners = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/softeners/vir_romantisch_37.jpg",
         alt: "vir_romantisch_37",
         url1: "./images/shop/household_chemicals/laundry_detergents/softeners/vir_romantisch_37-01.jpg",

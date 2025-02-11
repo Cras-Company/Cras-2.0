@@ -2,6 +2,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/universal_tools/ace_for_whites_3l.jpg",
     //     alt: "ace_for_whites_3l",
     //     url1: "./images/shop/household_chemicals/universal_tools/ace_for_whites_3l-01.jpg",
@@ -32,6 +33,7 @@ export const shopLotsStainRemovers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_1l.jpg",
         alt: "ace_gentile_1l",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_1l-01.jpg",
@@ -58,6 +60,7 @@ export const shopLotsStainRemovers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_2l.jpg",
         alt: "ace_gentile_2l",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_2l-01.jpg",
@@ -84,6 +87,7 @@ export const shopLotsStainRemovers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_fresco_profumo_2.3.jpg",
         alt: "ace_gentile_fresco_profumo_2.3",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_fresco_profumo_2.3-01.jpg",
@@ -110,6 +114,7 @@ export const shopLotsStainRemovers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_lavanda_e_muschio_bianco_2.3.jpg",
         alt: "ace_gentile_lavanda_e_muschio_bianco_2.3",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_gentile_lavanda_e_muschio_bianco_2.3-01.jpg",
@@ -136,6 +141,7 @@ export const shopLotsStainRemovers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_green_1.2l.jpg",
         alt: "ace_green_1.2l",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ace_green_1.2l-01.jpg",
@@ -162,6 +168,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/universal_tools/ace_spray_mousse_750.jpg",
     //     alt: "ace_spray_mousse_750",
     //     url1: "./images/shop/household_chemicals/universal_tools/ace_spray_mousse_750-01.jpg",
@@ -188,6 +195,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/universal_tools/ace_gentile_oxygen_750.jpg",
     //     alt: "ace_gentile_oxygen_750",
     //     url1: "./images/shop/household_chemicals/universal_tools/ace_gentile_oxygen_750-01.jpg",
@@ -214,6 +222,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/universal_tools/ace_candeggina_piu_700.jpg",
     //     alt: "ace_candeggina_piu_700",
     //     url1: "./images/shop/household_chemicals/universal_tools/ace_candeggina_piu_700-01.jpg",
@@ -240,6 +249,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/universal_tools/ace_candeggina_piu_fresco_profumo_700.jpg",
     //     alt: "ace_candeggina_piu_fresco_profumo_700",
     //     url1: "./images/shop/household_chemicals/universal_tools/ace_candeggina_piu_fresco_profumo_700-01.jpg",
@@ -266,6 +276,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/sale/ace_candeggina_piu_fresco_profumo_1600.jpg",
     //     alt: "ace_candeggina_piu_fresco_profumo_1600",
     //     url1: "./images/shop/sale/ace_candeggina_piu_fresco_profumo_1600-01.jpg",
@@ -292,6 +303,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ariel_fleckenentferner.jpg",
     //     alt: "ariel_fleckenentferner",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/ariel_fleckenentferner-01.jpg",
@@ -318,6 +330,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/at_home_clean_stain_remover_color_1kg.jpg",
         alt: "at_home_clean_stain_remover_color_1kg",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/at_home_clean_stain_remover_color_1kg-01.jpg",
@@ -346,6 +359,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/at_home_clean_stain_remover_white_900.jpg",
         alt: "at_home_clean_stain_remover_white_900",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/at_home_clean_stain_remover_white_900-01.jpg",
@@ -374,6 +388,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/chanteclair_savon_marseille_250.jpg",
     //     alt: "chanteclair_savon_marseille_250",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/chanteclair_savon_marseille_250-01.jpg",
@@ -402,6 +417,7 @@ export const shopLotsStainRemovers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/chanteclair_savon_marseille_250.jpg",
         alt: "chanteclair_savon_marseille_250",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/chanteclair_savon_marseille_250-01.jpg",
@@ -430,6 +446,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_con_bicarbonato_ricarica_600.jpg",
     //     alt: "chanteclair_sgrassatore_universale_con_bicarbonato_ricarica_600",
     //     url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_con_bicarbonato_ricarica_600-01.jpg",
@@ -456,6 +473,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_con_bicarbonato_600.jpg",
         alt: "chanteclair_sgrassatore_universale_con_bicarbonato_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_con_bicarbonato_600-01.jpg",
@@ -482,6 +500,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_disinfettante_600.jpg",
         alt: "chanteclair_sgrassatore_universale_disinfettante_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_disinfettante_600-01.jpg",
@@ -508,6 +527,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_disinfettante_floral_600.jpg",
     //     alt: "chanteclair_sgrassatore_universale_disinfettante_floral_600",
     //     url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_disinfettante_floral_600-01.jpg",
@@ -534,6 +554,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_lavanda_600.jpg",
         alt: "chanteclair_sgrassatore_universale_lavanda_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_lavanda_600-01.jpg",
@@ -560,6 +581,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_lavanda_ricarica_600.jpg",
         alt: "chanteclair_sgrassatore_universale_lavanda_ricarica_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_lavanda_ricarica_600-01.jpg",
@@ -586,6 +608,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_limone_600.jpg",
         alt: "chanteclair_sgrassatore_universale_limone_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_limone_600-01.jpg",
@@ -612,6 +635,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_limone_ricarica_600.jpg",
         alt: "chanteclair_sgrassatore_universale_limone_ricarica_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_limone_ricarica_600-01.jpg",
@@ -638,6 +662,7 @@ export const shopLotsStainRemovers = [
         {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_marsiglia_600.jpg",
         alt: "chanteclair_sgrassatore_universale_marsiglia_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_marsiglia_600-01.jpg",
@@ -664,6 +689,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_marsiglia_ricarica_600.jpg",
         alt: "chanteclair_sgrassatore_universale_marsiglia_ricarica_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_marsiglia_ricarica_600-01.jpg",
@@ -690,6 +716,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_aceto_lamponi_625.jpg",
         alt: "chanteclair_vert_aceto_lamponi_625",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_aceto_lamponi_625-01.jpg",
@@ -716,6 +743,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_sgrassatore_universale_625.jpg",
     //     alt: "chanteclair_vert_sgrassatore_universale_625",
     //     url1: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_sgrassatore_universale_625-01.jpg",
@@ -742,6 +770,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_sgrassatore_universale_arancia_zenzero_625.jpg",
     //     alt: "chanteclair_vert_sgrassatore_universale_arancia_zenzero_625",
     //     url1: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_sgrassatore_universale_arancia_zenzero_625-01.jpg",
@@ -768,6 +797,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_sgrassatore_universale_limone_basilico_625.jpg",
         alt: "chanteclair_vert_sgrassatore_universale_limone_basilico_625",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_sgrassatore_universale_limone_basilico_625-01.jpg",
@@ -794,6 +824,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/denkmit_gallseife_100.jpg",
     //     alt: "denkmit_gallseife_100",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/denkmit_gallseife_100-01.jpg",
@@ -828,6 +859,7 @@ export const shopLotsStainRemovers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/denkmit_fleckenspray_500.jpg",
         alt: "denkmit_fleckenspray_500",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/denkmit_fleckenspray_500-01.jpg",
@@ -854,6 +886,7 @@ export const shopLotsStainRemovers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/dr_beckmann_gallseife_100.jpg",
         alt: "dr_beckmann_gallseife_100",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/dr_beckmann_gallseife_100-01.jpg",
@@ -884,6 +917,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/gallus_fleckentferner_color.jpg",
         alt: "gallus_fleckentferner_color",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/gallus_fleckentferner_color-01.jpg",
@@ -912,6 +946,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/gallus_fleckentferner_weiss.jpg",
         alt: "gallus_fleckentferner_weiss",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/gallus_fleckentferner_weiss-01.jpg",
@@ -940,6 +975,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/la_salud_oxy_poder_dual_16.jpg",
         alt: "la_salud_oxy_poder_dual_16",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/la_salud_oxy_poder_dual_16-01.jpg",
@@ -968,6 +1004,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/la_salud_oxy_ropa_blanca_16.jpg",
         alt: "la_salud_oxy_ropa_blanca_16",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/la_salud_oxy_ropa_blanca_16-01.jpg",
@@ -996,6 +1033,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/la_salud_oxy_ropa_color_16.jpg",
         alt: "la_salud_oxy_ropa_color_16",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/la_salud_oxy_ropa_color_16-01.jpg",
@@ -1024,6 +1062,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/la_salud_oxy_ropa_blanca_1kg.jpg",
         alt: "la_salud_oxy_ropa_blanca_1kg",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/la_salud_oxy_ropa_blanca_1kg-01.jpg",
@@ -1052,6 +1091,7 @@ export const shopLotsStainRemovers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/la_salud_oxy_ropa_color_1kg.jpg",
         alt: "la_salud_oxy_ropa_color_1kg",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/la_salud_oxy_ropa_color_1kg-01.jpg",
@@ -1080,6 +1120,7 @@ export const shopLotsStainRemovers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/neo_blanc_gentil_1l.jpg",
         alt: "neo_blanc_gentil_1l",
         url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/neo_blanc_gentil_1l-01.jpg",
@@ -1106,6 +1147,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/universal_tools/neo_blanc_lixivia_desengordurante_700.jpg",
     //     alt: "neo_blanc_lixivia_desengordurante_700",
     //     url1: "./images/shop/household_chemicals/universal_tools/neo_blanc_lixivia_desengordurante_700-01.jpg",
@@ -1132,6 +1174,7 @@ export const shopLotsStainRemovers = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/stain_removers/power_wash_fleckentferner_color.jpg",
     //     alt: "power_wash_fleckentferner_color",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/stain_removers/power_wash_fleckentferner_color-01.jpg",

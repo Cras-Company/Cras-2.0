@@ -2,6 +2,7 @@ export const shopLotsForWindows = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/for_windows/astonish_window_glass_cleaner_750.jpg",
         alt: "astonish_window_glass_cleaner_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/for_windows/astonish_window_glass_cleaner_750-01.jpg",
@@ -28,6 +29,7 @@ export const shopLotsForWindows = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/for_windows/denkmit_glasreiniger_1l.jpg",
         alt: "denkmit_glasreiniger_1l",
         url1: "./images/shop/household_chemicals/means_for_cleaning/for_windows/denkmit_glasreiniger_1l-01.jpg",
@@ -54,6 +56,7 @@ export const shopLotsForWindows = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/for_windows/gallus_glas-reineger_green_1l.jpg",
         alt: "gallus_glas-reineger_green_1l",
         url1: "./images/shop/household_chemicals/means_for_cleaning/for_windows/gallus_glas-reineger_green_1l-01.jpg",
@@ -80,6 +83,7 @@ export const shopLotsForWindows = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/for_windows/gallus_glas-reineger_blue_1l.jpg",
         alt: "gallus_glas-reineger_blue_1l",
         url1: "./images/shop/household_chemicals/means_for_cleaning/for_windows/gallus_glas-reineger_blue_1l-01.jpg",

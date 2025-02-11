@@ -225,6 +225,8 @@ function burgerHandleClickMainCategory(event, attribute, filterKey) {
   "pasta", "dairy-products", "conservation", "snacks", "spreads", "sweets", "drinks", "olives-oils", "taste-modifiers",
 
   "for-children", "hair-care", "shower-gels", "soap", "limbs-care", "deo-anti", "shining-smile", "wipes", "feminine-hygiene", "toilet-papers",
+
+  "dishwashing-detergents", "detergents", "world-of-fragrances",
 ].forEach(target => {
   const element = document.querySelector(`.js-modal__burger-subcategory[data-target="${target}"], .burger__secondary-item[data-target="${target}"]`);
   if (element) {

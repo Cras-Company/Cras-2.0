@@ -2,6 +2,7 @@ export const shopLotsMeansCleaningDishwashers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/at_home_clean_dishwasher_cleaner_250.jpg",
         alt: "at_home_clean_dishwasher_cleaner_250",
         url1: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/at_home_clean_dishwasher_cleaner_250-01.jpg",
@@ -28,6 +29,7 @@ export const shopLotsMeansCleaningDishwashers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/denkmit_bugelwasser_1l.jpg",
         alt: "denkmit_bugelwasser_1l",
         url1: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/denkmit_bugelwasser_1l-01.jpg",
@@ -54,6 +56,7 @@ export const shopLotsMeansCleaningDishwashers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/denkmit_bio_entkalker_nature_250.jpg",
         alt: "denkmit_bio_entkalker_nature_250",
         url1: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/denkmit_bio_entkalker_nature_250-01.jpg",
@@ -80,6 +83,7 @@ export const shopLotsMeansCleaningDishwashers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/denkmit_anti_kalk_pulver_multi_power_2_1.5kg.jpg",
         alt: "denkmit_anti_kalk_pulver_multi_power_2_1.5kg",
         url1: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/denkmit_anti_kalk_pulver_multi_power_2_1.5kg-01.jpg",
@@ -108,6 +112,7 @@ export const shopLotsMeansCleaningDishwashers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/denkmit_anti_kalk_tabs_multi_power_2_60.jpg",
         alt: "denkmit_anti_kalk_tabs_multi_power_2_60",
         url1: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/denkmit_anti_kalk_tabs_multi_power_2_60-01.jpg",
@@ -138,6 +143,7 @@ export const shopLotsMeansCleaningDishwashers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/denkmit_spezialsalz_2kg.jpg",
         alt: "denkmit_spezialsalz_2kg",
         url1: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/denkmit_spezialsalz_2kg-01.jpg",
@@ -168,6 +174,7 @@ export const shopLotsMeansCleaningDishwashers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/domol_schnell_entkalker_30.jpg",
         alt: "domol_schnell_entkalker_30",
         url1: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/domol_schnell_entkalker_30-01.jpg",
@@ -194,6 +201,7 @@ export const shopLotsMeansCleaningDishwashers = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/gut_gunstig_anti_kalk_51.jpg",
     //     alt: "gut_gunstig_anti_kalk_51",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/gut_gunstig_anti_kalk_51-01.jpg",
@@ -222,6 +230,7 @@ export const shopLotsMeansCleaningDishwashers = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/gut_gunstig_anti_kalk_51.jpg",
     //     alt: "gut_gunstig_anti_kalk_51",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/gut_gunstig_anti_kalk_51-01.jpg",
@@ -250,6 +259,7 @@ export const shopLotsMeansCleaningDishwashers = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/igre_palla_magica_cattura_capelli_e_pelucchi_4.jpg",
         alt: "igre_palla_magica_cattura_capelli_e_pelucchi_4",
         url1: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/igre_palla_magica_cattura_capelli_e_pelucchi_4-01.jpg",
@@ -276,6 +286,7 @@ export const shopLotsMeansCleaningDishwashers = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/w5_washing_machine_cleaner_4_in_1_250.jpg",
         alt: "w5_washing_machine_cleaner_4_in_1_250",
         url1: "./images/shop/household_chemicals/means_for_cleaning/dishwashers/w5_washing_machine_cleaner_4_in_1_250-01.jpg",

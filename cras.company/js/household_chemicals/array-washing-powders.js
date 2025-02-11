@@ -5,6 +5,7 @@ export const shopLotsWashingPowders = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/ariel_color_style_40_2.6.jpg",
         alt: "ariel_color_style_40_2.6",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/ariel_color_style_40_2.6-01.jpg",
@@ -31,6 +32,7 @@ export const shopLotsWashingPowders = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/ariel_original_40_2.6.jpg",
         alt: "ariel_original_40_2.6",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/ariel_original_40_2.6-01.jpg",
@@ -57,6 +59,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/ariel_fast_dissolving_color_36.jpg",
         alt: "ariel_fast_dissolving_color_36",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/ariel_fast_dissolving_color_36-01.jpg",
@@ -85,6 +88,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/ariel_fast_dissolving_moutnain_spring_36.jpg",
         alt: "ariel_fast_dissolving_moutnain_spring_36",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/ariel_fast_dissolving_moutnain_spring_36-01.jpg",
@@ -116,6 +120,7 @@ export const shopLotsWashingPowders = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/bold_lenor_fast_dissolving_2.47.jpg",
     //     alt: "bold_lenor_fast_dissolving_2.47",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/bold_lenor_fast_dissolving_2.47-01.jpg",
@@ -147,6 +152,7 @@ export const shopLotsWashingPowders = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_vollwaschmittel_color_1.35.jpg",
         alt: "denkmit_vollwaschmittel_color_1.35",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_vollwaschmittel_color_1.35-01.jpg",
@@ -177,6 +183,7 @@ export const shopLotsWashingPowders = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_vollwaschmittel_weiss_1.35.jpg",
         alt: "denkmit_vollwaschmittel_weiss_1.35",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_vollwaschmittel_weiss_1.35-01.jpg",
@@ -207,6 +214,7 @@ export const shopLotsWashingPowders = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_vollwaschmittel_summer_rain_1.3.jpg",
     //     alt: "denkmit_vollwaschmittel_summer_rain_1.3",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_vollwaschmittel_summer_rain_1.3-01.jpg",
@@ -237,6 +245,7 @@ export const shopLotsWashingPowders = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_colorwaschmittel_sunny_fresh_1.3.jpg",
         alt: "denkmit_colorwaschmittel_sunny_fresh_1.3",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_colorwaschmittel_sunny_fresh_1.3-01.jpg",
@@ -267,6 +276,7 @@ export const shopLotsWashingPowders = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_vollwaschmittel_dreamy_breeze_1.3.jpg",
         alt: "denkmit_vollwaschmittel_dreamy_breeze_1.3",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_vollwaschmittel_dreamy_breeze_1.3-01.jpg",
@@ -297,6 +307,7 @@ export const shopLotsWashingPowders = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_colorwaschmittel_ultra_sensitive_1.35.jpg",
         alt: "denkmit_colorwaschmittel_ultra_sensitive_1.35",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_colorwaschmittel_ultra_sensitive_1.35-01.jpg",
@@ -327,6 +338,7 @@ export const shopLotsWashingPowders = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_vollwaschmittel_ultra_sensitive_1.35.jpg",
         alt: "denkmit_vollwaschmittel_ultra_sensitive_1.35",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/denkmit_vollwaschmittel_ultra_sensitive_1.35-01.jpg",
@@ -357,6 +369,7 @@ export const shopLotsWashingPowders = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/derr_color_130.jpg",
         alt: "derr_color_130",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/derr_color_130-01.jpg",
@@ -383,6 +396,7 @@ export const shopLotsWashingPowders = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/derr_universal_130.jpg",
         alt: "derr_universal_130",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/derr_universal_130-01.jpg",
@@ -409,6 +423,7 @@ export const shopLotsWashingPowders = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/fairy_non_bio_3.9.jpg",
     //     alt: "fairy_non_bio_3.9",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/fairy_non_bio_3.9-01.jpg",
@@ -442,6 +457,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_colorwaschmittel_10.jpg",
         alt: "gallus_colorwaschmittel_10",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_colorwaschmittel_10-01.jpg",
@@ -468,6 +484,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_voll_10.jpg",
         alt: "gallus_voll_10",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_voll_10-01.jpg",
@@ -494,6 +511,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_weiss_10.jpg",
         alt: "gallus_weiss_10",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_weiss_10-01.jpg",
@@ -520,6 +538,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_colorwaschmittel_26.jpg",
         alt: "gallus_colorwaschmittel_26",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_colorwaschmittel_26-01.jpg",
@@ -546,6 +565,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_vollwaschmittel_26.jpg",
         alt: "gallus_vollwaschmittel_26",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_vollwaschmittel_26-01.jpg",
@@ -572,6 +592,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_colorwaschmittel_60.jpg",
         alt: "gallus_colorwaschmittel_60",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_colorwaschmittel_60-01.jpg",
@@ -598,6 +619,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_vollwaschmittel_60.jpg",
         alt: "gallus_vollwaschmittel_60",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_vollwaschmittel_60-01.jpg",
@@ -624,6 +646,7 @@ export const shopLotsWashingPowders = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_colorwaschmittel_130.jpg",
         alt: "gallus_colorwaschmittel_130",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_colorwaschmittel_130-01.jpg",
@@ -650,6 +673,7 @@ export const shopLotsWashingPowders = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_vollwaschmittel_130.jpg",
         alt: "gallus_vollwaschmittel_130",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_vollwaschmittel_130-01.jpg",
@@ -676,6 +700,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_color_58.jpg",
         alt: "gallus_color_58",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_color_58-01.jpg",
@@ -702,6 +727,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_voll_58.jpg",
         alt: "gallus_voll_58",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_voll_58-01.jpg",
@@ -728,6 +754,7 @@ export const shopLotsWashingPowders = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_color_120.jpg",
         alt: "gallus_color_120",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_color_120-01.jpg",
@@ -754,6 +781,7 @@ export const shopLotsWashingPowders = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_voll_120.jpg",
         alt: "gallus_voll_120",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/gallus_voll_120-01.jpg",
@@ -780,6 +808,7 @@ export const shopLotsWashingPowders = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/ja!_voll_30.jpg",
         alt: "ja!_voll_30",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/ja!_voll_30-01.jpg",
@@ -811,6 +840,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_color_20.jpg",
         alt: "onyx_color_20",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_color_20-01.jpg",
@@ -837,6 +867,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_universal_20.jpg",
         alt: "onyx_universal_20",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_universal_20-01.jpg",
@@ -863,6 +894,7 @@ export const shopLotsWashingPowders = [
     // {
     //     type: "only-wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_color_40.jpg",
     //     alt: "onyx_color_40",
     //     marker: "LDWP060",
@@ -885,6 +917,7 @@ export const shopLotsWashingPowders = [
     // {
     //     type: "only-wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_voll_40.jpg",
     //     alt: "onyx_voll_40",
     //     marker: "LDWP061",
@@ -907,6 +940,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_color_40.jpg",
         alt: "onyx_color_40",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_color_40-01.jpg",
@@ -933,6 +967,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_universal_40.jpg",
         alt: "onyx_universal_40",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_universal_40-01.jpg",
@@ -959,6 +994,7 @@ export const shopLotsWashingPowders = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_color_old_80.jpg",
     //     alt: "onyx_color_old_80",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_color_old_80-01.jpg",
@@ -985,6 +1021,7 @@ export const shopLotsWashingPowders = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_voll_80.jpg",
     //     alt: "onyx_voll_80",
     //     marker: "LDWP063",
@@ -1007,6 +1044,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_color_80.jpg",
         alt: "onyx_color_80",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_color_80-01.jpg",
@@ -1033,6 +1071,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_universal_80.jpg",
         alt: "onyx_universal_80",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_universal_80-01.jpg",
@@ -1059,6 +1098,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_color_140.jpg",
         alt: "onyx_color_140",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_color_140-01.jpg",
@@ -1085,6 +1125,7 @@ export const shopLotsWashingPowders = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_universal_140.jpg",
         alt: "onyx_universal_140",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_universal_140-01.jpg",
@@ -1111,6 +1152,7 @@ export const shopLotsWashingPowders = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_color_130.jpg",
     //     alt: "onyx_color_130",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_color_130-01.jpg",
@@ -1137,6 +1179,7 @@ export const shopLotsWashingPowders = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_voll_130.jpg",
     //     alt: "onyx_voll_130",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/onyx_voll_130.jpg",
@@ -1164,6 +1207,7 @@ export const shopLotsWashingPowders = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/power_wash_color_130.jpg",
         alt: "power_wash_color_130",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/power_wash_color_130-01.jpg",
@@ -1188,6 +1232,7 @@ export const shopLotsWashingPowders = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/power_wash_voll_130.jpg",
         alt: "power_wash_voll_130",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/power_wash_voll_130-01.jpg",
@@ -1215,6 +1260,7 @@ export const shopLotsWashingPowders = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/tandil_fein_35.jpg",
         alt: "tandil_fein_35",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/tandil_fein_35-01.jpg",
@@ -1243,6 +1289,7 @@ export const shopLotsWashingPowders = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/tandil_ultra_color.jpg",
     //     alt: "tandil_ultra_color",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/tandil_ultra_color.jpg",
@@ -1267,6 +1314,7 @@ export const shopLotsWashingPowders = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/washing_powder/tandil_ultra_plus_30.jpg",
         alt: "tandil_ultra_plus_30",
         url1: "./images/shop/household_chemicals/laundry_detergents/washing_powder/tandil_ultra_plus_30-01.jpg",

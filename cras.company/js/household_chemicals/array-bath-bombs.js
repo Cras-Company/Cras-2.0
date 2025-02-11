@@ -2,6 +2,7 @@ export const shopLotsBathBombs = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "world-of-fragrances",
         url: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_bubble_to_bloom_floral_moments_grapefruit_120.jpg",
         alt: "sence_bubble_to_bloom_floral_moments_grapefruit_120",
         url1: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_bubble_to_bloom_floral_moments_grapefruit_120-01.jpg",
@@ -30,6 +31,7 @@ export const shopLotsBathBombs = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "world-of-fragrances",
         url: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_bubble_to_bloom_flower_crush_apple_120.jpg",
         alt: "sence_bubble_to_bloom_flower_crush_apple_120",
         url1: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_bubble_to_bloom_flower_crush_apple_120-01.jpg",
@@ -58,6 +60,7 @@ export const shopLotsBathBombs = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "world-of-fragrances",
         url: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_bubble_to_bloom_orchid_love_sweet_plum_120.jpg",
         alt: "sence_bubble_to_bloom_orchid_love_sweet_plum_120",
         url1: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_bubble_to_bloom_orchid_love_sweet_plum_120-01.jpg",
@@ -86,6 +89,7 @@ export const shopLotsBathBombs = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "world-of-fragrances",
         url: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_bubble_to_bloom_tropical_joy_coconut_120.jpg",
         alt: "sence_bubble_to_bloom_tropical_joy_coconut_120",
         url1: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_bubble_to_bloom_tropical_joy_coconut_120-01.jpg",
@@ -114,6 +118,7 @@ export const shopLotsBathBombs = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "world-of-fragrances",
         url: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_bath_bombs_bubble_to_bloom_16.jpg",
         alt: "sence_bath_bombs_bubble_to_bloom_16",
         url1: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_bath_bombs_bubble_to_bloom_16-01.jpg",
@@ -142,6 +147,7 @@ export const shopLotsBathBombs = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "world-of-fragrances",
         url: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_bubble_spirit_adventure_coconut_120.jpg",
         alt: "sence_bubble_spirit_adventure_coconut_120",
         url1: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_bubble_spirit_adventure_coconut_120-01.jpg",
@@ -170,6 +176,7 @@ export const shopLotsBathBombs = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "world-of-fragrances",
         url: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_courage_but_now_relaxing_lemon_120.jpg",
         alt: "sence_courage_but_now_relaxing_lemon_120",
         url1: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_courage_but_now_relaxing_lemon_120-01.jpg",
@@ -198,6 +205,7 @@ export const shopLotsBathBombs = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "world-of-fragrances",
         url: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_love_hakuna_matata_banana_120.jpg",
         alt: "sence_love_hakuna_matata_banana_120",
         url1: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_love_hakuna_matata_banana_120-01.jpg",
@@ -226,6 +234,7 @@ export const shopLotsBathBombs = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "world-of-fragrances",
         url: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_wild_and_bubble_on_bubble_gum_120.jpg",
         alt: "sence_wild_and_bubble_on_bubble_gum_120",
         url1: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_wild_and_bubble_on_bubble_gum_120-01.jpg",
@@ -254,6 +263,7 @@ export const shopLotsBathBombs = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "world-of-fragrances",
         url: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_pretty_wild_bath_bombs_16.jpg",
         alt: "sence_pretty_wild_bath_bombs_16",
         url1: "./images/shop/household_chemicals/world_of_fragrances/bath_bombs/sence_pretty_wild_bath_bombs_16-01.jpg",

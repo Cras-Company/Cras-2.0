@@ -2,6 +2,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_bagno_briliante_500.jpg",
         alt: "ace_bagno_briliante_500",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_bagno_briliante_500-01.jpg",
@@ -28,6 +29,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_bagno_candeggina_750.jpg",
         alt: "ace_bagno_candeggina_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_bagno_candeggina_750-01.jpg",
@@ -54,6 +56,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_sgrassatore_cucina_800.jpg",
         alt: "ace_sgrassatore_cucina_800",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_sgrassatore_cucina_800-01.jpg",
@@ -80,6 +83,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_sgrassatore_igienizzante_500.jpg",
         alt: "ace_sgrassatore_igienizzante_500",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_sgrassatore_igienizzante_500-01.jpg",
@@ -106,6 +110,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_sgrassatore_universale_500.jpg",
         alt: "ace_sgrassatore_universale_500",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_sgrassatore_universale_500-01.jpg",
@@ -132,6 +137,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_sgrassatore_cucina_750.jpg",
         alt: "ace_sgrassatore_cucina_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_sgrassatore_cucina_750-01.jpg",
@@ -158,6 +164,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_sgrassatore_con_candeggina_750.jpg",
         alt: "ace_sgrassatore_con_candeggina_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/ace_sgrassatore_con_candeggina_750-01.jpg",
@@ -184,6 +191,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/universal_tools/ace_spray_mousse_750.jpg",
     //     alt: "ace_spray_mousse_750",
     //     url1: "./images/shop/household_chemicals/universal_tools/ace_spray_mousse_750-01.jpg",
@@ -210,6 +218,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/universal_tools/ace_gentile_oxygen_750.jpg",
     //     alt: "ace_gentile_oxygen_750",
     //     url1: "./images/shop/household_chemicals/universal_tools/ace_gentile_oxygen_750-01.jpg",
@@ -236,6 +245,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_classica_3l.jpg",
         alt: "ace_candeggina_classica_3l",
         url1: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_classica_3l-01.jpg",
@@ -266,6 +276,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_classica_5l.jpg",
         alt: "ace_candeggina_classica_5l",
         url1: "./images/shop/household_chemicals/laundry_detergents/bleaches/ace_candeggina_classica_5l-01.jpg",
@@ -296,6 +307,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/universal_tools/ace_candeggina_piu_700.jpg",
     //     alt: "ace_candeggina_piu_700",
     //     url1: "./images/shop/household_chemicals/universal_tools/ace_candeggina_piu_700-01.jpg",
@@ -322,6 +334,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/universal_tools/ace_candeggina_piu_fresco_profumo_700.jpg",
     //     alt: "ace_candeggina_piu_fresco_profumo_700",
     //     url1: "./images/shop/household_chemicals/universal_tools/ace_candeggina_piu_fresco_profumo_700-01.jpg",
@@ -348,6 +361,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/sale/ace_candeggina_piu_fresco_profumo_1600.jpg",
     //     alt: "ace_candeggina_piu_fresco_profumo_1600",
     //     url1: "./images/shop/sale/ace_candeggina_piu_fresco_profumo_1600-01.jpg",
@@ -374,6 +388,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/universal_tools/ace_ultra_gel_lavanda_1l.jpg",
         alt: "ace_ultra_gel_lavanda_1l",
         url1: "./images/shop/household_chemicals/universal_tools/ace_ultra_gel_lavanda_1l-01.jpg",
@@ -400,6 +415,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/universal_tools/ace_spray_multiuso_eco_ricarica_15.jpg",
     //     alt: "ace_spray_multiuso_eco_ricarica_15",
     //     url1: "./images/shop/household_chemicals/universal_tools/ace_spray_multiuso_eco_ricarica_15-01.jpg",
@@ -428,6 +444,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_the_good_one_500.jpg",
         alt: "astonish_the_good_one_500",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_the_good_one_500-01.jpg",
@@ -458,6 +475,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_oven_cookware_cleaner_150.jpg",
         alt: "astonish_oven_cookware_cleaner_150",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_oven_cookware_cleaner_150-01.jpg",
@@ -484,6 +502,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_cream_lemon_500.jpg",
         alt: "astonish_cream_lemon_500",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_cream_lemon_500-01.jpg",
@@ -510,6 +529,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_antibacterial_surface_cleanser_pomegranate_raspberry_750.jpg",
         alt: "astonish_antibacterial_surface_cleanser_pomegranate_raspberry_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_antibacterial_surface_cleanser_pomegranate_raspberry_750-01.jpg",
@@ -536,6 +556,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_bathroom_cleaner_jasmine_basil_750.jpg",
         alt: "astonish_bathroom_cleaner_jasmine_basil_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_bathroom_cleaner_jasmine_basil_750-01.jpg",
@@ -562,6 +583,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_daily_shower_shine_hibiscus_blossom_750.jpg",
         alt: "astonish_daily_shower_shine_hibiscus_blossom_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_daily_shower_shine_hibiscus_blossom_750-01.jpg",
@@ -588,6 +610,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_daily_shower_shine_white_lilies_750.jpg",
         alt: "astonish_daily_shower_shine_white_lilies_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_daily_shower_shine_white_lilies_750-01.jpg",
@@ -614,6 +637,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_kitchen_cleaner_zesty_lemon_750.jpg",
         alt: "astonish_kitchen_cleaner_zesty_lemon_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_kitchen_cleaner_zesty_lemon_750-01.jpg",
@@ -640,6 +664,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_lime_blast_limescale_remover_750.jpg",
         alt: "astonish_lime_blast_limescale_remover_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_lime_blast_limescale_remover_750-01.jpg",
@@ -666,6 +691,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_mould_mildrew_blaster_apple_burst_750.jpg",
         alt: "astonish_mould_mildrew_blaster_apple_burst_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_mould_mildrew_blaster_apple_burst_750-01.jpg",
@@ -692,6 +718,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_multi_purpose_cleaner_bleach_750.jpg",
         alt: "astonish_multi_purpose_cleaner_bleach_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_multi_purpose_cleaner_bleach_750-01.jpg",
@@ -718,6 +745,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_hob_cleaner_anibacterial_235.jpg",
         alt: "astonish_hob_cleaner_anibacterial_235",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/astonish_hob_cleaner_anibacterial_235-01.jpg",
@@ -744,6 +772,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/at_home_clean_all_purpose_lime_eucalyptus.jpg",
     //     alt: "at_home_clean_all_purpose_lime_eucalyptus",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/at_home_clean_all_purpose_lime_eucalyptus-01.jpg",
@@ -770,6 +799,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_con_candeggina_450.jpg",
     //     alt: "chanteclair_sgrassatore_con_candeggina_450",
     //     url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_con_candeggina_450-01.jpg",
@@ -796,6 +826,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_con_candeggina_625.jpg",
         alt: "chanteclair_sgrassatore_con_candeggina_625",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_con_candeggina_625-01.jpg",
@@ -822,6 +853,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_con_bicarbonato_ricarica_600.jpg",
     //     alt: "chanteclair_sgrassatore_universale_con_bicarbonato_ricarica_600",
     //     url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_con_bicarbonato_ricarica_600-01.jpg",
@@ -848,6 +880,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_con_bicarbonato_600.jpg",
         alt: "chanteclair_sgrassatore_universale_con_bicarbonato_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_con_bicarbonato_600-01.jpg",
@@ -874,6 +907,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_disinfettante_600.jpg",
         alt: "chanteclair_sgrassatore_universale_disinfettante_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_disinfettante_600-01.jpg",
@@ -900,6 +934,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_disinfettante_floral_600.jpg",
     //     alt: "chanteclair_sgrassatore_universale_disinfettante_floral_600",
     //     url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_disinfettante_floral_600-01.jpg",
@@ -926,6 +961,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_lavanda_600.jpg",
         alt: "chanteclair_sgrassatore_universale_lavanda_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_lavanda_600-01.jpg",
@@ -952,6 +988,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_lavanda_ricarica_600.jpg",
         alt: "chanteclair_sgrassatore_universale_lavanda_ricarica_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_lavanda_ricarica_600-01.jpg",
@@ -978,6 +1015,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_limone_600.jpg",
         alt: "chanteclair_sgrassatore_universale_limone_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_limone_600-01.jpg",
@@ -1004,6 +1042,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_limone_ricarica_600.jpg",
         alt: "chanteclair_sgrassatore_universale_limone_ricarica_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_limone_ricarica_600-01.jpg",
@@ -1030,6 +1069,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
         {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_marsiglia_600.jpg",
         alt: "chanteclair_sgrassatore_universale_marsiglia_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_marsiglia_600-01.jpg",
@@ -1056,6 +1096,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_marsiglia_ricarica_600.jpg",
         alt: "chanteclair_sgrassatore_universale_marsiglia_ricarica_600",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_sgrassatore_universale_marsiglia_ricarica_600-01.jpg",
@@ -1082,6 +1123,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_aceto_lamponi_625.jpg",
         alt: "chanteclair_vert_aceto_lamponi_625",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_aceto_lamponi_625-01.jpg",
@@ -1108,6 +1150,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_sgrassatore_universale_625.jpg",
     //     alt: "chanteclair_vert_sgrassatore_universale_625",
     //     url1: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_sgrassatore_universale_625-01.jpg",
@@ -1134,6 +1177,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_sgrassatore_universale_arancia_zenzero_625.jpg",
     //     alt: "chanteclair_vert_sgrassatore_universale_arancia_zenzero_625",
     //     url1: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_sgrassatore_universale_arancia_zenzero_625-01.jpg",
@@ -1160,6 +1204,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_sgrassatore_universale_limone_basilico_625.jpg",
         alt: "chanteclair_vert_sgrassatore_universale_limone_basilico_625",
         url1: "./images/shop/household_chemicals/universal_tools/chanteclair_vert_sgrassatore_universale_limone_basilico_625-01.jpg",
@@ -1186,6 +1231,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/chanteclair_zero_625.jpg",
     //     alt: "chanteclair_zero_625",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/chanteclair_zero_625-01.jpg",
@@ -1212,6 +1258,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/chanteclair_anticalcare_universale_antigoccia_625.jpg",
         alt: "chanteclair_anticalcare_universale_antigoccia_625",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/chanteclair_anticalcare_universale_antigoccia_625-01.jpg",
@@ -1238,6 +1285,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/clinair_allesreiniger_arctic.jpg",
     //     alt: "clinair_allesreiniger_arctic",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/clinair_allesreiniger_arctic-01.jpg",
@@ -1264,6 +1312,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/clinair_allesreiniger_fresh_green.jpg",
     //     alt: "clinair_allesreiniger_fresh_green",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/clinair_allesreiniger_fresh_green-01.jpg",
@@ -1290,6 +1339,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/clinair_allesreiniger_lemon.jpg",
     //     alt: "clinair_allesreiniger_lemon",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/clinair_allesreiniger_lemon-01.jpg",
@@ -1316,6 +1366,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/clinair_allesreiniger_purple_flower.jpg",
     //     alt: "clinair_allesreiniger_purple_flower",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/clinair_allesreiniger_purple_flower-01.jpg",
@@ -1342,6 +1393,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/denkmit_fruhlings_moment.jpg",
     //     alt: "denkmit_fruhlings_moment",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/denkmit_fruhlings_moment-01.jpg",
@@ -1368,6 +1420,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_backofen_und_grillreiniger_500.jpg",
         alt: "denkmit_backofen_und_grillreiniger_500",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_backofen_und_grillreiniger_500-01.jpg",
@@ -1394,6 +1447,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_power_fettloser_multi_power_4_750.jpg",
         alt: "denkmit_power_fettloser_multi_power_4_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_power_fettloser_multi_power_4_750-01.jpg",
@@ -1420,6 +1474,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_badreiniger_frishe_1l.jpg",
         alt: "denkmit_badreiniger_frishe_1l",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_badreiniger_frishe_1l-01.jpg",
@@ -1446,6 +1501,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_badreiniger_nature_750.jpg",
         alt: "denkmit_badreiniger_nature_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_badreiniger_nature_750-01.jpg",
@@ -1472,6 +1528,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_glaskeramik_reiniger_3_in_1_300.jpg",
     //     alt: "denkmit_glaskeramik_reiniger_3_in_1_300",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_glaskeramik_reiniger_3_in_1_300-01.jpg",
@@ -1498,6 +1555,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_kalkreiniger_500.jpg",
         alt: "denkmit_kalkreiniger_500",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_kalkreiniger_500-01.jpg",
@@ -1526,6 +1584,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_reinigungs_paste_320.jpg",
     //     alt: "denkmit_reinigungs_paste_320",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_reinigungs_paste_320-01.jpg",
@@ -1554,6 +1613,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_rohrreiniger_1l.jpg",
         alt: "denkmit_rohrreiniger_1l",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_rohrreiniger_1l-01.jpg",
@@ -1580,6 +1640,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_rohrreiniger_granulat_600.jpg",
         alt: "denkmit_rohrreiniger_granulat_600",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/denkmit_rohrreiniger_granulat_600-01.jpg",
@@ -1606,6 +1667,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/der_general_sensitive_aloe_vera.jpg",
     //     alt: "der_general_sensitive_aloe_vera",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/der_general_sensitive_aloe_vera-01.jpg",
@@ -1632,6 +1694,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/der_general_universal_bergfruhling.jpg",
     //     alt: "der_general_universal_bergfruhling",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/der_general_universal_bergfruhling-01.jpg",
@@ -1658,6 +1721,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/domestos_anti_spray_750.jpg",
         alt: "domestos_anti_spray_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/domestos_anti_spray_750-01.jpg",
@@ -1684,6 +1748,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_backofen_grill_750.jpg",
         alt: "gallus_backofen_grill_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_backofen_grill_750-01.jpg",
@@ -1710,6 +1775,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_bad_reiniger_750.jpg",
         alt: "gallus_bad_reiniger_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_bad_reiniger_750-01.jpg",
@@ -1736,6 +1802,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_kalk_reiniger_750.jpg",
         alt: "gallus_kalk_reiniger_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_kalk_reiniger_750-01.jpg",
@@ -1762,6 +1829,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_kuchen_reiniger_750.jpg",
         alt: "gallus_kuchen_reiniger_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_kuchen_reiniger_750-01.jpg",
@@ -1788,6 +1856,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_universal_fettloser_750.jpg",
         alt: "gallus_universal_fettloser_750",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_universal_fettloser_750-01.jpg",
@@ -1814,6 +1883,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_cream_cleaner_lemon_700.jpg",
         alt: "gallus_cream_cleaner_lemon_700",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_cream_cleaner_lemon_700-01.jpg",
@@ -1840,6 +1910,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_gel_drain_opener_1l.jpg",
         alt: "gallus_gel_drain_opener_1l",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gallus_gel_drain_opener_1l-01.jpg",
@@ -1866,6 +1937,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/universal/gut_gunstig_allzweckreiniger_bergfrische.jpg",
         alt: "gut_gunstig_allzweckreiniger_bergfrische",
         url1: "./images/shop/household_chemicals/means_for_cleaning/universal/gut_gunstig_allzweckreiniger_bergfrische-01.jpg",
@@ -1892,6 +1964,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gut_gunstig_badreiniger_1l.jpg",
     //     alt: "gut_gunstig_badreiniger_1l",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gut_gunstig_badreiniger_1l-01.jpg",
@@ -1918,6 +1991,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/ja!_allzweckreiniger_lemon.jpg",
     //     alt: "ja!_allzweckreiniger_lemon",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/ja!_allzweckreiniger_lemon-01.jpg",
@@ -1944,6 +2018,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/universal/ja!_allzweckreiniger_ocean.jpg",
         alt: "ja!_allzweckreiniger_ocean",
         url1: "./images/shop/household_chemicals/means_for_cleaning/universal/ja!_allzweckreiniger_ocean-01.jpg",
@@ -1970,6 +2045,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/k-classic_allesreiniger_fresh_breeze.jpg",
     //     alt: "k-classic_allesreiniger_fresh_breeze",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/k-classic_allesreiniger_fresh_breeze-01.jpg",
@@ -1996,6 +2072,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/k-classic_allesreiniger_lemon_fresh.jpg",
     //     alt: "k-classic_allesreiniger_lemon_fresh",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/k-classic_allesreiniger_lemon_fresh-01.jpg",
@@ -2022,6 +2099,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/k-classic_allesreiniger_tropical_flower.jpg",
     //     alt: "k-classic_allesreiniger_tropical_flower",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/k-classic_allesreiniger_tropical_flower-01.jpg",
@@ -2048,6 +2126,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "only-wholesale оптом",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gut_gunstig_pulver_power.jpg",
     //     alt: "gut_gunstig_pulver_power",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/gut_gunstig_pulver_power.jpg",
@@ -2072,6 +2151,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/universal_tools/neo_blanc_lixivia_desengordurante_700.jpg",
     //     alt: "neo_blanc_lixivia_desengordurante_700",
     //     url1: "./images/shop/household_chemicals/universal_tools/neo_blanc_lixivia_desengordurante_700-01.jpg",
@@ -2098,6 +2178,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/universal_tools/neo_blanc_lixivia densa_1l.jpg",
         alt: "neo_blanc_lixivia densa_1l",
         url1: "./images/shop/household_chemicals/universal_tools/neo_blanc_lixivia densa_1l-01.jpg",
@@ -2124,6 +2205,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/power_wash_kalkloser_750.jpg",
     //     alt: "power_wash_kalkloser_750",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/power_wash_kalkloser_750-01.jpg",
@@ -2150,6 +2232,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/reinex_apfel_fresh.jpg",
     //     alt: "reinex_apfel_fresh",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/reinex_apfel_fresh-01.jpg",
@@ -2176,6 +2259,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "cleaning-care-products",
     // url: "./images/shop/household_chemicals/means_for_cleaning/universal/respekt_allzweckreiniger_sommertraum.jpg",
     //     alt: "respekt_allzweckreiniger_sommertraum",
     //     url1: "./images/shop/household_chemicals/means_for_cleaning/universal/respekt_allzweckreiniger_sommertraum-01.jpg",
@@ -2202,6 +2286,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/well_done_zsiroldo_650.jpg",
         alt: "well_done_zsiroldo_650",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/well_done_zsiroldo_650-01.jpg",
@@ -2228,6 +2313,7 @@ export const shopLotsMeansCleaningKitchenBathroom = [
     {
         type: "only-wholesale оптом",
         mainCategory: "household-chemicals",
+        subcategory: "cleaning-care-products",
         url: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/well_done_zsiroldo_1000.jpg",
         alt: "well_done_zsiroldo_1000",
         url1: "./images/shop/household_chemicals/means_for_cleaning/kitchen_bathroom/well_done_zsiroldo_1000-01.jpg",

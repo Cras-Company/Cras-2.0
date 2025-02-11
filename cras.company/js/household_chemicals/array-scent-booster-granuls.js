@@ -2,6 +2,7 @@ export const shopLotsScentBoosterGranuls = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/fairy_scent_booster_almond_manuka_245.jpg",
         alt: "fairy_scent_booster_almond_manuka_245",
         url1: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/fairy_scent_booster_almond_manuka_245-01.jpg",
@@ -28,6 +29,7 @@ export const shopLotsScentBoosterGranuls = [
     // {
     //     type: "retail",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_scent_booster_exotic_bloom_245.jpg",
     //     alt: "lenor_scent_booster_exotic_bloom_245",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_scent_booster_exotic_bloom_245-01.jpg",
@@ -54,6 +56,7 @@ export const shopLotsScentBoosterGranuls = [
     {
         type: "wholesale",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_profumo_ametista_fiorito_210.jpg",
         alt: "lenor_profumo_ametista_fiorito_210",
         url1: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_profumo_ametista_fiorito_210-01.jpg",
@@ -80,6 +83,7 @@ export const shopLotsScentBoosterGranuls = [
     {
         type: "wholesale",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_profumo_fiori_vaniglia_210.jpg",
         alt: "lenor_profumo_fiori_vaniglia_210",
         url1: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_profumo_fiori_vaniglia_210-01.jpg",
@@ -106,6 +110,7 @@ export const shopLotsScentBoosterGranuls = [
     {
         type: "wholesale",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_profumo_risveglio_primaverile_210.jpg",
         alt: "lenor_profumo_risveglio_primaverile_210",
         url1: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_profumo_risveglio_primaverile_210-01.jpg",
@@ -132,6 +137,7 @@ export const shopLotsScentBoosterGranuls = [
     {
         type: "wholesale",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_profumo_ruby_jasmine_210.jpg",
         alt: "lenor_profumo_ruby_jasmine_210",
         url1: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_profumo_ruby_jasmine_210-01.jpg",
@@ -158,6 +164,7 @@ export const shopLotsScentBoosterGranuls = [
     {
         type: "wholesale",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_perfume_de_ariel_210.jpg",
         alt: "lenor_perfume_de_ariel_210",
         url1: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_perfume_de_ariel_210-01.jpg",
@@ -184,6 +191,7 @@ export const shopLotsScentBoosterGranuls = [
     // {
     //     type: "wholesale",
     // mainCategory: "household-chemicals",    
+    // subcategory: "detergents",
     // url: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_perfume_de_dash_210.jpg",
     //     alt: "lenor_perfume_de_dash_210",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_perfume_de_dash_210-01.jpg",
@@ -210,6 +218,7 @@ export const shopLotsScentBoosterGranuls = [
     {
         type: "wholesale",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_scent_booster_fresh_210.jpg",
         alt: "lenor_scent_booster_fresh_210",
         url1: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_scent_booster_fresh_210-01.jpg",
@@ -236,6 +245,7 @@ export const shopLotsScentBoosterGranuls = [
     {
         type: "wholesale",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_sensitive_cotton_fresh_210.jpg",
         alt: "lenor_sensitive_cotton_fresh_210",
         url1: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_sensitive_cotton_fresh_210-01.jpg",
@@ -262,6 +272,7 @@ export const shopLotsScentBoosterGranuls = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_scent_booster_active_264.jpg",
         alt: "lenor_scent_booster_active_264",
         url1: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_scent_booster_active_264-01.jpg",
@@ -288,6 +299,7 @@ export const shopLotsScentBoosterGranuls = [
     {
         type: "retail",
         mainCategory: "household-chemicals",
+        subcategory: "detergents",
         url: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_scent_booster_fresh_264.jpg",
         alt: "lenor_scent_booster_fresh_264",
         url1: "./images/shop/household_chemicals/laundry_detergents/scent_booster_granuls/lenor_scent_booster_fresh_264-01.jpg",
