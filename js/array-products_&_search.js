@@ -555,55 +555,6 @@ hideAllSectionsAndProducts();
 loadItems();
 
 // ===========================================================================
-// Анимация иконок в разделе товаров
-// ===========================================================================
-const filterMenus = document.querySelectorAll(".js-filter__menu");
-const filterSecondaryMenus = document.querySelectorAll(".js-filter__secondary-menu");
-
-const filterLists = document.querySelectorAll(".js-filter__list");
-const filterSecondaryLists = document.querySelectorAll(".js-filter__secondary-list");
-
-const filterIconsOpen = document.querySelectorAll(".js-filter__icon-open");
-const filterIconsClose = document.querySelectorAll(".js-filter__icon-close");
-
-const filterSecondaryIconsOpen = document.querySelectorAll(".js-filter__secondary-icon-open");
-const filterSecondaryIconsClose = document.querySelectorAll(".js-filter__secondary-icon-close");
-
-const filterIconHandler = (menuIndex) => {
-  const iconClose = filterIconsClose[menuIndex];
-  const iconOpen = filterIconsOpen[menuIndex];
-  const list = filterLists[menuIndex];
-
-  iconClose.classList.toggle("js-icon-close");
-  iconOpen.classList.toggle("js-icon-open");
-  list.classList.toggle("js-filter-list-open");
-};
-
-const filterSecondaryIconHandler = (menuIndex) => {
-  const secondaryIconClose = filterSecondaryIconsClose[menuIndex];
-  const secondaryIconOpen = filterSecondaryIconsOpen[menuIndex];
-  const secondaryList = filterSecondaryLists[menuIndex];
-
-  secondaryIconClose.classList.toggle("js-icon-close");
-  secondaryIconOpen.classList.toggle("js-icon-open");
-  secondaryList.classList.toggle("js-filter-list-open");
-};
-
-filterMenus.forEach((menu, index) => {
-  menu.addEventListener("click", (event) => {
-    event.stopPropagation();
-    filterIconHandler(index);
-  });
-});
-
-filterSecondaryMenus.forEach((menu, index) => {
-  menu.addEventListener("click", (event) => {
-    event.stopPropagation();
-    filterSecondaryIconHandler(index);
-  });
-});
-
-// ===========================================================================
 // Поиск в фильтре
 // ===========================================================================
 

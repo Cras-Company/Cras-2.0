@@ -117,7 +117,6 @@ const arrayProducingCountriesMarkup = extractUniqueSortedValues("countryName");
 initializeList(crasBrands, arrayCrasBrandsMarkup, "brand", brandClickHandler);
 initializeList(producingCountries, arrayProducingCountriesMarkup, "country", countryClickHandler);
 
-
 function handleClick(event, attribute, filterKey) {
   event.preventDefault();
 
@@ -226,10 +225,69 @@ function burgerHandleClickMainCategory(event, attribute, filterKey) {
 
   "for-children", "hair-care", "shower-gels", "soap", "limbs-care", "deo-anti", "shining-smile", "wipes", "feminine-hygiene", "toilet-papers",
 
-  "dishwashing-detergents", "detergents", "world-of-fragrances",
+  "dishwashing-detergents", "detergents", "cleaning-care-products", "world-of-fragrances",
 ].forEach(target => {
   const element = document.querySelector(`.js-modal__burger-subcategory[data-target="${target}"], .burger__secondary-item[data-target="${target}"]`);
   if (element) {
     element.addEventListener("click", event => burgerHandleClickMainCategory(event, "data-target", "subcategory"));
   }
 });
+
+// ===========================================================================
+// Клик по категориям
+// ===========================================================================
+
+const filterSecondaryLists = document.querySelectorAll(".js-burger__secondary-list");
+
+[...filterSecondaryLists].forEach(list => {
+  list.addEventListener("click", filterClickHandler);
+});
+
+function filterClickHandler(event) {
+  
+  event.preventDefault();
+  
+  outputError.textContent = "";
+  outputError.style.marginTop = "0px";
+  outputError.style.marginBottom = "0px";
+  
+  const target = event.target.closest("li");
+
+  if (target) {
+    const dataTarget = target.getAttribute("data-target");
+
+    if (dataTarget) {
+      event.stopPropagation();
+      
+      hideAllSectionsAndProducts();
+
+      loadMoreButton.style.display = 'none';
+
+      arrayOfProducts.forEach(({ element, dataTarget: productDataTarget, block }) => {
+        if (productDataTarget === dataTarget) {
+          element.style.display = "flex";
+
+          const section = element.closest(".js-section-none");
+
+          if (section) {
+            section.style.display = "block";
+          }
+
+          if (block) {
+            block.style.display = "block";
+
+            arrayOfProducts.forEach(product => {
+              if (productDataTarget === dataTarget) {
+                product.element.innerHTML = createMobileListItemsMarkup(product.items);
+              }
+            })
+          }
+        }
+      });
+
+      jumpOnMainPage();
+      lazyLoadImagesAnimation();
+      onCloseModal(refs.openModalBurgerMenu);
+    }  
+  }
+}
