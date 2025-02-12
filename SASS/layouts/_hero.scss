@@ -47,6 +47,13 @@
   width: 80%;
 
   color: var(--hero-text-color);
+
+  &--license {
+    text-align: center;
+    color: var(--primary-text-color);
+
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -66,6 +73,10 @@
     font-size: 44px;
 
     width: 90%;
+
+    &--license {
+      width: 100%;
+    }
   }
 }
 

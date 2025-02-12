@@ -75,6 +75,14 @@ body.modal-open {
   }
 }
 
+.modal--burger--secondary {
+  height: 35vh;
+
+  // @media (min-width: 780px) {
+  //   width: 40vw;
+  // }
+}
+
 .modal--overflow {
   height: 70vh;
   overflow-y: auto;
@@ -95,6 +103,16 @@ body.modal-open {
     height: 75vh;
 
     overflow-y: scroll;
+  }
+}
+
+.modal-secondary-over {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: 480px) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
