@@ -11,6 +11,8 @@ import { restoreIcons, lotBasketHandler, restoreStoregeIcons } from './basket.js
 import { refs, onOpenModal, onCloseModal } from './modal.js';
 
 import {
+  loadMoreButton,
+  resetMarkup,
   loadItems,
   hideAllSectionsAndProducts,
   lazyLoadImagesAnimation,
@@ -254,11 +256,8 @@ const shopListBathBombs = document.querySelector(".js-cras__list--bath-bombs");
 // ===========================================================================
 
 // Форма поиска
-// const inputSearchMobile = document.querySelector("#search-mobile");
-const filterFormMobile = document.querySelector(".js-filter__form-mobile");
-
 const inputSearch = document.querySelector("#search");
-const filterForm = document.querySelector(".js-filter__form");
+const searchForm = document.querySelector(".js-search__form");
 
 // Новинки
 const SectionAllNewItems = document.querySelector(".js-section-all-new-items");
@@ -558,11 +557,9 @@ loadItems();
 // Поиск в фильтре
 // ===========================================================================
 
-// inputSearchMobile.value = "";
 inputSearch.value = "";
 
-// filterFormMobile.addEventListener("submit", handleFormSubmit);
-// filterForm.addEventListener("submit", handleFormSubmit);
+searchForm.addEventListener("submit", handleFormSubmit);
 
 function universalSearch(items, searchItem) {
   const searchWords = searchItem.split(" ").filter(word => word.trim() !== "");
@@ -590,14 +587,13 @@ function handleFormSubmit(event) {
 
   event.preventDefault();
 
-  const searchItem = event.target === filterForm ? inputSearch.value.trim().toLowerCase() : inputSearchMobile.value.trim().toLowerCase();
+  const searchItem = event.target === searchForm ? inputSearch.value.trim().toLowerCase() : inputSearchMobile.value.trim().toLowerCase();
 
   resetMarkup();
+  loadMoreButton.style.display = 'none';
 
-  if (event.target === filterForm) {
+  if (event.target === searchForm) {
     inputSearch.value = "";
-  } else if (event.target === filterFormMobile) {
-    inputSearchMobile.value = "";
   }
 
   // Новинки

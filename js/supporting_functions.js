@@ -40,7 +40,7 @@ export function loadItems() {
   isFirstLoad = false;
 }
 
-const loadMoreButton = document.querySelector('.js-button-next');
+export const loadMoreButton = document.querySelector('.js-button-next');
 
 loadMoreButton.addEventListener('click', () => {
   loadMoreButton.disabled = true; // Блокируем кнопку на время выполнения
@@ -60,7 +60,7 @@ loadMoreButton.addEventListener('click', () => {
 // Сброс разметки
 // ===========================================================================
 
-function resetMarkup() {
+export function resetMarkup() {
   arrayOfProducts.forEach(product => {
     product.element.style.display = "block";
     product.block.style.display = "block";
