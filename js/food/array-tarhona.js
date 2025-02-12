@@ -203,8 +203,8 @@ export const shopLotsTarhona = [
     },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "pasta",
+    // mainCategory: "foodstuffs",
+        // subcategory: "pasta",    
     // url: "./images/shop/food/pasta/tarhona/tiradell_tarhona_500.jpg",
     //     alt: "tiradell_tarhona_500",
     //     url1: "./images/shop/food/pasta/tarhona/tiradell_tarhona_500.jpg",

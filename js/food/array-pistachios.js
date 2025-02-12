@@ -51,8 +51,8 @@ export const shopLotsPistachios = [
     },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "snacks",
+    // mainCategory: "foodstuffs",
+        // subcategory: "snacks",    
     // url: "./images/shop/food/snacks/pistachios/mogyi_pisztacia_60.jpg",
     //     alt: "mogyi_pisztacia_60",
     //     marker: "FDPH400",

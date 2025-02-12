@@ -109,8 +109,8 @@ export const shopLotsIntimHygiene = [
     },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "hygiene-products",    
-    // subcategory: "feminine-hygiene",
+    // mainCategory: "hygiene-products",
+        // subcategory: "feminine-hygiene",    
     // url: "./images/shop/gigiena/feminine_hygiene/intim_hugiene/dermomed_intime_wash_lichene_250.jpg",
     //     alt: "dermomed_intime_wash_lichene_250",
     //     url1: "./images/shop/gigiena/feminine_hygiene/intim_hugiene/dermomed_intime_wash_lichene_250-01.jpg",
@@ -241,8 +241,8 @@ export const shopLotsIntimHygiene = [
     },
     // {
     //     type: "retail",
-    // mainCategory: "hygiene-products",    
-    // subcategory: "feminine-hygiene",
+    // mainCategory: "hygiene-products",
+        // subcategory: "feminine-hygiene",    
     // url: "./images/shop/gigiena/feminine_hygiene/intim_hugiene/lactacyd_classic_zilnica_200.jpg",
     //     alt: "lactacyd_classic_zilnica_200",
     //     url1: "./images/shop/gigiena/feminine_hygiene/intim_hugiene/lactacyd_classic_zilnica_200-01.jpg",

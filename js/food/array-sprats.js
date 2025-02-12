@@ -30,8 +30,8 @@ export const shopLotsSprats = [
     },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "conservation",
+    // mainCategory: "foodstuffs",
+        // subcategory: "conservation",    
     // url: "./images/shop/food/canned_food/sprats/king_oscar_szproty_tomato_160.jpg",
     //     alt: "king_oscar_szproty_tomato_160",
     //     url1: "./images/shop/food/canned_food/sprats/king_oscar_szproty_tomato_160-01.jpg",
@@ -55,8 +55,8 @@ export const shopLotsSprats = [
     // },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "conservation",
+    // mainCategory: "foodstuffs",
+        // subcategory: "conservation",    
     // url: "./images/shop/food/canned_food/sprats/king_oscar_szproty_tomato_omega_160.jpg",
     //     alt: "king_oscar_szproty_tomato_omega_160",
     //     url1: "./images/shop/food/canned_food/sprats/king_oscar_szproty_tomato_omega_160-01.jpg",
@@ -84,8 +84,8 @@ export const shopLotsSprats = [
     // },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "conservation",
+    // mainCategory: "foodstuffs",
+        // subcategory: "conservation",    
     // url: "./images/shop/food/canned_food/sprats/m&k_szprot_podwedzany_w_oleju_160.jpg",
     //     alt: "m&k_szprot_podwedzany_w_oleju_160",
     //     marker: "FDST340",
@@ -107,8 +107,8 @@ export const shopLotsSprats = [
     // },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "conservation",
+    // mainCategory: "foodstuffs",
+        // subcategory: "conservation",    
     // url: "./images/shop/food/canned_food/sprats/m&k_szprot_podwedzany_w_sosie_pomidorowym_160.jpg",
     //     alt: "m&k_szprot_podwedzany_w_sosie_pomidorowym_160",
     //     url1: "./images/shop/food/canned_food/sprats/m&k_szprot_podwedzany_w_sosie_pomidorowym_160-01.jpg",

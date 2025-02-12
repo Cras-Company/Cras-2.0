@@ -28,8 +28,8 @@ export const shopLotsOliveOil = [
     },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "olives-oils",
+    // mainCategory: "foodstuffs",
+        // subcategory: "olives-oils",    
     // url: "./images/shop/food/olives_oil/olive_oil/greece_olive_oil_1000.jpg",
     //     alt: "greece_olive_oil_1000",
     //     url1: "./images/shop/food/olives_oil/olive_oil/greece_olive_oil_1000.jpg",
@@ -53,8 +53,8 @@ export const shopLotsOliveOil = [
     // },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "olives-oils",
+    // mainCategory: "foodstuffs",
+        // subcategory: "olives-oils",    
     // url: "./images/shop/food/olives_oil/olive_oil/maestro_garsia_olive_oil_250.jpg",
     //     alt: "maestro_garsia_olive_oil_250",
     //     url1: "./images/shop/food/olives_oil/olive_oil/maestro_garsia_olive_oil_250.jpg",
@@ -78,8 +78,8 @@ export const shopLotsOliveOil = [
     // },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "olives-oils",
+    // mainCategory: "foodstuffs",
+        // subcategory: "olives-oils",    
     // url: "./images/shop/food/olives_oil/olive_oil/maestro_garsia_olive_oil_500.jpg",
     //     alt: "maestro_garsia_olive_oil_500",
     //     url1: "./images/shop/food/olives_oil/olive_oil/maestro_garsia_olive_oil_500.jpg",
@@ -103,8 +103,8 @@ export const shopLotsOliveOil = [
     // },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "olives-oils",
+    // mainCategory: "foodstuffs",
+        // subcategory: "olives-oils",    
     // url: "./images/shop/food/olives_oil/olive_oil/monini_classico_olio_extra_1l.jpg",
     //     alt: "monini_classico_olio_extra_1l",
     //     url1: "./images/shop/food/olives_oil/olive_oil/monini_classico_olio_extra_1l.jpg",

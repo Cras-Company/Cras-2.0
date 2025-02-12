@@ -1,8 +1,8 @@
 export const shopLotsInstantCoffee = [
     // {
     //     type: "retail",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "drinks",
+    // mainCategory: "foodstuffs",
+        // subcategory: "drinks",    
     // url: "./images/shop/food/drinks/instant_coffee/bellarom_exclusive_200.jpg",
     //     alt: "bellarom_exclusive_200",
     //     url1: "./images/shop/food/drinks/instant_coffee/bellarom_exclusive_200.jpg",
@@ -26,8 +26,8 @@ export const shopLotsInstantCoffee = [
     // },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "drinks",
+    // mainCategory: "foodstuffs",
+        // subcategory: "drinks",    
     // url: "./images/shop/food/drinks/instant_coffee/cafe_d`Or_crema_160.jpg",
     //     alt: "cafe_d`Or_crema_160",
     //     url1: "./images/shop/food/drinks/instant_coffee/cafe_d`Or_crema_160.jpg",

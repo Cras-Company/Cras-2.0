@@ -1,7 +1,7 @@
 export const shopLotsNoodles = [
     // {
     //     type: "retail",
-    // mainCategory: "foodstuffs",    
+    // mainCategory: "foodstuffs",   
     // subcategory: "pasta",
     // url: "./images/shop/food/pasta/noodles/barilla_tagliatelle_16_500.jpg",
     //     alt: "barilla_tagliatelle_16_500",
@@ -36,8 +36,8 @@ export const shopLotsNoodles = [
     // },
     {
         type: "wholesale оптом",
-        mainCategory: "foodstuffs",
-        subcategory: "pasta",
+        mainCategory: "foodstuffs",   
+        subcategory: "pasta",        
         url: "./images/shop/food/pasta/noodles/pasta_reggia_fettuce_500.jpg",
         alt: "pasta_reggia_fettuce_500",
         url1: "./images/shop/food/pasta/noodles/pasta_reggia_fettuce_500-01.jpg",

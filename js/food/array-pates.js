@@ -1,8 +1,8 @@
 export const shopLotsPates = [
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "conservation",
+    // mainCategory: "foodstuffs",
+        // subcategory: "conservation",    
     // url: "./images/shop/food/canned_food/pates/fresh_pecenovka_190.jpg",
     //     alt: "fresh_pecenovka_190",
     //     url1: "./images/shop/food/canned_food/pates/fresh_pecenovka_190.jpg",
@@ -26,8 +26,8 @@ export const shopLotsPates = [
     // },
     // {
     //     type: "retail",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "conservation",
+    // mainCategory: "foodstuffs",
+        // subcategory: "conservation",    
     // url: "./images/shop/food/canned_food/pates/freshona_pasta_ardei_120.jpg",
     //     alt: "freshona_pasta_ardei_120",
     //     url1: "./images/shop/food/canned_food/pates/freshona_pasta_ardei_120.jpg",
@@ -51,8 +51,8 @@ export const shopLotsPates = [
     // },
     // {
     //     type: "retail",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "conservation",
+    // mainCategory: "foodstuffs",
+        // subcategory: "conservation",    
     // url: "./images/shop/food/canned_food/pates/freshona_pasta_ciuperci_120.jpg",
     //     alt: "freshona_pasta_ciuperci_120",
     //     url1: "./images/shop/food/canned_food/pates/freshona_pasta_ciuperci_120.jpg",
@@ -76,8 +76,8 @@ export const shopLotsPates = [
     // },
     // {
     //     type: "retail",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "conservation",
+    // mainCategory: "foodstuffs",
+        // subcategory: "conservation",    
     // url: "./images/shop/food/canned_food/pates/freshona_pasta_masline_120.jpg",
     //     alt: "freshona_pasta_masline_120",
     //     url1: "./images/shop/food/canned_food/pates/freshona_pasta_masline_120-01.jpg",
@@ -101,8 +101,8 @@ export const shopLotsPates = [
     // },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "conservation",
+    // mainCategory: "foodstuffs",
+        // subcategory: "conservation",    
     // url: "./images/shop/food/canned_food/pates/hame_pioner_pork_190.jpg",
     //     alt: "hame_pioner_pork_190",
     //     url1: "./images/shop/food/canned_food/pates/hame_pioner_pork_190.jpg",
@@ -201,8 +201,8 @@ export const shopLotsPates = [
     },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "conservation",
+    // mainCategory: "foodstuffs",
+        // subcategory: "conservation",    
     // url: "./images/shop/food/canned_food/pates/pamapol_pasztet_z_indykiem_390.jpg",
     //     alt: "pamapol_pasztet_z_indykiem_390",
     //     url1: "./images/shop/food/canned_food/pates/pamapol_pasztet_z_indykiem_390-01.jpg",

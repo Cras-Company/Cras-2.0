@@ -366,8 +366,8 @@ export const shopLotsToothpastesAdult = [
     },
     // {
     //     type: "retail",
-    // mainCategory: "hygiene-products",    
-    // subcategory: "shining-smile",
+    // mainCategory: "hygiene-products",
+        // subcategory: "shining-smile",    
     // url: "./images/shop/gigiena/beaming_smile/adult/dentamax_sensitive_125.jpg",
     //     alt: "dentamax_sensitive_125",
     //     url1: "./images/shop/gigiena/beaming_smile/adult/dentamax_sensitive_125-01.jpg",
@@ -393,8 +393,8 @@ export const shopLotsToothpastesAdult = [
     // },
     // {
     //     type: "retail",
-    // mainCategory: "hygiene-products",    
-    // subcategory: "shining-smile",
+    // mainCategory: "hygiene-products",
+        // subcategory: "shining-smile",    
     // url: "./images/shop/gigiena/beaming_smile/adult/dentamax_zahnweiss_125.jpg",
     //     alt: "dentamax_zahnweiss_125",
     //     url1: "./images/shop/gigiena/beaming_smile/adult/dentamax_zahnweiss_125-01.jpg",

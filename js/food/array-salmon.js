@@ -27,7 +27,7 @@ export const shopLotsSalmon = [
         {
         type: "retail",
         mainCategory: "foodstuffs",
-        subcategory: "conservation",
+        subcategory: "conservation",       
         url: "./images/shop/food/canned_food/salmon/marinero_losos_tomato_150.jpg",
         alt: "marinero_losos_tomato_150",
         url1: "./images/shop/food/canned_food/salmon/marinero_losos_tomato_150.jpg",

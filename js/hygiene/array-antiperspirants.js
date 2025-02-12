@@ -29,7 +29,7 @@ export const shopLotsAntiperspirants = [
     {
         type: "retail",
         mainCategory: "hygiene-products",
-        subcategory: "deo-anti",
+        subcategory: "deo-anti",       
         url: "./images/shop/gigiena/deo_anti/antiperspirants/ombia_anti_transpirant_sensetive_50.jpg",
         alt: "ombia_anti_transpirant_sensetive_50",
         url1: "./images/shop/gigiena/deo_anti/antiperspirants/ombia_anti_transpirant_sensetive_50-01.jpg",

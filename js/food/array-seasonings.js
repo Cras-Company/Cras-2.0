@@ -1,8 +1,8 @@
 export const shopLotsSeasonings = [
     // {
     //     type: "retail",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "taste-modifiers",
+    // mainCategory: "foodstuffs",
+        // subcategory: "taste-modifiers",    
     // url: "./images/shop/food/taste_modifier/seasonings/caneo_przyprawa_uniwersalna.jpg",
     //     alt: "caneo_przyprawa_uniwersalna",
     //     url1: "./images/shop/food/taste_modifier/seasonings/caneo_przyprawa_uniwersalna.jpg",
@@ -26,8 +26,8 @@ export const shopLotsSeasonings = [
     // },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "taste-modifiers",
+    // mainCategory: "foodstuffs",
+        // subcategory: "taste-modifiers",    
     // url: "./images/shop/food/taste_modifier/seasonings/lucullus_mezes-csipos_48.jpg",
     //     alt: "lucullus_mezes-csipos_48",
     //     url1: "./images/shop/food/taste_modifier/seasonings/lucullus_mezes-csipos_48.jpg",

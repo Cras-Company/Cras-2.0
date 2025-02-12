@@ -27,7 +27,7 @@ export const shopLotsMustard = [
     {
         type: "retail",
         mainCategory: "foodstuffs",
-        subcategory: "taste-modifiers",
+        subcategory: "taste-modifiers",      
         url: "./images/shop/food/taste_modifier/mustard/madero_francuska_270.jpg",
         alt: "madero_francuska_270",
         url1: "./images/shop/food/taste_modifier/mustard/madero_francuska_270.jpg",

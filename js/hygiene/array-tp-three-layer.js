@@ -142,8 +142,8 @@ export const shopLotsTPThreeLayer = [
   },
   // {
   //   type: "wholesale оптом",
-  // mainCategory: "hygiene-products",  
-  // subcategory: "toilet-papers",
+  // mainCategory: "hygiene-products",
+    // subcategory: "toilet-papers",  
   // url: "./images/shop/gigiena/toilet_paper/three_layer/star_trio_24.jpg",
   //   alt: "star_trio_24",
   //   url1: "./images/shop/gigiena/toilet_paper/three_layer/star_trio_24-01.jpg",

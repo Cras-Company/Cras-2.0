@@ -1,8 +1,8 @@
 export const shopLotsLaundrySheets = [
     // {
     //     type: "wholesale",
-    // mainCategory: "household-chemicals",    
-    // subcategory: "detergents",
+    // mainCategory: "household-chemicals",
+        // subcategory: "detergents",    
     // url: "./images/shop/household_chemicals/laundry_detergents/laundry_sheets/at_home_wash_laundry_sheets_color.jpg",
     //     alt: "at_home_wash_laundry_sheets_color",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/laundry_sheets/at_home_wash_laundry_sheets_color-01.jpg",
@@ -28,8 +28,8 @@ export const shopLotsLaundrySheets = [
     // },
     // {
     //     type: "wholesale",
-    // mainCategory: "household-chemicals",    
-    // subcategory: "detergents",
+    // mainCategory: "household-chemicals",
+        // subcategory: "detergents",    
     // url: "./images/shop/household_chemicals/laundry_detergents/laundry_sheets/at_home_wash_laundry_sheets_white.jpg",
     //     alt: "at_home_wash_laundry_sheets_white",
     //     url1: "./images/shop/household_chemicals/laundry_detergents/laundry_sheets/at_home_wash_laundry_sheets_white-01.jpg",

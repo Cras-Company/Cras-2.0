@@ -26,8 +26,8 @@ export const shopLotsPeanuts = [
     },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "snacks",
+    // mainCategory: "foodstuffs",
+        // subcategory: "snacks",    
     // url: "./images/shop/food/snacks/peanuts/ensa_arasidy_100.jpg",
     //     alt: "ensa_arasidy_100",
     //     url1: "./images/shop/food/snacks/peanuts/ensa_arasidy_100.jpg",
@@ -51,8 +51,8 @@ export const shopLotsPeanuts = [
     // },
     // {
     //     type: "retail",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "snacks",
+    // mainCategory: "foodstuffs",
+        // subcategory: "snacks",    
     // url: "./images/shop/food/snacks/peanuts/mani_king_tostado_sin_piel_120.jpg",
     //     alt: "mani_king_tostado_sin_piel_120",
     //     url1: "./images/shop/food/snacks/peanuts/mani_king_tostado_sin_piel_120-01.jpg",

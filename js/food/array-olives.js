@@ -1,8 +1,8 @@
 export const shopLotsOlives = [
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "olives-oils",
+    // mainCategory: "foodstuffs",
+        // subcategory: "olives-oils",    
     // url: "./images/shop/food/olives_oil/olives/baresa_czarne_oliwki_bez_340.jpg",
     //     alt: "baresa_czarne_oliwki_bez_340",
     //     url1: "./images/shop/food/olives_oil/olives/baresa_czarne_oliwki_bez_340.jpg",
@@ -26,8 +26,8 @@ export const shopLotsOlives = [
     // },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "olives-oils",
+    // mainCategory: "foodstuffs",
+        // subcategory: "olives-oils",    
     // url: "./images/shop/food/olives_oil/olives/baresa_zielone_oliwki_bez_340.jpg",
     //     alt: "baresa_zielone_oliwki_bez_340",
     //     url1: "./images/shop/food/olives_oil/olives/baresa_zielone_oliwki_bez_340.jpg",
@@ -51,8 +51,8 @@ export const shopLotsOlives = [
     // },
     // {
     //     type: "retail",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "olives-oils",
+    // mainCategory: "foodstuffs",
+        // subcategory: "olives-oils",    
     // url: "./images/shop/food/olives_oil/olives/corbi_green_big_700.jpg",
     //     alt: "corbi_green_big_700",
     //     url1: "./images/shop/food/olives_oil/olives/corbi_green_big_700.jpg",

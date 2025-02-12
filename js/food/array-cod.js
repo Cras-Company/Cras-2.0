@@ -26,8 +26,8 @@ export const shopLotsCod = [
     },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "conservation",
+    // mainCategory: "foodstuffs",
+        // subcategory: "conservation",    
     // url: "./images/shop/food/canned_food/cod/juor_240.jpg",
     //     alt: "juor_240",
     //     url1: "./images/shop/food/canned_food/cod/juor_240.jpg",

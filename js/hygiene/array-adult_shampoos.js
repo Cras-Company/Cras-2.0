@@ -218,7 +218,7 @@ export const shopLotsAdultShampoos = [
   {
     type: "retail",
     mainCategory: "hygiene-products",
-    subcategory: "hair-care",
+      subcategory: "hair-care",
     url: "./images/shop/gigiena/bath_gels/balea_men_sport_duschgel_300.jpg",
     alt: "balea_men_sport_duschgel_300",
     url1: "./images/shop/gigiena/bath_gels/balea_men_sport_duschgel_300-01.jpg",
@@ -352,8 +352,8 @@ export const shopLotsAdultShampoos = [
   },
   // {
   //   type: "retail",
-  // mainCategory: "hygiene-products",  
-  // subcategory: "hair-care",
+  // mainCategory: "hygiene-products",
+    //   subcategory: "hair-care",  
   // url: "./images/shop/gigiena/hair_care/shampoos/elkos_frucht_vitamin_500.jpg",
   //   alt: "elkos_frucht_vitamin_500",
   //   url1: "./images/shop/gigiena/hair_care/shampoos/elkos_frucht_vitamin_500-01.jpg",
@@ -379,8 +379,8 @@ export const shopLotsAdultShampoos = [
   // },
   // {
   //   type: "retail",
-  // mainCategory: "hygiene-products",  
-  // subcategory: "hair-care",
+  // mainCategory: "hygiene-products",
+    //   subcategory: "hair-care",  
   // url: "./images/shop/gigiena/hair_care/shampoos/elkos_krauter_500.jpg",
   //   alt: "elkos_krauter_500",
   //   url1: "./images/shop/gigiena/hair_care/shampoos/elkos_krauter_500-01.jpg",
@@ -407,7 +407,7 @@ export const shopLotsAdultShampoos = [
   {
     type: "retail",
     mainCategory: "hygiene-products",
-    subcategory: "hair-care",
+      subcategory: "hair-care",
     url: "./images/shop/gigiena/hair_care/shampoos/elkos_hopfen_for_man_500.jpg",
     alt: "elkos_hopfen_for_man_500",
     url1: "./images/shop/gigiena/hair_care/shampoos/elkos_hopfen_for_man_500-01.jpg",
@@ -433,8 +433,8 @@ export const shopLotsAdultShampoos = [
   },
   // {
   //   type: "retail",
-  // mainCategory: "hygiene-products",  
-  // subcategory: "hair-care",
+  // mainCategory: "hygiene-products",
+    //   subcategory: "hair-care",  
   // url: "./images/shop/gigiena/hair_care/shampoos/ombia_men_3_in_1.jpg",
   //   alt: "ombia_men_3_in_1",
   //   marker: "ASDG001",
@@ -483,8 +483,8 @@ export const shopLotsAdultShampoos = [
   },
   // {
   //   type: "retail",
-  // mainCategory: "hygiene-products",  
-  // subcategory: "hair-care",
+  // mainCategory: "hygiene-products",
+    //   subcategory: "hair-care",  
   // url: "./images/shop/gigiena/hair_care/shampoos/schauma_for_man_400.jpg",
   //   alt: "schauma_for_man_400",
   //   url1: "./images/shop/gigiena/hair_care/shampoos/schauma_for_man_400-01.jpg",
@@ -510,8 +510,8 @@ export const shopLotsAdultShampoos = [
   // },
   // {
   //   type: "retail",
-  // mainCategory: "hygiene-products",  
-  // subcategory: "hair-care",
+  // mainCategory: "hygiene-products",
+    //   subcategory: "hair-care",  
   // url: "./images/shop/gigiena/hair_care/shampoos/schauma_7_krauter_400.jpg",
   //   alt: "schauma_7_krauter_400",
   //   url1: "./images/shop/gigiena/hair_care/shampoos/schauma_7_krauter_400-01.jpg",
@@ -535,8 +535,8 @@ export const shopLotsAdultShampoos = [
   // },
   // {
   //   type: "retail",
-  // mainCategory: "hygiene-products",  
-  // subcategory: "hair-care",
+  // mainCategory: "hygiene-products",
+    //   subcategory: "hair-care",  
   // url: "./images/shop/gigiena/hair_care/shampoos/schauma_repair_pflege_400.jpg",
   //   alt: "schauma_repair_pflege_400",
   //   url1: "./images/shop/gigiena/hair_care/shampoos/schauma_repair_pflege_400-01.jpg",
@@ -560,8 +560,8 @@ export const shopLotsAdultShampoos = [
   // },
   // {
   //   type: "retail",
-  // mainCategory: "hygiene-products",  
-  // subcategory: "hair-care",
+  // mainCategory: "hygiene-products",
+    //   subcategory: "hair-care",  
   // url: "./images/shop/gigiena/hair_care/shampoos/schauma_fresh_volume_400.jpg",
   //   alt: "schauma_fresh_volume_400",
   //   url1: "./images/shop/gigiena/hair_care/shampoos/schauma_fresh_volume_400-01.jpg",
@@ -696,7 +696,7 @@ export const shopLotsAdultShampoos = [
   {
     type: "retail",
     mainCategory: "hygiene-products",
-    subcategory: "hair-care",
+      subcategory: "hair-care",
     url: "./images/shop/gigiena/hair_care/shampoos/wash_go_herbal_200.jpg",
     alt: "wash_go_herbal_200",
     url1: "./images/shop/gigiena/hair_care/shampoos/wash_go_herbal_200-01.jpg",

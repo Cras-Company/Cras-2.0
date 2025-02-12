@@ -1,8 +1,8 @@
 export const shopLotsToothpastesNoFluoride = [
     // {
     //     type: "retail",
-    // mainCategory: "hygiene-products",    
-    // subcategory: "shining-smile",
+    // mainCategory: "hygiene-products",
+        // subcategory: "shining-smile",    
     // url: "./images/shop/gigiena/beaming_smile/no_flouride_adults/dabur_babool_60.jpg",
     //     alt: "dabur_babool_60",
     //     url1: "./images/shop/gigiena/beaming_smile/no_flouride_adults/dabur_babool_60-01.jpg",

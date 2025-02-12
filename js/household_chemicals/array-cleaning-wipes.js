@@ -1,8 +1,8 @@
 export const shopLotsCleaningWipes = [
   // {
   //   type: "retail",
-  // mainCategory: "household-chemicals",  
-  // subcategory: "cleaning-care-products",
+  // mainCategory: "household-chemicals",
+    // subcategory: "cleaning-care-products",  
   // url: "./images/shop/household_chemicals/means_for_cleaning/cleaning_wipes/denkmit_bildschirm-reinigungstucher_feucht_20.jpg",
   //   alt: "denkmit_bildschirm-reinigungstucher_feucht_20",
   //   url1: "./images/shop/household_chemicals/means_for_cleaning/cleaning_wipes/denkmit_bildschirm-reinigungstucher_feucht_20-01.jpg",
@@ -55,8 +55,8 @@ export const shopLotsCleaningWipes = [
   },
   // {
   //   type: "retail",
-  // mainCategory: "household-chemicals",  
-  // subcategory: "cleaning-care-products",
+  // mainCategory: "household-chemicals",
+    // subcategory: "cleaning-care-products",  
   // url: "./images/shop/household_chemicals/means_for_cleaning/cleaning_wipes/denkmit_cockpit-pflegetucher_feucht_20.jpg",
   //   alt: "denkmit_cockpit-pflegetucher_feucht_20",
   //   url1: "./images/shop/household_chemicals/means_for_cleaning/cleaning_wipes/denkmit_cockpit-pflegetucher_feucht_20-01.jpg",
@@ -298,8 +298,8 @@ export const shopLotsCleaningWipes = [
   },
   // {
   //   type: "retail",
-  // mainCategory: "household-chemicals",  
-  // subcategory: "cleaning-care-products",
+  // mainCategory: "household-chemicals",
+    // subcategory: "cleaning-care-products",  
   // url: "./images/shop/household_chemicals/means_for_cleaning/cleaning_wipes/presto_wet_wipes_bathroom_36.jpg",
   //   alt: "presto_wet_wipes_bathroom_36",
   //   url1: "./images/shop/household_chemicals/means_for_cleaning/cleaning_wipes/presto_wet_wipes_bathroom_36-01.jpg",

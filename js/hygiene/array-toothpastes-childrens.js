@@ -30,8 +30,8 @@ export const shopLotsToothpastesChildren = [
     },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "hygiene-products",    
-    // subcategory: "shining-smile for-children",
+    // mainCategory: "hygiene-products",
+        // subcategory: "shining-smile for-children",    
     // url: "./images/shop/gigiena/beaming_smile/children/dental_tralala_kids_cola_50.jpg",
     //     alt: "dental_tralala_kids_cola_50",
     //     url1: "./images/shop/gigiena/beaming_smile/children/dental_tralala_kids_cola_50-01.jpg",

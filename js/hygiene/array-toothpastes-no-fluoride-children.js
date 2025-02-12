@@ -31,7 +31,7 @@ export const shopLotsToothpastesNoFluorideChildren = [
     {
         type: "retail",
         mainCategory: "hygiene-products",
-        subcategory: "shining-smile for-children",
+        subcategory: "shining-smile for-children",       
         url: "./images/shop/gigiena/beaming_smile/no_flouride_children/dabur_kids_no_fluoride_watermelon_50.jpg",
         alt: "dabur_kids_no_fluoride_watermelon_50",
         url1: "./images/shop/gigiena/beaming_smile/no_flouride_children/dabur_kids_no_fluoride_watermelon_50-01.jpg",

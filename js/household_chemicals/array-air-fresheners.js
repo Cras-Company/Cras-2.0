@@ -1,8 +1,8 @@
 export const shopLotsAirFresheners = [
     // {
     //     type: "retail",
-    // mainCategory: "household-chemicals",    
-    // subcategory: "world-of-fragrances",
+    // mainCategory: "household-chemicals",
+        // subcategory: "world-of-fragrances",    
     // url: "./images/shop/household_chemicals/world_of_fragrances/air_fresheners/at_home_scents_gel_crystals_lavender_retreat_150.jpg",
     //     alt: "at_home_scents_gel_crystals_lavender_retreat_150",
     //     url1: "./images/shop/household_chemicals/world_of_fragrances/air_fresheners/at_home_scents_gel_crystals_lavender_retreat_150-01.jpg",

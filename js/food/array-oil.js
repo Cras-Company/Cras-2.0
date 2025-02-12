@@ -26,8 +26,8 @@ export const shopLotsOil = [
     },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "olives-oils",
+    // mainCategory: "foodstuffs",
+        // subcategory: "olives-oils",    
     // url: "./images/shop/food/olives_oil/oil/vesuvio_avocado_oil_250.jpg",
     //     alt: "vesuvio_avocado_oil_250",
     //     url1: "./images/shop/food/olives_oil/oil/vesuvio_avocado_oil_250.jpg",

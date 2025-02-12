@@ -59,8 +59,8 @@ export const shopLotsPopcorns = [
     },
     // {
     //     type: "wholesale оптом",
-    // mainCategory: "foodstuffs",    
-    // subcategory: "snacks",
+    // mainCategory: "foodstuffs",
+        // subcategory: "snacks",    
     // url: "./images/shop/food/snacks/popcorn/mogyi_popcorn_chili_100.jpg",
     //     alt: "mogyi_popcorn_chili_100",
     //     url1: "./images/shop/food/snacks/popcorn/mogyi_popcorn_chili_100-01.jpg",
