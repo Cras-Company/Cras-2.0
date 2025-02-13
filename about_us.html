@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Угода користувача компанії Крас">
-    <title>Оплата і доставка у компанії &#171;Cras&#187;</title>
+    <title>Угода користувача компанії &#171;Cras&#187;</title>
 
     <meta http-equiv="Cache-Control" content="public, max-age=86400">
 
@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    
+
     <!-- Модальное окно мобилки -->
     <div class="backdrop is-hidden" data-modal-burger-menu>
     
@@ -92,9 +92,9 @@
     
                     <li class="modal__burger-nav-item">
     
-                        <a class="modal__burger-nav-link modal__burger-nav-link--active" href="./payment.html">
+                        <a class="modal__burger-nav-link" href="./payment.html">
     
-                            <svg class="burger__icon burger__icon--active" width="20" height="20">
+                            <svg class="burger__icon" width="20" height="20">
     
                                 <use href="./images/icon/sprite.svg#payment"></use>
                             </svg>
@@ -105,9 +105,9 @@
     
                     <li class="modal__burger-nav-item">
     
-                        <a class="modal__burger-nav-link" href="./license.html">
+                        <a class="modal__burger-nav-link modal__burger-nav-link--active" href="./license.html">
     
-                            <svg class="burger__icon" width="20" height="20">
+                            <svg class="burger__icon burger__icon--active" width="20" height="20">
     
                                 <use href="./images/icon/sprite.svg#privacy_notice"></use>
                             </svg>
@@ -217,100 +217,198 @@
         </div>
     </header>
 
+    <!-- Основной раздел -->
     <main>
     
-        <div class="container section licence unselectable section--padding-about-us">
+        <div class="container">
     
-            <h1 class="title title--license">Оплата і доставка</h1>
+            <section class="section section--padding-about-us">
     
-            <h2>Як зробити замовлення?</h2>
+                <h1 class="title title--license">Про компанію <span lang="en" class="cinzel">&#171;CRAS&#187;</span></h1>
     
-            <div class="video-container">
+                <ul class="about-us">
     
-                <iframe class="video-order" src="https://www.youtube.com/embed/oZ0H2w8_LNU" frameborder="0"
-                    allowfullscreen></iframe>
-            </div>
+                    <li>
+    
+                        <div class="about-us--flex-1280">
+    
+                            <div class="about-us--width">
+    
+                                <div class="about-us--flex">
+    
+                                    <div>
+    
+                                        <p>Вас вітає компанія <span lang="en" class="cinzel">&#171;CRAS&#187;</span>!
+                                            Дякуємо, що до
+                                            нас приєдналися.
+                                        </p>
+    
+                                        <p>У наш час ми відчуваємо бажання менше витрачати, але при цьому мати можливість
+                                            придбати за приємними цінами
+                                            те, що нам потрібно щодня у побуті. І це не має значення, якщо йдеться про
+                                            продукти харчування або, наприклад, різні предмети для побуту.
+                                        </p>
+    
+                                        <p>Проте, важливо, щоб ці товари були високої якості та, головне - це був
+                                            оригінальний товар.</p>
+                                    </div>
+    
+                                    <img class="about-us__img about-us__img--display-max"
+                                        src="./images/about_us/cras-coin.jpg" alt="cras coin" width="200">
+                                </div>
+    
+                                <h2 class="about-us__title">Хто ми</h2>
+    
+                                <p class="text"><span lang="en" class="cinzel">&#171;CRAS&#187;</span> - це сучасна компанія
+                                    нового покоління, яка спеціалізується на постачанні товарів, які завжди потрібні у
+                                    повсякденному житті. До
+                                    нашого асортименту входять
+                                    добре знайомі всім товари відомих марок: продукти харчування, побутова хімія та засоби
+                                    гігієни. А у найближчому майбутньому ми плануємо розширити нашу пропозицію і для інших
+                                    товарів. Важливо відзначити, що все відповідає європейським стандартам якості.</p>
+    
+                                <p class="text">Крім того, наш асортимент також включає у себе різні бренди господарчих
+                                    товарів, які широко популярні в Європі і тільки
+                                    зараз входять на український ринок.</p>
+    
+                                <p class="text">І найкраще в цьому те, що ми можемо запропонувати найнижчі ціни на ці
+                                    товари, забезпечуючи при цьому той самий
+                                    рівень якості, який ви очікуєте. І це все стосується речей, які ви використовуєте щодня.
+                                </p>
+                            </div>
+    
+                            <img class="about-us__img about-us__img--display-min about-us__img--1280"
+                                src="./images/about_us/cras-coin.jpg" alt="cras coin" width="200">
+    
+                        </div>
+    
+                        <h2 class="about-us__slogan">Компанія <span lang="en" class="cinzel">&#171;CRAS&#187;</span> -
+                            перший крок у майбутнє!</h2>
+                    </li>
+    
+                    <li class="about-us__item__only">
+    
+                        <h2 class="about-us__slogan">Тільки з нами Ви отримаєте:</h2>
+    
+                        <ul class="about-us__list-only">
+    
+                            <li class="about-us__item-only">
+    
+                                <img class="about-us__img-only" src="./images/about_us/products.jpg" alt="products"
+                                    width="150">
+    
+                                <p class="about-us__text-only">якісні товари з Європи<br>за приємними цінами</p>
+                            </li>
+    
+                            <li class="about-us__item-only">
+    
+                                <img class="about-us__img-only" src="./images/about_us/delivery.jpg" alt="delivery"
+                                    width="150">
+    
+                                <p class="about-us__text-only">швидка доставка у будь-який куточок України:<br>"Нова пошта",
+                                    "Укрпошта" та <span lang="en">"Meest Expres"</span></p>
+                            </li>
+    
+                            <li class="about-us__item-only">
+    
+                                <img class="about-us__img-only" src="./images/about_us/support.jpg" alt="support"
+                                    width="150">
+    
+                                <p class="about-us__text-only">індивідуальний підхід<br>до кожного клієнта</p>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li>
+    
+                        <div class="about-us--flex-1280">
+    
+                            <img class="about-us__img about-us__img--usdt-block" src="./images/about_us/usdt.jpg"
+                                alt="тизер" width="300">
     
     
-            <p>За допомогою цих простих кроків Ви зможете легко зробити замовлення на нашому сайті:</p>
+                            <div class="about-us--flex-usdt">
     
-            <ol>
-                <li>
-                    Перегляньте асортимент товарів і додайте до кошика той, що вам сподобався;
-                </li>
+                                <img class="about-us__img about-us__img--usdt-none" src="./images/about_us/usdt.jpg"
+                                    alt="тизер" width="300">
     
-                <li>
-                    Додайте необхідну кількість товару, яку бажаєте замовити та натисніть на "Оформити замовлення";
-                </li>
+                                <div>
     
-                <li>
-                    Натисніть на іконку мессенджера ("Facebook", "Instagram", "Telegram" або "Viber") та "вставте"
-                    скопійоване повідомлення (CTRL + V; клік на праву кнопку миші => "вставити"; на мобільному пристрої:
-                    зажміть поле повідомлення => "вставити");
-                </li>
+                                    <p class="text">Компанія <span lang="en" class="cinzel">&#171;CRAS&#187;</span> є новою
+                                        на українському
+                                        ринку, але наші цілі спрямовані на майбутнє.</p>
     
-                <li>
-                    Дотримуйтесь вказівок адміністратора щодо оплати та доставки замовлення.
-                </li>
+                                    <p class="text">Вже зараз частина світового ринку переходить до розрахунків у
+                                        криптовалюті. Ми першими
+                                        запроваджуємо на українському ринку діючий світовий досвід, та використовуємо
+                                        додатково саме
+                                        такі
+                                        розрахунки за товари, а саме криптовалюту <span lang="en"
+                                            class="cinzel">USDT</span>. Ця
+                                        криптовалюта не прив'язується до банківської системи,
+                                        вона захищена від коливань курсу, політичних подій та супутніх цьому фінансових
+                                        ризиків. І
+                                        саме дозволяє зробити ціни значно доступними для кінцевого споживача.</p>
     
-                <li>
-                    Контактна інформація для зв'язку з нашим адміністратором:
-                    <ul>
+                                    <p class="text usdt-text-block">Не хвилюйтесь: це насправді дуже легко, і Ви дуже швидко
+                                        розберетеся, як це працює. Просто
+                                        зареєструйтесь у системи, та за декілька хвилин, користуючись підказками, Ви
+                                        зрозумієте, як
+                                        генерувати такі електронні гроші, та як значно дешевше купувати за них те, що Вам
+                                        потрібно.
+                                        Всі розрахунки у криптовалюті проводяться через захищений особистий кабінет.</p>
+                                </div>
+                            </div>
     
-                        <li>
-                            Ви можете зателефонувати за номером телефону:
+                            <p class="text usdt-text-none">Не хвилюйтесь: це насправді дуже легко, і Ви дуже швидко
+                                розберетеся, як це працює. Просто
+                                зареєструйтесь у системи, та за декілька хвилин, користуючись підказками, Ви зрозумієте, як
+                                генерувати такі електронні гроші, та як значно дешевше купувати за них те, що Вам потрібно.
+                                Всі розрахунки у криптовалюті проводяться через захищений особистий кабінет.</p>
+                        </div>
     
-                            <a class="contacts__link" href="tel:+380958294440">+38 095 829 44 40</a>
-                        </li>
+                        <h2 class="about-us__title">Основні переваги розрахунків у криптовалюті:</h2>
     
-                        <li>
-                            написати або подзвонити у Телеграмм за вище вказаним номером;
-                        </li>
+                        <ul class="about-us__edge">
     
-                        <li>
-                            зверніться до нашої компанії, скориставшись посиланнями на соцмережі, які розміщені внизу цієї
-                            сторінки;
-                        </li>
+                            <li>доступність електронних грошей у будь який час, у будь якому куточку світу;</li>
     
-                        <li>
-                            надіслати листа:
-                            <a class="contacts__link" href="mailto:support@cras.company">support@cras.company</a>
-                        </li>
-                    </ul>
-                </li>
-            </ol>
+                            <li>повна анонімність розрахунків;</li>
     
-            <h2>Способи оплати</h2>
+                            <li>взламати, підробити або здійснити інші неправомірні операції над криптовалютою неможливо
+                                - вона надійно захищена;</li>
     
-            <p>Ви можете зробити оплату як у гривнях, так і у криптовалюті USDT (система MATIC Polygon, коміссія складає ≈
-                $0.15).
-            </p>
+                            <li>миттєвий переказ коштів з мінімальною комісією;</li>
     
-            <p>При оплаті у гривнях адміністратор надасть вам платіжні реквізити. Після оплати надішліть платіжну квітанцію
-                на нашу пошту, у Телеграмм або повідомленням у соцмережі.</p>
+                            <li>незалежність від банківської системи!</li>
+                        </ul>
     
-            <p>При оплаті у криптовалюті очікуйте повідомлення адміністратора про надходження платежу.</p>
+                        <p class="text">Та найголовніше - це оригінальні товари європейських брендів та європейської якості,
+                            які ми
+                            першими в Україні змогли зробити більш доступними по цінам, завдяки технології розрахунків у
+                            криптовалюті. Без зайвих націнок - все те, чим ви користуєтесь щодня.</p>
     
-            <h2>Умови доставки замовлення</h2>
+                        <p class="text">Дивіться, пробуйте, користуйтесь, заробляйте та рекомендуйте. Ця технологія - вже
+                            наше діюче
+                            майбутнє.</p>
+                    </li>
+                </ul>
     
-            <p>Відправлення <i>Товару</i> здійснюється після повної передплати суми <i>Замовлення</i>.</p>
-    
-            <p>Доставка <i>Товару</i> по УКРАЇНІ здійснюється компанією перевізником «НОВА ПОШТА», "УКРПОШТА" та "Meest Expres".</p>
-    
-            <p>Доставка придбаного <i>Товару</i> здійснюється за рахунок <i>Покупця</i>.</p>
-    
-            <p>Самовивіз <i>Товару</i> по м. Ужгород здійснюється за адресами:</p>
-    
-            <ol>
-    
-                <li>вул. Академіка Корольова, 4 (ТЦ "ФЛАМІНКО");</li>
-    
-                <li>вул. Грушевського, 27/29 (колишня автобусна зупинка).</li>
-            </ol>
-    
-            <p>Оціночна вартість <i>Товару</i> зазначається актуальна, а не мінімальна.</p>
+                <h2 class="about-us__slogan">Компанія <span lang="en" class="cinzel">&#171;CRAS&#187;</span> - зроблено у
+                    майбутньому!</h2>
+            </section>
+            
+            <!-- Слайдер -->
+            <section class="container section">
+            
+            
+                <div class="swiper js-swiper js-jump-marker">
+            
+                    <div class="swiper-wrapper"></div>
+                </div>
 
-            <p>При замовленні <i>Товару</i> ОПТОМ (мінімальне замовлення 12 шт. одиниці продукції), адміністратор уточнить наявніть на складах та актуаульну ціну.</p>
+                <h2 class="slider__slogan slider__slogan--about-us unselectable">Бренди у нашому асортименті</h2>
+            </section>   
         </div>
     </main>
 
@@ -517,11 +615,13 @@
                     class="br-footer"> Різні торгові марки належать відповідним власникам.</p>
         </div>
     </footer>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
         integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     <script type="module" src="./js/modal.js"></script>
+    <script src="./js/swiper-slider.js"></script>
+    <script type="module" src="./js/slider.js"></script>
 </body>
 </html>

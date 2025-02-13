@@ -40,3 +40,29 @@
     fill: var(--link-color);
     transition: fill 250ms var(--timing-function);
 }
+
+.slider__slogan {
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.14;
+
+    @media screen and (min-width: 480px) {
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 26px;
+    }
+
+    &--about-us {
+        margin: 20px 0;
+    }
+}
