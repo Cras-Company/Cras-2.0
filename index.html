@@ -28,81 +28,6 @@
 
 <body>
 
-    <header class="header js-header">
-
-        <div class="container">
-
-            <div class="section-header header--flex">
-
-                <button class="header__button header__button--burger header__button--size" type="button"
-                    data-modal-burger-menu-btn aria-label="Відкрити головне меню">
-
-                    <svg class="icon">
-
-                        <use href="./images/icon/sprite.svg#burger-menu"></use>
-                    </svg>
-                </button>
-
-                <a class="logo-link logo-link--margin-left" href="/">
-
-                    <img class="logo-link__img" src="./images/logo.png" alt="логотип" width="82" height="82">
-
-                    <div class="logo-link--flex">
-
-                        <span class="logo">Компанія &#171<span lang="en">Cras</span>&#187</span>
-
-                        <span class="logo logo--head">товари з Європи</span>
-                    </div>
-                </a>
-
-                <form class="js-search__form">
-
-                    <div class="search-form">
-
-                        <input class="js-input-search" type="text" name="search" id="search" placeholder="Товар, Бренд, Виробник" autofocus>
-
-                        <button class="header__button search__button search__button--margin"
-                            type="submit"
-                            aria-label="Кнопка пошуку">
-
-                            <svg class="icon">
-
-                                <use href="./images/icon/sprite.svg#search"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
-
-                <div class="header__login-basket js-header__login-basket">
-
-                    <!-- <div class="reg-login__button--header">
-
-                        <button class="reg-login__button" type="button" data-btn-register-open="">
-
-                            <span class="reg-login__button__text">Приєднатися</span>
-                        </button>
-
-                        <button class="reg-login__button reg-login__button--margin" type="button" data-btn-login-open="">
-
-                            <span class="reg-login__button__text">Вхід</span>
-                        </button>
-                    </div> -->
-
-                    <button class="header__button header__button-basket header__button--header-margin header__button--size"
-                        type="button" data-modal-basket aria-label="Відкрити кошик">
-
-                        <svg class="icon">
-
-                            <use href="./images/icon/sprite.svg#basket"></use>
-                        </svg>
-
-                        <span class="header__basket-number js-header__basket-number"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <!-- Модальное окно бургер-меню -->
     <div class="backdrop is-hidden" data-modal-burger-menu>
     
@@ -121,17 +46,17 @@
             <div class="modal--overflow js-modal--overflow modal-content">
     
                 <!-- <div class="reg-login__button--burger-menu">
-    
-                    <button class="reg-login__button reg-login__button--burger" type="button" data-btn-register-open="">
-    
-                        <span class="reg-login__button__text">Приєднатися</span>
-                    </button>
-    
-                    <button class="reg-login__button reg-login__button--burger" type="button" data-btn-login-open="">
-    
-                        <span class="reg-login__button__text">Вхід</span>
-                    </button>
-                </div> -->
+        
+                        <button class="reg-login__button reg-login__button--burger" type="button" data-btn-register-open="">
+        
+                            <span class="reg-login__button__text">Приєднатися</span>
+                        </button>
+        
+                        <button class="reg-login__button reg-login__button--burger" type="button" data-btn-login-open="">
+        
+                            <span class="reg-login__button__text">Вхід</span>
+                        </button>
+                    </div> -->
     
                 <ul class="modal__burger-list">
     
@@ -149,10 +74,10 @@
                     </li>
     
                     <!-- <li class="nav__item">
-                                                                            
-                        <a class="nav__link" href="./profile.html">Мій профіль</a>
-                    </li> -->
-
+                                                                                
+                            <a class="nav__link" href="./profile.html">Мій профіль</a>
+                        </li> -->
+    
                     <li class="modal__burger-nav-item">
     
                         <a class="modal__burger-nav-link" href="./about_us.html">
@@ -194,17 +119,17 @@
                 </ul>
     
                 <ul class="modal__burger-list">
-
+    
                     <!-- Новинки -->
                     <li data-target="new-items" class="modal__burger-item">
-                    
+    
                         <a class="modal__burger-link" href="/">
-                    
+    
                             <svg class="burger__icon burger__icon--main-size" width="46" height="46">
-                    
+    
                                 <use href="./images/icon/sprite.svg#new-items"></use>
                             </svg>
-                    
+    
                             Актуальні <br class="burger-menu-br">новинки
                         </a>
                     </li>
@@ -222,380 +147,396 @@
                             Акційні <br class="burger-menu-br">пропозиції
                         </a>
                     </li>
-
+    
                     <!-- Побутова хімія -->
                     <li data-target="household-chemicals" class="modal__burger-item js-modal__burger-item">
-                    
+    
                         <div class="modal__burger-item_case">
-                    
+    
                             <a class="modal__burger-link" href="/household_chemicals">
-                    
-                                <svg class="burger__icon burger__icon--main-size js-burger__icon-close" width="46" height="46">
-                    
+    
+                                <svg class="burger__icon burger__icon--main-size js-burger__icon-close" width="46"
+                                    height="46">
+    
                                     <use href="./images/icon/sprite.svg#househousehold-chemicals"></use>
                                 </svg>
-                    
-                                <svg class="burger__icon burger__icon--main-size burger__icon-open js-burger__icon-open" width="46"
-                                    height="46">
-                    
+    
+                                <svg class="burger__icon burger__icon--main-size burger__icon-open js-burger__icon-open"
+                                    width="46" height="46">
+    
                                     <use href="./images/icon/sprite.svg#househousehold-chemicals-open"></use>
                                 </svg>
-                    
+    
                                 Побутова хімія
                             </a>
-                    
+    
                             <button class="header__button burger__gear-button js-burger__gear-button" type="button">
-                    
+    
                                 <svg class="burger__icon-gear" width="29" height="29">
-                    
+    
                                     <use href="./images/icon/sprite.svg#gear-arrow"></use>
                                 </svg>
                             </button>
                         </div>
-                    
+    
                         <div class="modal__burger-item__main-case js-modal__burger-item__main-case">
-                    
+    
                             <ul class="burger__main-list js-burger__main-list">
-                    
+    
                                 <!-- Засоби для миття посуду -->
                                 <li data-target="dishwashing-detergents" class="modal__burger-item">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
-                                        <a class="modal__burger-link modal__burger-link--main" href="/household_chemicals/washing_dishes">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                        <a class="modal__burger-link modal__burger-link--main"
+                                            href="/household_chemicals/washing_dishes">
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#dishwashing-detergents"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#dishwashing-detergents-open"></use>
                                             </svg>
-                    
+    
                                             Засоби для <br class="burger-menu-br">миття посуду
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list burger__secondary-list--index-60 js-burger__secondary-list">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-60 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="hands_washing_dishes">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Для ручного миття
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="mechanical_washing_dishes">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Для посудомийних машин
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                    
+    
                                 <!--Засоби для прання білизни -->
                                 <li data-target="detergents" class="modal__burger-item">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
+    
                                         <a class="modal__burger-link modal__burger-link--main"
                                             href="/household_chemicals/laundry_detergents">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#wash-machine"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#wash-machine-open"></use>
                                             </svg>
-                    
+    
                                             Засоби для <br class="burger-menu-br">прання білизни
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list burger__secondary-list--index-55 js-burger__secondary-list">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-55 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="washing_gels">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Гелі для прання
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="power_caps">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Капсули для прання
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="washing_powders">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Пральні порошки
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="laundry_sheets">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Пральні серветки
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="bleaches">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Відбілювачі
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="stain_removers">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Засоби для виведення плям
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="softeners">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Кондиціонери, ополіскувачі
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="scent-booster-granuls">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Парфуми для прання <br class="burger-menu-br">(гранули)
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                    
+    
                                 <!-- Засоби для чищення та догляду -->
                                 <li data-target="cleaning-care-products" class="modal__burger-item">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
-                                        <a class="modal__burger-link modal__burger-link--main" href="/household_chemicals/clean_&_care">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                        <a class="modal__burger-link modal__burger-link--main"
+                                            href="/household_chemicals/clean_&_care">
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#cleaning-products"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#cleaning-products-open"></use>
                                             </svg>
-                    
+    
                                             Засоби для <br class="burger-menu-br">чищення та догляду
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list burger__secondary-list--index-50 js-burger__secondary-list">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-50 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="for_windows">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Для тканин
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="for_windows">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Для вікон та дзеркал
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="for_furniture">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Для меблів
                                                 </a>
                                             </li>
-                    
-                                            <li class="burger__secondary-item" data-target="means_cleaning_kitchen_bathroom">
-                    
+    
+                                            <li class="burger__secondary-item"
+                                                data-target="means_cleaning_kitchen_bathroom">
+    
                                                 <a href="">
-                    
+    
                                                     Для кухні та ванної кімнати
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="for_wc">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Для туалету
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="for_floor">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Для підлоги
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="means_cleaning_universal">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Універсальні
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="means_cleaning_dishwashers">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Для побутової техніки
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="cleaning_wipes">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Серветки для чищення
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                    
+    
                                 <!-- Світ ароматів -->
                                 <li data-target="world-of-fragrances" class="modal__burger-item">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
+    
                                         <a class="modal__burger-link modal__burger-link--main"
                                             href="/household_chemicals/world_of_fragrances">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#smells"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#smells-open"></use>
                                             </svg>
-                    
+    
                                             Світ ароматів
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list burger__secondary-list--index-45 js-burger__secondary-list">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-45 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="moisture_absorbers">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Поглиначі вологи
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="air_fresheners">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Освіжувачі повітря
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="fabric_fresheners">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Освіжувачі тканин
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="anti_smells">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Нейтралізатори запаху
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="bath_bombs">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Бомбочки для ванни
                                                 </a>
                                             </li>
@@ -605,622 +546,655 @@
                             </ul>
                         </div>
                     </li>
-
+    
                     <!-- Засоби гігієни -->
                     <li data-target="hygiene-products" class="modal__burger-item js-modal__burger-item">
-                    
+    
                         <div class="modal__burger-item_case">
-                    
+    
                             <a class="modal__burger-link" href="">
-                    
-                                <svg class="burger__icon burger__icon--main-size js-burger__icon-close" width="46" height="46">
-                    
+    
+                                <svg class="burger__icon burger__icon--main-size js-burger__icon-close" width="46"
+                                    height="46">
+    
                                     <use href="./images/icon/sprite.svg#gigiena"></use>
                                 </svg>
-                    
-                                <svg class="burger__icon burger__icon--main-size burger__icon-open js-burger__icon-open" width="46"
-                                    height="46">
-                    
+    
+                                <svg class="burger__icon burger__icon--main-size burger__icon-open js-burger__icon-open"
+                                    width="46" height="46">
+    
                                     <use href="./images/icon/sprite.svg#gigiena-open"></use>
                                 </svg>
-                    
+    
                                 Засоби гігієни
                             </a>
-                    
+    
                             <button class="header__button burger__gear-button js-burger__gear-button" type="button">
-                    
+    
                                 <svg class="burger__icon-gear" width="29" height="29">
-                    
+    
                                     <use href="./images/icon/sprite.svg#gear-arrow"></use>
                                 </svg>
                             </button>
                         </div>
-                    
+    
                         <div class="modal__burger-item__main-case js-modal__burger-item__main-case">
-                    
+    
                             <ul class="burger__main-list js-burger__main-list">
-                    
+    
                                 <!-- Для дітей -->
                                 <li data-target="for-children" class="modal__burger-item js-modal__burger-subcategory">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
+    
                                         <a class="modal__burger-link modal__burger-link--main" href="">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#for-children"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#for-children-open"></use>
                                             </svg>
-                    
+    
                                             Для дітей
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list burger__secondary-list--index-85 js-burger__secondary-list">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-85 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="children-shampoos">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Шампуньки
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="children-shower-gels">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Гелі для душу
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="children-toothpaste">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Зубна паста
                                                 </a>
                                             </li>
-                    
-                                            <li class="burger__secondary-item" data-target="children-toothpaste-no-flouride">
-                    
+    
+                                            <li class="burger__secondary-item"
+                                                data-target="children-toothpaste-no-flouride">
+    
                                                 <a href="">
-                    
+    
                                                     Зубна паста без фтору
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="children-diaper">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Підгузники
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                    
+    
                                 <!--Догляд за волоссям -->
                                 <li data-target="hair-care" class="modal__burger-item js-modal__burger-subcategory">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
+    
                                         <a class="modal__burger-link modal__burger-link--main" href="">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#hair-care"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#hair-care-open"></use>
                                             </svg>
-                    
+    
                                             Догляд за волоссям
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list js-burger__secondary-list burger__secondary-list--index-80">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list js-burger__secondary-list burger__secondary-list--index-80">
+    
                                             <li class="burger__secondary-item" data-target="baby-shampoos">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Дитячі шампуньки
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="adult-shampoos">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Шампуні для дорослих
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="hair-conditioners">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Кондиціонери для волосся
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="hair-masks">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Маски для волосся
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                    
+    
                                 <!-- Гелі для душу -->
                                 <li data-target="shower-gels" class="modal__burger-item js-modal__burger-subcategory">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
+    
                                         <a class="modal__burger-link modal__burger-link--main" href="">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#shower-gels"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#shower-gels-open"></use>
                                             </svg>
-                    
+    
                                             Гелі для душу
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list burger__secondary-list--index-75 js-burger__secondary-list">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-75 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="baby-shower-gels">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Для дітей
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="adult-shower-gels">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Для дорослих
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                    
+    
                                 <!-- Мило -->
                                 <li data-target="soap" class="modal__burger-item js-modal__burger-subcategory">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
+    
                                         <a class="modal__burger-link modal__burger-link--main" href="">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#soap"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#soap-open"></use>
                                             </svg>
-                    
+    
                                             Мило
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list burger__secondary-list--index-70 js-burger__secondary-list">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-70 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="liquid-soap">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Рідке мило
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="solid-soap">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Тверде мило
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                    
+    
                                 <!-- Догляд за руками -->
                                 <li data-target="limbs-care" class="modal__burger-item js-modal__burger-subcategory">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
+    
                                         <a class="modal__burger-link modal__burger-link--main" href="">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#hand-care"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#hand-care-open"></use>
                                             </svg>
-                    
+    
                                             Догляд за кінцівками
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list burger__secondary-list--index-65 js-burger__secondary-list">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-65 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="handcreme">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Креми та бальзами
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                    
+    
                                 <!-- Дезодоранти та антиперспіранти -->
                                 <li data-target="deo-anti" class="modal__burger-item js-modal__burger-subcategory">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
+    
                                         <a class="modal__burger-link modal__burger-link--main" href="">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#deodorants"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#deodorants-open"></use>
                                             </svg>
-                    
+    
                                             Дезодоранти та<br>антиперспіранти
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list burger__secondary-list--index-65 js-burger__secondary-list">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-65 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="antiperspirants">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Антиперспіранти
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="deodorants">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Дезодоранти
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                    
+    
                                 <!-- Сяюча посмішка -->
                                 <li data-target="shining-smile" class="modal__burger-item js-modal__burger-subcategory">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
+    
                                         <a class="modal__burger-link modal__burger-link--main" href="">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#toothpastes"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#toothpastes-open"></use>
                                             </svg>
-                    
+    
                                             Сяюча посмішка
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list burger__secondary-list--index-60 js-burger__secondary-list">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-60 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="toothpastes-children">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Зубні пасти для дітей
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="toothpastes-adult">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Зубні пасти для дорослих
                                                 </a>
                                             </li>
-                    
-                                            <li class="burger__secondary-item" data-target="toothpastes-children-no-fluoride">
-                    
+    
+                                            <li class="burger__secondary-item"
+                                                data-target="toothpastes-children-no-fluoride">
+    
                                                 <a href="">
-                    
+    
                                                     Зубні пасти для дітей<br>без фтору
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="toothpastes-no_fluoride">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Зубні пасти для дорослих<br>без фтору
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="mouthwashes">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Ополіскувачі для ротової порожнини
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                    
+    
                                 <!-- Серветки -->
                                 <li data-target="wipes" class="modal__burger-item js-modal__burger-subcategory">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
+    
                                         <a class="modal__burger-link modal__burger-link--main" href="">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#napkins"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#napkins-open"></use>
                                             </svg>
-                    
+    
                                             Серветки
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list burger__secondary-list--index-55 js-burger__secondary-list">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-55 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="wet-wipes">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Вологі серветки
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="micellar-wipes">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Міцелярні серветки
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                    
+    
                                 <!-- Жіноча гігієна -->
                                 <li data-target="feminine-hygiene" class="modal__burger-item js-modal__burger-subcategory">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
+    
                                         <a class="modal__burger-link modal__burger-link--main" href="">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#feminine-hygiene"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#feminine-hygiene-open"></use>
                                             </svg>
-                    
+    
                                             Жіноча гігієна
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list burger__secondary-list--index-50 js-burger__secondary-list">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-50 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="intim-hygiene">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Засоби для інтимної гігієни
                                                 </a>
                                             </li>
-                    
+    
                                             <li class="burger__secondary-item" data-target="pantyliner">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Жіночі прокладки
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                    
+    
                                 <!-- Туалетний папір -->
                                 <li data-target="toilet-papers" class="modal__burger-item js-modal__burger-subcategory">
-                    
+    
                                     <div class="modal__burger-item_case modal__burger-item_case--flex">
-                    
-                                        <button class="header__button burger__gear-button js-burger__main-gear-button" type="button">
-                    
-                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25" height="25">
-                    
+    
+                                        <button class="header__button burger__gear-button js-burger__main-gear-button"
+                                            type="button">
+    
+                                            <svg class="burger__icon-gear burger__icon-gear--sec-cat-size" width="25"
+                                                height="25">
+    
                                                 <use href="./images/icon/sprite.svg#gear-cras"></use>
                                             </svg>
                                         </button>
-                    
+    
                                         <a class="modal__burger-link modal__burger-link--main" href="">
-                    
-                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close" width="39"
-                                                height="39">
-                    
+    
+                                            <svg class="burger__icon burger__icon--sec-size js-burger__main-icon-close"
+                                                width="39" height="39">
+    
                                                 <use href="./images/icon/sprite.svg#toilet-paper"></use>
                                             </svg>
-                    
+    
                                             <svg class="burger__icon burger__icon--sec-size burger__main-icon-open js-burger__main-icon-open"
                                                 width="39" height="39">
-                    
+    
                                                 <use href="./images/icon/sprite.svg#toilet-paper-open"></use>
                                             </svg>
-                    
+    
                                             Туалетний папір
                                         </a>
                                     </div>
-                    
+    
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
-                    
-                                        <ul class="burger__secondary-list burger__secondary-list--index-45 js-burger__secondary-list">
-                    
+    
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-45 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="tp-three-layer">
-                    
+    
                                                 <a href="">
-                    
+    
                                                     Тришаровий
                                                 </a>
                                             </li>
@@ -1595,19 +1569,19 @@
     
                                         <ul
                                             class="burger__secondary-list burger__secondary-list--index-64 js-burger__secondary-list">
-
+    
                                             <li class="burger__secondary-item" data-target="cream-spreads">
-                                            
+    
                                                 <a href="">
-                                            
+    
                                                     Вершкові
                                                 </a>
                                             </li>
-
+    
                                             <li class="burger__secondary-item" data-target="cheese-spreads">
-                                            
+    
                                                 <a href="">
-                                            
+    
                                                     Сирні
                                                 </a>
                                             </li>
@@ -1658,12 +1632,13 @@
     
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
     
-                                        <ul class="burger__secondary-list burger__secondary-list--index-63 js-burger__secondary-list">
-                                            
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-63 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="bars">
-                                            
+    
                                                 <a href="">
-                                            
+    
                                                     Батончики
                                                 </a>
                                             </li>
@@ -1722,7 +1697,8 @@
     
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
     
-                                        <ul class="burger__secondary-list burger__secondary-list--index-60 js-burger__secondary-list">
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-60 js-burger__secondary-list">
     
                                             <li class="burger__secondary-item" data-target="hot-chocolate">
     
@@ -1810,7 +1786,8 @@
     
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
     
-                                        <ul class="burger__secondary-list burger__secondary-list--index-55 js-burger__secondary-list">
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-55 js-burger__secondary-list">
     
                                             <li class="burger__secondary-item" data-target="oil">
     
@@ -1874,16 +1851,17 @@
     
                                     <div class="modal__burger-item__secondary-case js-modal__burger-item__secondary-case">
     
-                                        <ul class="burger__secondary-list burger__secondary-list--index-50 js-burger__secondary-list">
-
+                                        <ul
+                                            class="burger__secondary-list burger__secondary-list--index-50 js-burger__secondary-list">
+    
                                             <li class="burger__secondary-item" data-target="for-baking">
-                                            
+    
                                                 <a href="">
-                                            
+    
                                                     Для випікання
                                                 </a>
                                             </li>
-
+    
                                             <li class="burger__secondary-item" data-target="mustard">
     
                                                 <a href="">
@@ -1948,9 +1926,12 @@
                             </button>
                         </div>
     
-                        <div class="modal__burger-item__main-case js-modal__burger-item__main-case js-modal__burger-item__main-case--height">
+                        <div
+                            class="modal__burger-item__main-case js-modal__burger-item__main-case js-modal__burger-item__main-case--height">
     
-                            <ul class="burger__main-list burger__main-list--scroll js-burger__main-list js-cras__list--brends"></ul>
+                            <ul
+                                class="burger__main-list burger__main-list--scroll js-burger__main-list js-cras__list--brends">
+                            </ul>
                         </div>
                     </li>
     
@@ -1985,16 +1966,19 @@
                             </button>
                         </div>
     
-                        <div class="modal__burger-item__main-case js-modal__burger-item__main-case js-modal__burger-item__main-case--height">
+                        <div
+                            class="modal__burger-item__main-case js-modal__burger-item__main-case js-modal__burger-item__main-case--height">
     
-                            <ul class="burger__main-list burger__main-list--scroll js-burger__main-list js-cras__list--producing-countries"></ul>
+                            <ul
+                                class="burger__main-list burger__main-list--scroll js-burger__main-list js-cras__list--producing-countries">
+                            </ul>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-
+    
     <!-- Модальное окно корзины -->
     <div class="backdrop is-hidden" data-modal-basket-menu>
     
@@ -2033,7 +2017,7 @@
             <div class="basket__order-box js-basket__order-box"></div>
         </div>
     </div>
-
+    
     <!-- Модальное окно товара -->
     <div class="backdrop is-hidden" data-modal-lot>
     
@@ -2042,9 +2026,9 @@
             <img class="img-modal" src="./images/logo.png" alt="Логотип" width="100" height="100">
     
             <button class="modal__button-close modal__button-close--lot" type="button" data-modal-close>
-            
+    
                 <svg width="50" height="50">
-            
+    
                     <use href="./images/icon/sprite.svg#logo-black"></use>
                 </svg>
             </button>
@@ -2052,6 +2036,81 @@
             <div class="js-modal-lot"></div>
         </div>
     </div>
+
+    <header class="header js-header">
+
+        <div class="container">
+
+            <div class="section-header header--flex">
+
+                <button class="header__button header__button--burger header__button--size" type="button"
+                    data-modal-burger-menu-btn aria-label="Відкрити головне меню">
+
+                    <svg class="icon">
+
+                        <use href="./images/icon/sprite.svg#burger-menu"></use>
+                    </svg>
+                </button>
+
+                <a class="logo-link logo-link--margin-left" href="/index.html">
+
+                    <img class="logo-link__img" src="./images/logo.png" alt="логотип" width="82" height="82">
+
+                    <div class="logo-link--flex">
+
+                        <span class="logo">Компанія &#171<span lang="en">Cras</span>&#187</span>
+
+                        <span class="logo logo--head">товари з Європи</span>
+                    </div>
+                </a>
+
+                <form class="js-search__form">
+
+                    <div class="search-form">
+
+                        <input class="js-input-search" type="text" name="search" id="search" placeholder="Товар, Бренд, Виробник" autofocus>
+
+                        <button class="header__button search__button search__button--margin"
+                            type="submit"
+                            aria-label="Кнопка пошуку">
+
+                            <svg class="icon">
+
+                                <use href="./images/icon/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="header__login-basket js-header__login-basket">
+
+                    <!-- <div class="reg-login__button--header">
+
+                        <button class="reg-login__button" type="button" data-btn-register-open="">
+
+                            <span class="reg-login__button__text">Приєднатися</span>
+                        </button>
+
+                        <button class="reg-login__button reg-login__button--margin" type="button" data-btn-login-open="">
+
+                            <span class="reg-login__button__text">Вхід</span>
+                        </button>
+                    </div> -->
+
+                    <button class="header__button header__button-basket header__button--header-margin header__button--size"
+                        type="button" data-modal-basket aria-label="Відкрити кошик">
+
+                        <svg class="icon">
+
+                            <use href="./images/icon/sprite.svg#basket"></use>
+                        </svg>
+
+                        <span class="header__basket-number js-header__basket-number"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main>
 
