@@ -5,6 +5,8 @@ import {
   createModalListItemsMarkup,
 } from './markups.js';
 
+import { refs, onOpenModal, onCloseModal } from './modal.js';
+
 // ===========================================================================
 // Кнопка ДАЛЕЕ
 // ===========================================================================
@@ -189,4 +191,136 @@ export function iconsDescriptionAnimation() {
       });
     });
   });
+}
+
+// ===========================================================================
+// Открытие модального окна лота
+// ===========================================================================
+
+const shopListAllLots = document.querySelector(".js-click-for-new-window");
+
+const shopListMobileLot = document.querySelector('.js-modal-lot');
+
+shopListAllLots.addEventListener('click', lotModalOpenHandler);
+
+function lotModalOpenHandler(event) {
+  const targetButton = event.target.closest('button[data-modal-lot-open]');
+
+  if (targetButton) {
+    const target = targetButton.closest("li.cras-block");
+
+    if (target) {
+      const markerElement = target.querySelector(".js-marker").textContent;
+
+      onOpenModal(refs.openModalLot);
+
+      let foundItem = null;
+
+      arrayOfProducts.forEach(({ items }) => {
+        items.forEach(item => {
+          if (item.marker === markerElement && !foundItem) {
+            foundItem = item;
+          }
+        });
+      });
+
+      if (foundItem) {
+        shopListMobileLot.innerHTML = createModalListItemsMarkup([foundItem]);
+
+        const swiperLotButtons = document.querySelector(".js-swiper-lot-buttons");
+        const arrayLengthImages = Object.keys(foundItem).filter(key => key.startsWith('url')).length;
+
+        initializeSlider(foundItem, arrayLengthImages);
+
+        if (arrayLengthImages === 2) {
+          
+          swiperLotButtons.style.display = 'none';
+        }
+      }
+    }
+
+    function initializeSlider(foundItem, arrayLengthImages) {
+
+      const lotButtonNext = document.querySelector(".js-swiper-lot-button-next");
+      const lotButtonPrev = document.querySelector(".js-swiper-lot-button-prev");
+
+      lotButtonNext.addEventListener("click", scaleButtonNext);
+      lotButtonPrev.addEventListener("click", scaleButtonPrev);
+
+      function scaleButtonNext() {
+        lotButtonNext.style.transform = 'scale(0.8)';
+        setTimeout(function () {
+          lotButtonNext.style.transform = 'scale(1)';
+        }, 200);
+      }
+
+      function scaleButtonPrev() {
+        lotButtonPrev.style.transform = 'scale(0.8)';
+        setTimeout(function () {
+          lotButtonPrev.style.transform = 'scale(1)';
+        }, 200);
+      }
+
+      new Swiper('.js-swiper-modal-lot', {
+        slidesPerView: 1,
+        mousewheel: {
+          sensitivity: 1,
+        },
+        navigation: {
+          nextEl: '.swiper-lot-button-next',
+          prevEl: '.swiper-lot-button-prev',
+        },
+        observer: true,
+        observeParents: true,
+        observeSlideChildren: true,
+        zoom: {
+          maxRatio: 5,
+          minRatio: 1,
+        },
+        virtual: {
+          slides: (function () {
+            let lotImages = [];
+
+            for (let i = 1; i < arrayLengthImages; i++) {
+              lotImages.push(`
+                <div class="swiper-zoom-container"
+                  <div class="swiper-slide">
+                    <img class="cras-item__img"
+                      src="${foundItem[`url${i}`]}"
+                      alt="${foundItem[`alt${i}`]}" 
+                      width="310" 
+                      height="310"
+                    />
+                  </div>
+                </div>
+              `);
+            }
+
+            return lotImages;
+          })(),
+        },
+      });
+    }
+
+    // Убираем предыдущий слушатель события click, если он был
+    // const crasItems = document.querySelectorAll(".js-cras-item");
+    // crasItems.forEach((crasItem) => {
+    //   crasItem.removeEventListener('click', lotBasketHandler);
+    // });
+
+    // lazyLoadImagesAnimation();
+    // iconsDescriptionAnimation();
+
+    // // Добавляем новый слушатель события click
+    // crasItems.forEach((crasItem) => {
+    //   crasItem.addEventListener('click', (event) => {
+    //     lotBasketHandler(event);
+    //     restoreIcons();
+    //   });
+    // });
+
+    // Обновляем иконки в модальном окне
+    // const lotModalElements = document.querySelectorAll(".js-cras-item");
+    // restoreStoregeIcons(lotModalElements);
+  }
 }

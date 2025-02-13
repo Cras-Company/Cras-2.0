@@ -18,7 +18,7 @@ export const refs = {
 
   // modalMobileMainMenu: document.querySelector("[data-modal-main-menu]"),
 
-  // openModalLot: document.querySelector("[data-modal-lot]"),
+  openModalLot: document.querySelector("[data-modal-lot]"),
 
   closeModalBtn: document.querySelectorAll('[data-modal-close]'),
 };
@@ -134,7 +134,7 @@ refs.closeModalBtn.forEach((btn) => {
     // onCloseModal(refs.modalLoginMenu);
     onCloseModal(refs.modalBasketMenu);
     // onCloseModal(refs.modalMobileMainMenu);
-    // onCloseModal(refs.openModalLot);
+    onCloseModal(refs.openModalLot);
   });
 });
 

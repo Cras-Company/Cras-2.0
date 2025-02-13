@@ -115,6 +115,22 @@
     width: 40px;
     height: 40px;
   }
+
+  &--lot {
+    right: 3%;
+
+    @media (min-width: 480px) {
+      right: 5%;
+    }
+
+    @media (min-width: 780px) {
+      right: 3%;
+    }
+
+    @media (min-width: 1024px) {
+      right: -10%;
+    }
+  }
 }
 
 // Кнопка поиска

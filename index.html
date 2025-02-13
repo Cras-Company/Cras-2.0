@@ -103,6 +103,7 @@
         </div>
     </header>
 
+    <!-- Модальное окно бургер-меню -->
     <div class="backdrop is-hidden" data-modal-burger-menu>
     
         <div class="modal modal--burger">
@@ -1994,6 +1995,7 @@
         </div>
     </div>
 
+    <!-- Модальное окно корзины -->
     <div class="backdrop is-hidden" data-modal-basket-menu>
     
         <div class="modal modal--basket">
@@ -2029,6 +2031,25 @@
             </div>
     
             <div class="basket__order-box js-basket__order-box"></div>
+        </div>
+    </div>
+
+    <!-- Модальное окно товара -->
+    <div class="backdrop is-hidden" data-modal-lot>
+    
+        <div class="modal modal--lot">
+    
+            <img class="img-modal" src="./images/logo.png" alt="Логотип" width="100" height="100">
+    
+            <button class="modal__button-close modal__button-close--lot" type="button" data-modal-close>
+            
+                <svg width="50" height="50">
+            
+                    <use href="./images/icon/sprite.svg#logo-black"></use>
+                </svg>
+            </button>
+    
+            <div class="js-modal-lot"></div>
         </div>
     </div>
 
