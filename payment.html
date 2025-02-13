@@ -1,0 +1,523 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Угода користувача компанії Крас">
+    <title>Оплата і доставка у компанії &#171;Cras&#187;</title>
+
+    <meta http-equiv="Cache-Control" content="public, max-age=86400">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./fonts.css" defer>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    </noscript>
+
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="icon" href="./fav.ico" type="image/x-icon">
+</head>
+
+<body>
+    
+    <!-- Модальное окно мобилки -->
+    <div class="backdrop is-hidden" data-modal-burger-menu>
+    
+        <div class="modal modal--burger modal--burger--secondary">
+    
+            <img class="img-modal" src="./images/logo.png" alt="Логотип" width="100" height="100">
+    
+            <button class="modal__button-close" type="button" data-modal-close>
+    
+                <svg width="50" height="50">
+    
+                    <use href="./images/icon/sprite.svg#logo-black"></use>
+                </svg>
+            </button>
+    
+            <div class="modal-secondary-over js-modal--overflow modal-content">
+    
+                <!-- <div class="reg-login__button--burger-menu">
+            
+                            <button class="reg-login__button reg-login__button--burger" type="button" data-btn-register-open="">
+            
+                                <span class="reg-login__button__text">Приєднатися</span>
+                            </button>
+            
+                            <button class="reg-login__button reg-login__button--burger" type="button" data-btn-login-open="">
+            
+                                <span class="reg-login__button__text">Вхід</span>
+                            </button>
+                        </div> -->
+    
+                <ul class="modal__burger-list">
+    
+                    <li class="modal__burger-nav-item">
+    
+                        <a class="modal__burger-nav-link" href="/">
+    
+                            <svg class="burger__icon" width="20" height="20">
+    
+                                <use href="./images/icon/sprite.svg#home-page"></use>
+                            </svg>
+    
+                            Головна сторінка
+                        </a>
+                    </li>
+    
+                    <!-- <li class="nav__item">
+                                                                                    
+                                <a class="nav__link" href="./profile.html">Мій профіль</a>
+                            </li> -->
+    
+                    <li class="modal__burger-nav-item">
+    
+                        <a class="modal__burger-nav-link" href="./about_us.html">
+    
+                            <svg class="burger__icon" width="20" height="20">
+    
+                                <use href="./images/icon/sprite.svg#about_us"></use>
+                            </svg>
+    
+                            Про нас
+                        </a>
+                    </li>
+    
+                    <li class="modal__burger-nav-item">
+    
+                        <a class="modal__burger-nav-link modal__burger-nav-link--active" href="./payment.html">
+    
+                            <svg class="burger__icon burger__icon--active" width="20" height="20">
+    
+                                <use href="./images/icon/sprite.svg#payment"></use>
+                            </svg>
+    
+                            Оплата і доставка
+                        </a>
+                    </li>
+    
+                    <li class="modal__burger-nav-item">
+    
+                        <a class="modal__burger-nav-link" href="./license.html">
+    
+                            <svg class="burger__icon" width="20" height="20">
+    
+                                <use href="./images/icon/sprite.svg#privacy_notice"></use>
+                            </svg>
+    
+                            Угода користувача
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Модальное окно корзины -->
+    <div class="backdrop is-hidden" data-modal-basket-menu>
+    
+        <div class="modal modal--basket">
+    
+            <button class="basket-clear-all" type="button" data-modal-busket-clear>
+    
+                <span class="basket-clear-all__text">Очистити кошик</span>
+            </button>
+    
+            <img class="img-modal" src="./images/logo.png" alt="Логотип" width="100">
+    
+            <button class="modal__button-close modal__button-close--login" type="button" data-modal-close>
+    
+                <svg width="40" height="40">
+    
+                    <use href="./images/icon/sprite.svg#logo-black"></use>
+                </svg>
+            </button>
+    
+            <p class="title title--basket">
+                <span class="title--main-color">Мій</span>
+                <span class="title--secondary-color">кошик</span>
+            </p>
+    
+            <div class="basket__box-list">
+    
+                <video class="travolta js-travolta" autoplay loop muted>
+    
+                    <source src="./images/travolta.mp4" type="video/mp4">
+                </video>
+    
+                <ul class="basket__list js-modal-basket"></ul>
+            </div>
+    
+            <div class="basket__order-box js-basket__order-box"></div>
+        </div>
+    </div>
+    
+    <!-- Хедер -->
+    <header class="header js-header">
+    
+        <div class="container">
+    
+            <div class="section-header header--flex">
+    
+                <button class="header__button header__button--burger header__button--size" type="button"
+                    data-modal-burger-menu-btn aria-label="Відкрити головне меню">
+    
+                    <svg class="icon">
+    
+                        <use href="./images/icon/sprite.svg#burger-menu"></use>
+                    </svg>
+                </button>
+    
+                <a class="logo-link logo-link--margin-left" href="/">
+    
+                    <img class="logo-link__img" src="./images/logo.png" alt="логотип" width="82" height="82">
+    
+                    <div class="logo-link-secondary">
+    
+                        <span class="logo logo--secondary-font">Компанія &#171<span lang="en">Cras</span>&#187</span>
+    
+                        <span class="logo logo--head logo--secondary-font">товари з Європи</span>
+                    </div>
+                </a>
+    
+                <div class="header__login-basket js-header__login-basket">
+    
+                    <!-- <div class="reg-login__button--header">
+        
+                            <button class="reg-login__button" type="button" data-btn-register-open="">
+    
+                                <span class="reg-login__button__text">Приєднатися</span>
+                            </button>
+    
+                            <button class="reg-login__button reg-login__button--margin" type="button" data-btn-login-open="">
+    
+                                <span class="reg-login__button__text">Вхід</span>
+                            </button>
+                        </div> -->
+    
+                    <button class="header__button header__button-basket header__button--header-margin header__button--size"
+                        type="button" data-modal-basket aria-label="Відкрити кошик">
+    
+                        <svg class="icon">
+    
+                            <use href="./images/icon/sprite.svg#basket"></use>
+                        </svg>
+    
+                        <span class="header__basket-number js-header__basket-number"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    
+        <div class="container section licence unselectable section--padding-about-us">
+    
+            <h1 class="title title--license">Оплата і доставка</h1>
+    
+            <h2>Як зробити замовлення?</h2>
+    
+            <div class="video-container">
+    
+                <iframe class="video-order" src="https://www.youtube.com/embed/oZ0H2w8_LNU" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+    
+    
+            <p>За допомогою цих простих кроків Ви зможете легко зробити замовлення на нашому сайті:</p>
+    
+            <ol>
+                <li>
+                    Перегляньте асортимент товарів і додайте до кошика той, що вам сподобався;
+                </li>
+    
+                <li>
+                    Додайте необхідну кількість товару, яку бажаєте замовити та натисніть на "Оформити замовлення";
+                </li>
+    
+                <li>
+                    Натисніть на іконку мессенджера ("Facebook", "Instagram", "Telegram" або "Viber") та "вставте"
+                    скопійоване повідомлення (CTRL + V; клік на праву кнопку миші => "вставити"; на мобільному пристрої:
+                    зажміть поле повідомлення => "вставити");
+                </li>
+    
+                <li>
+                    Дотримуйтесь вказівок адміністратора щодо оплати та доставки замовлення.
+                </li>
+    
+                <li>
+                    Контактна інформація для зв'язку з нашим адміністратором:
+                    <ul>
+    
+                        <li>
+                            Ви можете зателефонувати за номером телефону:
+    
+                            <a class="contacts__link" href="tel:+380958294440">+38 095 829 44 40</a>
+                        </li>
+    
+                        <li>
+                            написати або подзвонити у Телеграмм за вище вказаним номером;
+                        </li>
+    
+                        <li>
+                            зверніться до нашої компанії, скориставшись посиланнями на соцмережі, які розміщені внизу цієї
+                            сторінки;
+                        </li>
+    
+                        <li>
+                            надіслати листа:
+                            <a class="contacts__link" href="mailto:support@cras.company">support@cras.company</a>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+    
+            <h2>Способи оплати</h2>
+    
+            <p>Ви можете зробити оплату як у гривнях, так і у криптовалюті USDT (система MATIC Polygon, коміссія складає ≈
+                $0.15).
+            </p>
+    
+            <p>При оплаті у гривнях адміністратор надасть вам платіжні реквізити. Після оплати надішліть платіжну квітанцію
+                на нашу пошту, у Телеграмм або повідомленням у соцмережі.</p>
+    
+            <p>При оплаті у криптовалюті очікуйте повідомлення адміністратора про надходження платежу.</p>
+    
+            <h2>Умови доставки замовлення</h2>
+    
+            <p>Відправлення <i>Товару</i> здійснюється після повної передплати суми <i>Замовлення</i>.</p>
+    
+            <p>Доставка <i>Товару</i> по УКРАЇНІ здійснюється компанією перевізником «НОВА ПОШТА» або "УКРПОШТА".</p>
+    
+            <p>Доставка придбаного <i>Товару</i> здійснюється за рахунок <i>Покупця</i>.</p>
+    
+            <p>Самовивіз <i>Товару</i> по м. Ужгород здійснюється за адресами:</p>
+    
+            <ol>
+    
+                <li>вул. Академіка Корольова, 4 (ТЦ "ФЛАМІНКО");</li>
+    
+                <li>вул. Грушевського, 27/29 (колишня автобусна зупинка).</li>
+            </ol>
+    
+            <p>Оціночна вартість <i>Товару</i> зазначається актуальна, а не мінімальна.</p>
+
+            <p>При замовленні <i>Товару</i> ОПТОМ (мінімальне замовлення 12 шт. одиниці продукції), адміністратор уточнить наявніть на складах та актуаульну ціну.</p>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <section class="contacts section">
+    
+        <div class="container contacts--flex">
+    
+            <div class="contacts__case">
+    
+                <a href="/">
+    
+                    <div class="logo-link logo-link--footer-margin">
+    
+                        <img class="logo-link__img" src="./images/logo.png" alt="логотип" width="82" height="82">
+    
+                        <div class="logo-link--footer">
+    
+                            <span class="logo logo-link--footer-color">Компанія &#171<span lang="en">Cras</span>&#187</span>
+    
+                            <span class="logo logo--footer ">товари з Європи</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <h2 class="cinzel footer-cinzel" lang="en">Made <span class="footer-color-slogan">in</span> future</h2>
+            </div>
+    
+            <div class="contacts__case">
+    
+                <h3 class="contacts__title">Контакти</h3>
+    
+                <ul class="contacts__list">
+    
+                    <li class="contacts__item">
+    
+                        <a class="contacts__link" href="mailto:support@cras.company">
+    
+                            <svg class="contacts__icon" width="20" height="20">
+    
+                                <use href="./images/icon/sprite.svg#envelope"></use>
+                            </svg>
+                            support@cras.company
+                        </a>
+                    </li>
+    
+                    <li class="contacts__item">
+    
+                        <a class="contacts__link" href="tel:+380958294440">
+    
+                            <svg class="contacts__icon" width="20" height="20">
+    
+                                <use href="./images/icon/sprite.svg#cell"></use>
+                            </svg>
+                            +38 095 829 44 40
+                        </a>
+                    </li>
+    
+                    <li class="contacts__item">
+    
+                        <p class="contacts-town">м.Ужгород</p>
+    
+                        <a class="contacts__link" target="_blank"
+                            href="https://www.google.com.ua/maps/place/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D1%96%D1%8F%C2%ABCras%C2%BB/@48.6022235,22.2803967,19z/data=!4m15!1m8!3m7!1s0x47391903f130c775:0xb51bd9ff778e2564!2z0YPQuy4g0JPRgNGD0YjQtdCy0YHQutC-0LPQviwgNjYsINCj0LbQs9C-0YDQvtC0LCDQl9Cw0LrQsNGA0L_QsNGC0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDg4MDAw!3b1!8m2!3d48.6050414!4d22.281794!16s%2Fg%2F1thqfjg4!3m5!1s0x473919a82a5ed9db:0x7d59ec4a1e8eaca2!8m2!3d48.6023687!4d22.2813666!16s%2Fg%2F11vx4yxkm7?hl=ru&entry=ttu">
+    
+                            <svg class="contacts__icon" width="20" height="20">
+    
+                                <use href="./images/icon/sprite.svg#location"></use>
+                            </svg>
+                            вул. Академіка Корольова, 4<br>(ТЦ &#171;ФЛАМІНГО&#187;)
+                        </a>
+    
+                        <a class="contacts__link" target="_blank"
+                            href="https://www.google.com.ua/maps/place/Cras+-+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B8+%D0%B7+%D0%84%D0%B2%D1%80%D0%BE%D0%BF%D0%B8/@48.6107775,22.2778685,18z/data=!4m15!1m8!3m7!1s0x47391856982f9513:0x385119705d13ce6f!2z0YPQuy4g0KDQsNC00LjRidC10LLQsCwgN9CwLCDQo9C20LPQvtGA0L7QtCwg0JfQsNC60LDRgNC_0LDRgtGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA4ODAwMg!3b1!8m2!3d48.6165633!4d22.2748676!16s%2Fg%2F11ldj15fr6!3m5!1s0x473919006181a709:0xddb688b4e4e9f616!8m2!3d48.6105626!4d22.2785947!16s%2Fg%2F11w9678lgq?hl=ru&entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D">
+    
+                            <svg class="contacts__icon" width="20" height="20">
+    
+                                <use href="./images/icon/sprite.svg#location"></use>
+                            </svg>
+                            вул. Грушевського, 27/29<br>(колишня автобусна зупинка)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="contacts__case">
+    
+                <h3 class="contacts__title">Компанія</h3>
+    
+                <ul>
+                    <li class="contacts__item">
+    
+                        <a class="contacts__link" href="./about_us.html">
+    
+                            <svg class="contacts__icon" width="20" height="20">
+    
+                                <use href="./images/icon/sprite.svg#about_us"></use>
+                            </svg>
+    
+                            Про нас
+                        </a>
+                    </li>
+    
+                    <li class="contacts__item">
+    
+                        <a class="contacts__link" href="./payment.html">
+    
+                            <svg class="contacts__icon" width="20" height="20">
+    
+                                <use href="./images/icon/sprite.svg#payment"></use>
+                            </svg>
+    
+                            Оплата і доставка</a>
+                    </li>
+    
+                    <li class="contacts__item">
+    
+                        <a class="contacts__link" href="./license.html">
+    
+                            <svg class="contacts__icon" width="20" height="20">
+    
+                                <use href="./images/icon/sprite.svg#privacy_notice"></use>
+                            </svg>
+    
+                            Угода користувача
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="contacts__case">
+    
+                <h3 class="contacts__title contacts__title--center">Приєднуйтесь</h3>
+    
+                <ul class="contacts__social">
+    
+                    <li class="contacts__list contacts__list--margin">
+    
+                        <a class="socials-link" href="https://www.facebook.com/profile.php?id=100093022350189"
+                            target="_blank" aria-label="Facebook профиль">
+    
+                            <svg class="social-icon" width="40" height="40">
+    
+                                <use class="social-icon__main" href="./images/icon/sprite.svg#icon-facebook"></use>
+    
+                                <use class="social-icon__hover" href="./images/icon/sprite.svg#icon-facebook-hovered">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="contacts__list contacts__list--margin">
+    
+                        <a class="socials-link" href="https://www.instagram.com/cras.company/" target="_blank"
+                            aria-label="Instagram профіль">
+    
+                            <svg class="social-icon" width="40" height="40">
+    
+                                <use class="social-icon__main" href="./images/icon/sprite.svg#instagram"></use>
+    
+                                <use class="social-icon__hover" href="./images/icon/sprite.svg#instagram-hovered"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="contacts__list contacts__list--margin">
+    
+                        <a class="socials-link" href="https://www.tiktok.com/@cras.company" target="_blank"
+                            aria-label="TikTok профіль">
+    
+                            <svg class="social-icon" width="40" height="40">
+    
+                                <use class="social-icon__main" href="./images/icon/sprite.svg#tiktok"></use>
+    
+                                <use class="social-icon__hover" href="./images/icon/sprite.svg#tiktok-hovered"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="contacts__list">
+    
+                        <a class="socials-link" href="https://t.me/Cras_Company" target="_blank"
+                            aria-label="Telegram профіль">
+    
+                            <svg class="social-icon" width="40" height="40">
+    
+                                <use class="social-icon__main" href="./images/icon/sprite.svg#telega"></use>
+    
+                                <use class="social-icon__hover" href="./images/icon/sprite.svg#telega-hovered"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+    
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer section">
+    
+        <div class="container">
+    
+            <p class="footer__text cinzel" lang="en">&#169; &#171;CRAS&#187; company. All rights reserved. <br
+                    class="br-footer"> Різні торгові марки належать відповідним власникам.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+        integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+</body>
