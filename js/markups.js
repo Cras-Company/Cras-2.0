@@ -477,7 +477,7 @@ export function createBasketOrderMarkup() {
             
             <button class="button__copy js-button__copy" type="button">
 
-                <p class="basket__copy-markers">ОФОРМИТИ ЗАМОВЛЕННЯ</p>
+                <p class="basket__copy-text">ОФОРМИТИ ЗАМОВЛЕННЯ</p>
 
             </button>`;
 };
