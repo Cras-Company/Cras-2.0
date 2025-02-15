@@ -590,6 +590,7 @@ function handleFormSubmit(event) {
   const searchItem = event.target === searchForm ? inputSearch.value.trim().toLowerCase() : inputSearchMobile.value.trim().toLowerCase();
 
   resetMarkup();
+
   loadMoreButton.style.display = 'none';
 
   if (event.target === searchForm) {
@@ -598,6 +599,7 @@ function handleFormSubmit(event) {
 
   // Новинки
   const filteredNewItems = universalSearch(shopLotsNewItems, searchItem);
+
   // Акция
   const filteredSale = universalSearch(shopLotsSale, searchItem);
 
@@ -1270,7 +1272,7 @@ function handleFormSubmit(event) {
 
   jumpOnMainPage();
   lazyLoadImagesAnimation();
-  // restoreIcons();
+  restoreIcons();
 }
 
 // ===========================================================================
@@ -1395,12 +1397,12 @@ function lotModalOpenHandler(event) {
     crasItems.forEach((crasItem) => {
       crasItem.addEventListener('click', (event) => {
         lotBasketHandler(event);
-        // restoreIcons();
+        restoreIcons();
       });
     });
 
     // Обновляем иконки в модальном окне
     const lotModalElements = document.querySelectorAll(".js-cras-item");
-    restoreStoregeIcons(lotModalElements); // Добавили вызов сюда
+    restoreStoregeIcons(lotModalElements);
   }
 }

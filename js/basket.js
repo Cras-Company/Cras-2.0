@@ -1,7 +1,6 @@
 import {
   USDTRate,
-  createBasketListItemsMarkup,
-  createBasketOrderMarkup
+  createBasketListItemsMarkup
 } from './markups.js';
 
 import {
@@ -36,11 +35,11 @@ import { shopLotsPopcorns } from "./food/array-popcorns.js";
 import { shopLotsPistachios } from "./food/array-pistachios.js";
 import { shopLotsChips } from "./food/array-chips.js";
 
-// import { shopLotsCreamSpreads } from "./food/array-cream-spreads.js";
-// import { shopLotsCheeseSpreads } from "./food/array-cheese-spreads.js";
+import { shopLotsCreamSpreads } from "./food/array-cream-spreads.js";
+import { shopLotsCheeseSpreads } from "./food/array-cheese-spreads.js";
 import { shopLotsSweetSpreads } from "./food/array-sweet-spreads.js";
 
-// import { shopLotsBars } from "./food/array-bars.js";
+import { shopLotsBars } from "./food/array-bars.js";
 import { shopLotsWaffles } from "./food/array-waffles.js";
 import { shopLotsChocolate } from "./food/array-chocolate.js";
 
@@ -55,7 +54,7 @@ import { shopLotsOil } from "./food/array-oil.js";
 import { shopLotsOlives } from "./food/array-olives.js";
 import { shopLotsOliveOil } from "./food/array-olive-oil.js";
 
-// import { shopLotsForBaking } from "./food/array-for-baking.js";
+import { shopLotsForBaking } from "./food/array-for-baking.js";
 import { shopLotsMustard } from "./food/array-mustard.js";
 import { shopLotsSauces } from "./food/array-sauces.js";
 import { shopLotsSeasonings } from "./food/array-seasonings.js";
@@ -147,11 +146,11 @@ const arrayOfProducts = [
   { items: shopLotsPistachios,  },
   { items: shopLotsChips, },
 
-  // { items: shopLotsCreamSpreads, },
-  // { items: shopLotsCheeseSpreads, },
+  { items: shopLotsCreamSpreads, },
+  { items: shopLotsCheeseSpreads, },
   { items: shopLotsSweetSpreads, },
 
-  // { items: shopLotsBars, },
+  { items: shopLotsBars, },
   { items: shopLotsWaffles, },
   { items: shopLotsChocolate, },
 
@@ -166,7 +165,7 @@ const arrayOfProducts = [
   { items: shopLotsOlives, },
   { items: shopLotsOliveOil, },
 
-  // { items: shopLotsForBaking, },
+  { items: shopLotsForBaking, },
   { items: shopLotsMustard, },
   { items: shopLotsSauces, },
   { items: shopLotsSeasonings, },
@@ -241,19 +240,19 @@ const shopListAllLots = document.querySelector(".js-click-for-new-window");
 const headerBasketNumbers = document.querySelectorAll(".js-header__basket-number");
 const basketListLots = document.querySelector(".js-modal-basket");
 const clearBasketButton = document.querySelector("[data-modal-busket-clear]");
+
 const basketOrderBox = document.querySelector(".js-basket__order-box");
+basketOrderBox.style.display = "none";
 
 const travolta = document.querySelector(".js-travolta");
 
-let basketfoundItemsArray = [];
-let iconsArray = [];
+let basketArray = [];
 let itemsArrayChecked = [];
-let quantityItemsArray = [];
-let totalAmount = [];
 
 shopListAllLots.addEventListener('click', lotBasketHandler);
 
 export function lotBasketHandler(event) {
+
   const targetButton = event.target.closest('button[data-lot-basket]');
 
   if (targetButton) {
@@ -269,121 +268,88 @@ export function lotBasketHandler(event) {
       const priceUSDT = (priceGRN / USDTRate).toFixed(2);
 
       toggleItemInBasket(marker, foundItem);
-      setupQuantityButtons();
-      updateQuantityItemsArray(marker, priceGRN, priceUSDT);
+
       updateHeaderBasketNumber();
-      toggleIconsForMarker(marker);
       setupRemoveButtons();
       handleClearBasketButton();
-      updatePriceWholesales(foundItem);
-      updateBasketOrder();
-      basketCheckboxChanger();
-      totalItemsAmount();
-      restoreButtonCopy();
+      // setupQuantityButtons();
+      // updatePriceWholesales(foundItem);
+      // updateBasketOrder();
+      // basketCheckboxChanger();
+      // totalItemsAmount();
+      // restoreButtonCopy();
     }
   }
 }
 
-function toggleItemInBasket(marker, foundItem) {
-  const itemIndex = basketfoundItemsArray.findIndex((item) => item.marker === marker);
-
-  if (itemIndex !== -1) {
-    basketfoundItemsArray.splice(itemIndex, 1);
-    removeBasketItemElement(marker);
-    removeBasketMarkupFromLocalStorage(marker);
-  } else {
-    if (foundItem) {
-      basketfoundItemsArray.push(foundItem);
-      addBasketItemElement(foundItem);
-      saveBasketMarkupToLocalStorage();
-    }
-  }
-
-  updateBasketFoundItemsArrayInLocalStorage();
-}
-
-function removeBasketItemElement(marker) {
-  const itemToRemove = basketListLots.querySelector(`[data-basket-marker="${marker}"]`);
-
-  if (itemToRemove) {
-    itemToRemove.remove();
-  }
-}
-
-function removeBasketMarkupFromLocalStorage(marker) {
-  const savedBasketMarkup = localStorage.getItem('basketMarkup');
-
-  if (savedBasketMarkup) {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(savedBasketMarkup, 'text/html');
-    const itemToRemoveInStorage = doc.querySelector(`[data-basket-marker="${marker}"]`);
-
-    if (itemToRemoveInStorage) {
-      itemToRemoveInStorage.remove();
-    }
-
-    if (doc.body.innerHTML.trim() === '') {
-      localStorage.removeItem('basketMarkup');
-    } else {
-      localStorage.setItem('basketMarkup', doc.body.innerHTML);
-    }
-  }
-}
-
-function addBasketItemElement(item) {
-  const basketMarkup = createBasketListItemsMarkup([item]);
-
-  if (basketMarkup) {
-    basketListLots.insertAdjacentHTML("beforeend", basketMarkup);
-  }
-}
-
-function saveBasketMarkupToLocalStorage() {
-  localStorage.setItem('basketMarkup', basketListLots.innerHTML);
-}
-
-function updateBasketFoundItemsArrayInLocalStorage() {
-  if (basketfoundItemsArray.length === 0) {
-    localStorage.removeItem('basketfoundItemsArray');
-  } else {
-    localStorage.setItem('basketfoundItemsArray', JSON.stringify(basketfoundItemsArray));
-  }
-}
-
+// Число товаров в корзине
 function updateHeaderBasketNumber() {
+  const basketArrayJSON = localStorage.getItem("basketArray");
+  const basketArray = JSON.parse(basketArrayJSON) || [];
+
   headerBasketNumbers.forEach((headerBasketNumber) => {
-    headerBasketNumber.textContent = basketfoundItemsArray.length > 0 ? basketfoundItemsArray.length : "";
-    localStorage.setItem('headerBasketNumberValue', headerBasketNumber.textContent);
+    headerBasketNumber.textContent = basketArray.length > 0 ? basketArray.length : "";
   });
 }
 
-function toggleIconsForMarker(marker) {
-  const iconsArrayJSON = localStorage.getItem("iconsArray");
-  const iconsArray = JSON.parse(iconsArrayJSON) || [];
-
-  const existingIndex = iconsArray.findIndex(item => item.marker === marker);
-
-  if (existingIndex !== -1) {
-    iconsArray.splice(existingIndex, 1);
-  } else {
-    iconsArray.push({
-      marker: marker,
-      addedInBasket: true,
-    });
-  }
-
-  if (iconsArray.length === 0) {
-    localStorage.removeItem("iconsArray");
-  } else {
-    localStorage.setItem("iconsArray", JSON.stringify(iconsArray));
-  }
-
+function toggleItemInBasket(marker, foundItem) {
+  // Иконки
   const basketInIcons = document.querySelectorAll(`[data-basket-marker="${marker}"] .js-basket__icon-in`);
   const basketOutIcons = document.querySelectorAll(`[data-basket-marker="${marker}"] .js-basket__icon-out`);
 
   basketInIcons.forEach(icon => icon.classList.toggle("js-icon-close"));
   basketOutIcons.forEach(icon => icon.classList.toggle("js-icon-open"));
+
+  // Добавление в локальное хранилище маркера товара
+  const basketArrayJSON = localStorage.getItem("basketArray");
+  const basketArray = JSON.parse(basketArrayJSON) || [];
+
+  const itemIndex = basketArray.findIndex(item => item.marker === marker);
+
+  if (itemIndex !== -1) { // Исправлено условие проверки
+    // Если товар уже в корзине → удаляем разметку
+    const itemToRemove = basketListLots.querySelector(`[data-basket-marker="${marker}"]`);
+
+    if (itemToRemove) {
+      itemToRemove.remove();
+    }
+
+    basketArray.splice(itemIndex, 1);
+  } else {
+    // Если товара нет в корзине → добавляем разметку
+    if (foundItem) {
+      const basketMarkup = createBasketListItemsMarkup([foundItem]);
+
+      if (basketMarkup) {
+        travolta.style.display = "none";
+        basketListLots.insertAdjacentHTML("beforeend", basketMarkup);
+        basketOrderBox.style.display = "block";
+      }
+
+      // Добавляем товар в массив корзины
+      basketArray.push({
+        marker: marker,
+        quantityItem: 1,
+      });
+    }
+  }
+
+  // Обновляем localStorage
+  localStorage.setItem("basketArray", JSON.stringify(basketArray));
+
+  if (basketArray.length === 0) {
+    localStorage.removeItem("basketArray");
+    basketOrderBox.style.display = "none";
+    travolta.style.display = "block";
+  }
 }
+
+
+
+
+
+
+
 
 function setupQuantityButtons() {
   const decreaseButtons = document.querySelectorAll('[data-price-down]');
@@ -391,30 +357,6 @@ function setupQuantityButtons() {
 
   decreaseButtons.forEach((button) => button.addEventListener('click', handleQuantityDecrease));
   increaseButtons.forEach((button) => button.addEventListener('click', handleQuantityIncrease));
-}
-
-function updateQuantityItemsArray(marker, priceGRN, priceUSDT) {
-  const quantityItemsArrayJSON = localStorage.getItem("quantityItemsArray");
-  const quantityItemsArray = JSON.parse(quantityItemsArrayJSON) || [];
-
-  const existingItemIndex = quantityItemsArray.findIndex(item => item.marker === marker);
-
-  if (existingItemIndex !== -1) {
-    quantityItemsArray.splice(existingItemIndex, 1);
-  } else {
-    quantityItemsArray.push({
-      marker: marker,
-      quantityItem: 1,
-      priceGRN: priceGRN,
-      priceUSDT: priceUSDT,
-    });
-  }
-
-  if (quantityItemsArray.length === 0) {
-    localStorage.removeItem("quantityItemsArray");
-  } else {
-    localStorage.setItem("quantityItemsArray", JSON.stringify(quantityItemsArray));
-  }
 }
 
 function updatePriceWholesales(foundItem) {
@@ -427,21 +369,11 @@ function updatePriceWholesales(foundItem) {
   }
 }
 
-function updateBasketOrder() {
-  basketOrderBox.innerHTML = createBasketOrderMarkup();
-}
-
 function setupRemoveButtons() {
   const removeButtons = document.querySelectorAll("[data-modal-remove-item]");
   removeButtons.forEach((button) => {
     button.addEventListener("click", removeBasketItem);
   });
-}
-
-function handleClearBasketButton() {
-  if (clearBasketButton) {
-    clearBasketButton.addEventListener("click", clearBasket);
-  }
 }
 
 // Удаление лота из корзины
@@ -454,114 +386,48 @@ function removeBasketItem(event) {
   // Удаляем разметку товара из корзины
   basketItem.remove();
 
-  // Удаляем разметку из локального хранилища
-  const savedBasketMarkup = localStorage.getItem('basketMarkup');
+  // Удаляем товар из localStorage
+  const basketArrayJSON = localStorage.getItem("basketArray");
+  const basketArray = JSON.parse(basketArrayJSON) || [];
 
-  if (savedBasketMarkup) {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(savedBasketMarkup, 'text/html');
-    const itemToRemoveInStorage = doc.querySelector(`[data-basket-marker="${marker}"]`);
-
-    if (itemToRemoveInStorage) {
-      itemToRemoveInStorage.remove();
-
-      if (doc.body.innerHTML.trim() === '') {
-
-        localStorage.removeItem('basketMarkup');
-      } else {
-
-        localStorage.setItem('basketMarkup', doc.body.innerHTML);
-      }
-    }
-  }
-
-  // Удаляем элемент массива из локального хранилища
-  const itemIndex = basketfoundItemsArray.findIndex((item) => item.marker === marker);
+  // Находим индекс элемента в массиве
+  const itemIndex = basketArray.findIndex(item => item.marker === marker);
+  
   if (itemIndex !== -1) {
-    basketfoundItemsArray.splice(itemIndex, 1);
+    basketArray.splice(itemIndex, 1); // Удаляем товар из массива
   }
 
-  headerBasketNumbers.forEach((headerBasketNumber) => {
-    if (basketfoundItemsArray.length > 0) {
-      headerBasketNumber.textContent = basketfoundItemsArray.length;
-      localStorage.setItem('headerBasketNumberValue', headerBasketNumber.textContent);
-    } else {
-      headerBasketNumber.textContent = "";
-      localStorage.removeItem('headerBasketNumberValue');
-    }
-  });
-
-  const basketfoundItemsArrayInStorage = JSON.parse(localStorage.getItem('basketfoundItemsArray'));
-  if (Array.isArray(basketfoundItemsArrayInStorage)) {
-    const updatedBasketfoundItemsArray = basketfoundItemsArrayInStorage.filter((item) => item.marker !== marker);
-    localStorage.setItem('basketfoundItemsArray', JSON.stringify(updatedBasketfoundItemsArray));
-    if (basketfoundItemsArray.length === 0) {
-      localStorage.removeItem('basketfoundItemsArray');
-    }
-  }
-
-  // Удаляем элемент массива числа товаров из локального хранилища
-  const quantityItemsArrayJSON = localStorage.getItem("quantityItemsArray");
-  const quantityItemsArray = JSON.parse(quantityItemsArrayJSON) || [];
-
-  if (itemIndex !== -1) {
-    quantityItemsArray.splice(itemIndex, 1);
-    localStorage.setItem('quantityItemsArray', JSON.stringify(quantityItemsArray));
-  }
-
-  if (quantityItemsArray.length === 0) {
-    localStorage.removeItem("quantityItemsArray");
-    localStorage.removeItem("totalAmount");
-    basketOrderBox.innerHTML = "";
+  // Обновляем localStorage
+  if (basketArray.length > 0) {
+    localStorage.setItem("basketArray", JSON.stringify(basketArray));
+  } else {
+    localStorage.removeItem("basketArray");
+    basketOrderBox.style.display = "none";
     travolta.style.display = "block";
   }
 
-  // Удаляем элемент массива состаяния чекбокса из локального хранилища
-  const itemsArrayCheckedJSON = localStorage.getItem("itemsArrayChecked");
-  const itemsArrayChecked = JSON.parse(itemsArrayCheckedJSON) || [];
-
-  if (itemIndex !== -1) {
-    itemsArrayChecked.splice(itemIndex, 1);
-    localStorage.setItem('itemsArrayChecked', JSON.stringify(itemsArrayChecked));
-  }
-
-  if (itemsArrayChecked.length === 0) {
-    localStorage.removeItem("itemsArrayChecked");
-  }
-
-  // Убираем классы с иконок и удаляем с массива
-  const iconsArrayJSON = localStorage.getItem("iconsArray");
-  const iconsArray = JSON.parse(iconsArrayJSON) || [];
-
-  if (itemIndex !== -1) {
-    iconsArray.splice(itemIndex, 1);
-    localStorage.setItem('iconsArray', JSON.stringify(iconsArray));
-  }
-
-  if (iconsArray.length === 0) {
-    localStorage.removeItem("iconsArray");
-  }
-
+  updateHeaderBasketNumber();
   restoreIcons();
-  totalItemsAmount();
+  // totalItemsAmount();
 }
 
+
 // Полная очистка корзины
+function handleClearBasketButton() {
+  if (clearBasketButton) {
+    clearBasketButton.addEventListener("click", clearBasket);
+  }
+}
+
 function clearBasket() {
   // Удаление разметки корзины
   basketListLots.innerHTML = "";
-  basketOrderBox.innerHTML = "";
+  basketOrderBox.style.display = "none";
   travolta.style.display = "block";
 
   // Удаление данных из локального хранилища, связанные с корзиной
   const keysToRemove = Object.keys(localStorage).filter((key) =>
-    key.startsWith("basketMarkup") ||
-    key === "basketfoundItemsArray" ||
-    key === "quantityItemsArray" ||
-    key === "itemsArrayChecked" ||
-    key === "totalAmount" ||
-    key === "iconsArray" ||
-    key === "basketNumber"
+    key.startsWith("basketArray")
   );
 
   keysToRemove.forEach((key) => {
@@ -569,16 +435,11 @@ function clearBasket() {
   });
 
   // Обновляем массивы из localStorage
-  basketfoundItemsArray = JSON.parse(localStorage.getItem('basketfoundItemsArray')) || [];
-  quantityItemsArray = JSON.parse(localStorage.getItem('quantityItemsArray')) || [];
-  itemsArrayChecked = JSON.parse(localStorage.getItem('itemsArrayChecked')) || [];
-  totalAmount = JSON.parse(localStorage.getItem('totalAmount')) || [];
-  iconsArray = JSON.parse(localStorage.getItem("iconsArray")) || [];
+  basketArray = JSON.parse(localStorage.getItem('basketArray')) || [];
 
   // Удаление счётчка товара в корзине
   headerBasketNumbers.forEach((headerBasketNumber) => {
     headerBasketNumber.textContent = "";
-    localStorage.removeItem('headerBasketNumberValue');
   });
 
   // Удаление классов у иконок
@@ -916,18 +777,50 @@ function totalItemsAmount() {
 // Фунции восстановления корзины
 // --------------------------------
 
-// Состояние иконок из хранилища
+// Восстановление товаров в корзине
+function initializeBasket() {
+  const basketArrayJSON = localStorage.getItem("basketArray");
+  const basketArray = JSON.parse(basketArrayJSON) || [];
+
+  if (basketArray.length > 0) {
+    const basketItemsMarkup = basketArray
+      .map(item => {
+        const foundItem = arrayOfProducts.flatMap(({ items }) => items).find(({ marker }) => marker === item.marker);
+        return foundItem ? createBasketListItemsMarkup([foundItem]) : "";
+      })
+      .join("");
+
+    if (basketItemsMarkup) {
+      basketListLots.innerHTML = basketItemsMarkup;
+      basketOrderBox.style.display = "block";
+      travolta.style.display = "none";
+    }
+  } else {
+    basketOrderBox.style.display = "none";
+    travolta.style.display = "block";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initializeBasket();
+  setupRemoveButtons();
+});
+
+// Восстановление числа товаров в корзине после перезагрузки
+updateHeaderBasketNumber();
+
+// Восстановление состояния иконок из хранилища
 export function restoreStoregeIcons(lotElements) {
-  const iconsArrayJSON = localStorage.getItem("iconsArray");
-  const iconsArray = iconsArrayJSON ? JSON.parse(iconsArrayJSON) : [];
+
+  const basketArrayJSON = localStorage.getItem("basketArray");
+  const basketArray = JSON.parse(basketArrayJSON) || [];
 
   lotElements.forEach((element) => {
     const marker = element.getAttribute("data-basket-marker");
     const basketInIcon = element.querySelector(".js-basket__icon-in");
     const basketOutIcon = element.querySelector(".js-basket__icon-out");
 
-    // Находим соответствующий элемент в iconsArray
-    const item = iconsArray.find((item) => item.marker === marker);
+    const item = basketArray.find((item) => item.marker === marker);
 
     if (item) {
       basketInIcon.classList.add("js-icon-close");
@@ -945,59 +838,15 @@ export function restoreIcons() {
     
   restoreStoregeIcons(lotElements);
 
-  const removeButtons = document.querySelectorAll("[data-modal-remove-item]");
-  removeButtons.forEach((button) => {
-    button.addEventListener("click", removeBasketItem);
-  });
+  // const removeButtons = document.querySelectorAll("[data-modal-remove-item]");
+  // removeButtons.forEach((button) => {
+  //   button.addEventListener("click", removeBasketItem);
+  // });
 
-  clearBasketButton.addEventListener("click", clearBasket);
+  // clearBasketButton.addEventListener("click", clearBasket);
 }
 
-restoreIcons();
-
-// Восстановление числа товаров в корзине
-function restoreBasketAmount() {
-  const basketAmount = localStorage.getItem('headerBasketNumberValue');
-  if (basketAmount) {
-    headerBasketNumbers.forEach((headerBasketNumber) => {
-      headerBasketNumber.textContent = basketAmount;
-    });
-  }
-
-  const removeButtons = document.querySelectorAll("[data-modal-remove-item]");
-  removeButtons.forEach((button) => {
-    button.addEventListener("click", removeBasketItem);
-  });
-
-  clearBasketButton.addEventListener("click", clearBasket);
-}
-
-restoreBasketAmount();
-
-// Восстановление массива товаров и разметки
-function restoreBasketItemsArrayMarkup() {
-  const storedBasketItemsArray = localStorage.getItem('basketfoundItemsArray');
-
-  if (storedBasketItemsArray) {
-    basketfoundItemsArray = JSON.parse(storedBasketItemsArray);
-  }
-
-  const savedBasketMarkup = localStorage.getItem('basketMarkup');
-
-  basketListLots.innerHTML = "";
-
-  if (savedBasketMarkup && basketListLots) {
-    basketListLots.innerHTML = savedBasketMarkup;
-  }
-
-  // Удаление товара на кнопку "Удалить"
-  const removeButtons = document.querySelectorAll("[data-modal-remove-item]");
-  removeButtons.forEach((button) => {
-    button.addEventListener("click", removeBasketItem);
-  });
-}
-
-restoreBasketItemsArrayMarkup();
+document.addEventListener("DOMContentLoaded", restoreIcons);
 
 // Восстановление суммы и количества товаров
 function restoreBasketItemsAmount() {
@@ -1059,7 +908,6 @@ function restoreBasketItemsAmount() {
       totalAmountUSDT.textContent = totalAmount.totalUSDT.toFixed(2);
     }
 
-    basketOrderBox.innerHTML = createBasketOrderMarkup();
     totalItemsAmount();
   }
 }
@@ -1214,3 +1062,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
