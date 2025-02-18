@@ -271,12 +271,11 @@ export function lotBasketHandler(event) {
 
       updateHeaderBasketNumber();
       setupRemoveButtons();
+      updatePriceWholesales(foundItem);
       handleClearBasketButton();
-      // setupQuantityButtons();
-      // updatePriceWholesales(foundItem);
+      setupQuantityButtons();
       // updateBasketOrder();
       // basketCheckboxChanger();
-      // totalItemsAmount();
       // restoreButtonCopy();
     }
   }
@@ -292,6 +291,7 @@ function updateHeaderBasketNumber() {
   });
 }
 
+// Добавление разметки товара в корзину
 function toggleItemInBasket(marker, foundItem) {
   // Иконки
   const basketInIcons = document.querySelectorAll(`[data-basket-marker="${marker}"] .js-basket__icon-in`);
@@ -344,21 +344,168 @@ function toggleItemInBasket(marker, foundItem) {
   }
 }
 
-
-
-
-
-
-
-
+// Добавление количества товаров в корзине
 function setupQuantityButtons() {
   const decreaseButtons = document.querySelectorAll('[data-price-down]');
   const increaseButtons = document.querySelectorAll('[data-price-up]');
 
   decreaseButtons.forEach((button) => button.addEventListener('click', handleQuantityDecrease));
   increaseButtons.forEach((button) => button.addEventListener('click', handleQuantityIncrease));
+
+  const totalAmountGRN = document.querySelector(".js-total-priceGRN");
+  const totalAmountUSDT = document.querySelector(".js-total-priceUSDT");
+
+  let totalGRN = 0;
+  let totalUSDT = 0;
+
+  // Записываем общие суммы в соответствующие элементы на странице
+  if (totalAmountGRN && totalAmountUSDT) {
+    totalAmountGRN.textContent = totalGRN;
+    totalAmountUSDT.textContent = totalUSDT.toFixed(2);
+  }
 }
 
+function handleQuantityDecrease(event) {
+  const targetButton = event.target.closest('button[data-price-down]');
+
+  if (!targetButton) return;
+
+  const item = targetButton.closest('.basket__item');
+  if (!item) return;
+  
+  const marker = item.getAttribute('data-basket-marker');
+  const foundItem = arrayOfProducts.flatMap(({ items }) => items).find((item) => item.marker === marker);
+  const priceGRN = foundItem ? parseFloat(foundItem.priceGRN) : 0;
+  const priceOptGRN = foundItem ? parseFloat(foundItem.priceGRNOpt) : 0;
+  const priceOptUSDT = (priceOptGRN / USDTRate).toFixed(2);
+
+  const itemQuantity = item.querySelector('.js-item-quantity');
+  const priceGRNElement = item.querySelector('.js-priceGRN'); 
+  const priceOptGRNElement = item.querySelector('.js-priceOptGRN');
+  const priceUSDTElement = item.querySelector('.js-priceUSDT');
+  const priceOptUSDTElement = item.querySelector('.js-priceOptUSDT');
+
+  // const quantityItemsArrayJSON = localStorage.getItem("quantityItemsArray");
+  // const quantityItemsArray = JSON.parse(quantityItemsArrayJSON) || [];
+
+  // let existingItemIndex = quantityItemsArray.findIndex(item => item.marker === marker);
+
+  let priceGRNItem = 0;
+  let priceUSDTItem = 0;
+  let priceOptGRNItem = 0;
+  let priceUSDTOptItem = 0;
+  let currentValue = parseInt(itemQuantity.textContent);
+
+  if (!itemQuantity || !priceGRNElement || !priceUSDTElement || !priceOptGRNElement || !priceOptUSDTElement) return;
+
+  const wholesaleCheckbox = item.querySelector('.js-basket__wholesale-сheckbox-input');
+
+  if (wholesaleCheckbox && wholesaleCheckbox.checked) {
+    currentValue = Math.max(currentValue - 1, 12);
+    itemQuantity.textContent = currentValue;
+    priceOptGRNItem = priceOptGRN * currentValue;
+    priceOptGRNElement.textContent = priceOptGRNItem;
+    priceUSDTOptItem = (priceOptUSDT * currentValue).toFixed(2);;
+    priceOptUSDTElement.textContent = priceUSDTOptItem;
+
+    // quantityItemsArray[existingItemIndex].quantityItem = currentValue;
+    // quantityItemsArray[existingItemIndex].optPriceGRN = priceOptGRNItem;
+    // quantityItemsArray[existingItemIndex].optPriceUSDT = priceUSDTOptItem;
+  } else {
+    currentValue = Math.max(currentValue - 1, 1);
+    itemQuantity.textContent = currentValue;
+    priceGRNItem = priceGRN * currentValue;
+    priceGRNElement.textContent = priceGRNItem;
+    priceUSDTItem = (priceGRNItem / USDTRate).toFixed(2);
+    priceUSDTElement.textContent = priceUSDTItem;
+
+    // quantityItemsArray[existingItemIndex].quantityItem = currentValue;
+    // quantityItemsArray[existingItemIndex].priceGRN = priceGRNItem;
+    // quantityItemsArray[existingItemIndex].priceUSDT = priceUSDTItem;
+  }
+
+  // localStorage.setItem("quantityItemsArray", JSON.stringify(quantityItemsArray));
+}
+
+function handleQuantityIncrease(event) {
+  const targetButton = event.target.closest('button[data-price-up]');
+
+  if (!targetButton) return;
+
+  const item = targetButton.closest('.basket__item');
+  if (!item) return;
+  
+  const marker = item.getAttribute('data-basket-marker');
+  const foundItem = arrayOfProducts.flatMap(({ items }) => items).find((item) => item.marker === marker);
+  const quantityOnStorage = foundItem ? parseInt(foundItem.quantityOnStorage) : 0;
+  const priceGRN = foundItem ? parseFloat(foundItem.priceGRN) : 0;
+  const priceOptGRN = foundItem ? parseFloat(foundItem.priceGRNOpt) : 0;
+  const priceOptUSDT = (priceOptGRN / USDTRate).toFixed(2);
+
+  const itemQuantity = item.querySelector('.js-item-quantity');
+  const priceGRNElement = item.querySelector('.js-priceGRN'); 
+  const priceOptGRNElement = item.querySelector('.js-priceOptGRN');
+  const priceUSDTElement = item.querySelector('.js-priceUSDT');
+  const priceOptUSDTElement = item.querySelector('.js-priceOptUSDT');
+
+  // const quantityItemsArrayJSON = localStorage.getItem("quantityItemsArray");
+  // const quantityItemsArray = JSON.parse(quantityItemsArrayJSON) || [];
+
+  // let existingItemIndex = quantityItemsArray.findIndex(item => item.marker === marker);
+
+  let priceGRNItem = 0;
+  let priceUSDTItem = 0;
+  let priceOptGRNItem = 0;
+  let priceUSDTOptItem = 0;
+  let currentValue = parseInt(itemQuantity.textContent);
+
+  if (!itemQuantity || !priceGRNElement || !priceUSDTElement || !priceOptGRNElement || !priceOptUSDTElement) return;
+
+  const wholesaleCheckbox = item.querySelector('.js-basket__wholesale-сheckbox-input');
+
+  if (wholesaleCheckbox && wholesaleCheckbox.checked) {
+    currentValue += 1;
+    itemQuantity.textContent = currentValue;
+    priceOptGRNItem = priceOptGRN * currentValue;
+    priceOptGRNElement.textContent = priceOptGRNItem;
+    priceUSDTOptItem = (priceOptUSDT * currentValue).toFixed(2);;
+    priceOptUSDTElement.textContent = priceUSDTOptItem;
+
+    // quantityItemsArray[existingItemIndex].quantityItem = currentValue;
+    // quantityItemsArray[existingItemIndex].optPriceGRN = priceOptGRNItem;
+    // quantityItemsArray[existingItemIndex].optPriceUSDT = priceUSDTOptItem;
+  } else {
+    if (currentValue < quantityOnStorage || wholesaleCheckbox) {
+      currentValue += 1;
+      itemQuantity.textContent = currentValue;
+      priceGRNItem = priceGRN * currentValue;
+      priceGRNElement.textContent = priceGRNItem;
+      priceUSDTItem = (priceGRNItem / USDTRate).toFixed(2);
+      priceUSDTElement.textContent = priceUSDTItem;
+
+      // quantityItemsArray[existingItemIndex].quantityItem = currentValue;
+      // quantityItemsArray[existingItemIndex].priceGRN = priceGRNItem;
+      // quantityItemsArray[existingItemIndex].priceUSDT = priceUSDTItem;
+    }
+  }
+
+  // localStorage.setItem("quantityItemsArray", JSON.stringify(quantityItemsArray));
+}
+
+
+
+
+
+
+// Удаление лота из корзины
+function setupRemoveButtons() {
+  const removeButtons = document.querySelectorAll("[data-modal-remove-item]");
+  removeButtons.forEach((button) => {
+    button.addEventListener("click", removeBasketItem);
+  });
+}
+
+// Отображение оптовой цены
 function updatePriceWholesales(foundItem) {
   const priceWholesales = document.querySelectorAll(".js-basket-price-wholesale");
 
@@ -369,14 +516,6 @@ function updatePriceWholesales(foundItem) {
   }
 }
 
-function setupRemoveButtons() {
-  const removeButtons = document.querySelectorAll("[data-modal-remove-item]");
-  removeButtons.forEach((button) => {
-    button.addEventListener("click", removeBasketItem);
-  });
-}
-
-// Удаление лота из корзины
 function removeBasketItem(event) {
   const basketItem = event.target.closest(".basket__item");
   if (!basketItem) return;
@@ -408,8 +547,15 @@ function removeBasketItem(event) {
 
   updateHeaderBasketNumber();
   restoreIcons();
-  // totalItemsAmount();
 }
+
+
+
+
+
+
+
+
 
 
 // Полная очистка корзины
@@ -453,134 +599,10 @@ function clearBasket() {
   });
 }
 
-function handleQuantityDecrease(event) {
-  const targetButton = event.target.closest('button[data-price-down]');
 
-  if (!targetButton) return;
 
-  const item = targetButton.closest('.basket__item');
-  if (!item) return;
-  
-  const marker = item.getAttribute('data-basket-marker');
-  const foundItem = arrayOfProducts.flatMap(({ items }) => items).find((item) => item.marker === marker);
-  const priceGRN = foundItem ? parseFloat(foundItem.priceGRN) : 0;
-  const priceOptGRN = foundItem ? parseFloat(foundItem.priceGRNOpt) : 0;
-  const priceOptUSDT = (priceOptGRN / USDTRate).toFixed(2);
 
-  const itemQuantity = item.querySelector('.js-item-quantity');
-  const priceGRNElement = item.querySelector('.js-priceGRN'); 
-  const priceOptGRNElement = item.querySelector('.js-priceOptGRN');
-  const priceUSDTElement = item.querySelector('.js-priceUSDT');
-  const priceOptUSDTElement = item.querySelector('.js-priceOptUSDT');
 
-  const quantityItemsArrayJSON = localStorage.getItem("quantityItemsArray");
-  const quantityItemsArray = JSON.parse(quantityItemsArrayJSON) || [];
-
-  let existingItemIndex = quantityItemsArray.findIndex(item => item.marker === marker);
-
-  let priceGRNItem = 0;
-  let priceUSDTItem = 0;
-  let priceOptGRNItem = 0;
-  let priceUSDTOptItem = 0;
-  let currentValue = parseInt(itemQuantity.textContent);
-
-  if (!itemQuantity || !priceGRNElement || !priceUSDTElement || !priceOptGRNElement || !priceOptUSDTElement) return;
-
-  const wholesaleCheckbox = item.querySelector('.js-basket__wholesale-сheckbox-input');
-
-  if (wholesaleCheckbox && wholesaleCheckbox.checked) {
-    currentValue = Math.max(currentValue - 1, 12);
-    itemQuantity.textContent = currentValue;
-    priceOptGRNItem = priceOptGRN * currentValue;
-    priceOptGRNElement.textContent = priceOptGRNItem;
-    priceUSDTOptItem = (priceOptUSDT * currentValue).toFixed(2);;
-    priceOptUSDTElement.textContent = priceUSDTOptItem;
-
-    quantityItemsArray[existingItemIndex].quantityItem = currentValue;
-    quantityItemsArray[existingItemIndex].optPriceGRN = priceOptGRNItem;
-    quantityItemsArray[existingItemIndex].optPriceUSDT = priceUSDTOptItem;
-  } else {
-    currentValue = Math.max(currentValue - 1, 1);
-    itemQuantity.textContent = currentValue;
-    priceGRNItem = priceGRN * currentValue;
-    priceGRNElement.textContent = priceGRNItem;
-    priceUSDTItem = (priceGRNItem / USDTRate).toFixed(2);
-    priceUSDTElement.textContent = priceUSDTItem;
-
-    quantityItemsArray[existingItemIndex].quantityItem = currentValue;
-    quantityItemsArray[existingItemIndex].priceGRN = priceGRNItem;
-    quantityItemsArray[existingItemIndex].priceUSDT = priceUSDTItem;
-  }
-
-  localStorage.setItem("quantityItemsArray", JSON.stringify(quantityItemsArray));
-  totalItemsAmount();
-}
-
-function handleQuantityIncrease(event) {
-  const targetButton = event.target.closest('button[data-price-up]');
-
-  if (!targetButton) return;
-
-  const item = targetButton.closest('.basket__item');
-  if (!item) return;
-  
-  const marker = item.getAttribute('data-basket-marker');
-  const foundItem = arrayOfProducts.flatMap(({ items }) => items).find((item) => item.marker === marker);
-  const quantityOnStorage = foundItem ? parseInt(foundItem.quantityOnStorage) : 0;
-  const priceGRN = foundItem ? parseFloat(foundItem.priceGRN) : 0;
-  const priceOptGRN = foundItem ? parseFloat(foundItem.priceGRNOpt) : 0;
-  const priceOptUSDT = (priceOptGRN / USDTRate).toFixed(2);
-
-  const itemQuantity = item.querySelector('.js-item-quantity');
-  const priceGRNElement = item.querySelector('.js-priceGRN'); 
-  const priceOptGRNElement = item.querySelector('.js-priceOptGRN');
-  const priceUSDTElement = item.querySelector('.js-priceUSDT');
-  const priceOptUSDTElement = item.querySelector('.js-priceOptUSDT');
-
-  const quantityItemsArrayJSON = localStorage.getItem("quantityItemsArray");
-  const quantityItemsArray = JSON.parse(quantityItemsArrayJSON) || [];
-
-  let existingItemIndex = quantityItemsArray.findIndex(item => item.marker === marker);
-
-  let priceGRNItem = 0;
-  let priceUSDTItem = 0;
-  let priceOptGRNItem = 0;
-  let priceUSDTOptItem = 0;
-  let currentValue = parseInt(itemQuantity.textContent);
-
-  if (!itemQuantity || !priceGRNElement || !priceUSDTElement || !priceOptGRNElement || !priceOptUSDTElement) return;
-
-  const wholesaleCheckbox = item.querySelector('.js-basket__wholesale-сheckbox-input');
-
-  if (wholesaleCheckbox && wholesaleCheckbox.checked) {
-    currentValue += 1;
-    itemQuantity.textContent = currentValue;
-    priceOptGRNItem = priceOptGRN * currentValue;
-    priceOptGRNElement.textContent = priceOptGRNItem;
-    priceUSDTOptItem = (priceOptUSDT * currentValue).toFixed(2);;
-    priceOptUSDTElement.textContent = priceUSDTOptItem;
-
-    quantityItemsArray[existingItemIndex].quantityItem = currentValue;
-    quantityItemsArray[existingItemIndex].optPriceGRN = priceOptGRNItem;
-    quantityItemsArray[existingItemIndex].optPriceUSDT = priceUSDTOptItem;
-  } else {
-    if (currentValue < quantityOnStorage || wholesaleCheckbox) {
-      currentValue += 1;
-      itemQuantity.textContent = currentValue;
-      priceGRNItem = priceGRN * currentValue;
-      priceGRNElement.textContent = priceGRNItem;
-      priceUSDTItem = (priceGRNItem / USDTRate).toFixed(2);
-      priceUSDTElement.textContent = priceUSDTItem;
-
-      quantityItemsArray[existingItemIndex].quantityItem = currentValue;
-      quantityItemsArray[existingItemIndex].priceGRN = priceGRNItem;
-      quantityItemsArray[existingItemIndex].priceUSDT = priceUSDTItem;
-    }
-  }
-
-  localStorage.setItem("quantityItemsArray", JSON.stringify(quantityItemsArray));
-  totalItemsAmount();
-}
 
 function basketCheckboxChanger() {
   const wholesaleCheckboxes = document.querySelectorAll('.js-basket__wholesale-сheckbox-input');
@@ -718,59 +740,8 @@ function basketCheckboxChanger() {
       if (itemsArrayChecked.length === 0) {
         localStorage.removeItem("itemsArrayChecked");
       }
-
-      totalItemsAmount();
     });
   });
-}
-
-function totalItemsAmount() {
-  const totalAmountGRN = document.querySelector(".js-total-priceGRN");
-  const totalAmountUSDT = document.querySelector(".js-total-priceUSDT");
-
-  const quantityItemsArrayJSON = localStorage.getItem("quantityItemsArray");
-  let quantityItemsArray = JSON.parse(quantityItemsArrayJSON) || [];
-  const totalAmountJSON = localStorage.getItem("totalAmount");
-  let totalAmount = JSON.parse(totalAmountJSON) || [];
-
-  // Инициализируем переменные для хранения общей суммы
-  let totalGRN = 0;
-  let totalUSDT = 0;
-
-  quantityItemsArray.forEach(item => {
-    totalGRN += (item.priceGRN || item.optPriceGRN || 0);
-    totalUSDT += parseFloat(item.priceUSDT || item.optPriceUSDT || 0);
-  });
-
-  // Записываем общие суммы в соответствующие элементы на странице
-  if (totalAmountGRN && totalAmountUSDT) {
-    totalAmountGRN.textContent = totalGRN;
-    totalAmountUSDT.textContent = totalUSDT.toFixed(2);
-  }
-
-  if (totalAmount.length > 0) {
-    totalAmount[0].totalAmountGRN = totalGRN;
-    totalAmount[0].totalAmountUSDT = totalUSDT.toFixed(2);;
-  } else {
-    totalAmount.push({
-      totalAmountGRN: totalGRN,
-      totalAmountUSDT: totalUSDT,
-    });
-  }
-
-  localStorage.setItem("quantityItemsArray", JSON.stringify(quantityItemsArray));
-  localStorage.setItem("totalAmount", JSON.stringify(totalAmount));
-
-  if (totalGRN > 0 && totalUSDT > 0) {
-    travolta.style.display = "none";
-  }
-
-  if (totalGRN === 0) {
-    localStorage.removeItem("totalAmount");
-    travolta.style.display = "block";
-    basketOrderBox.innerHTML = "";
-    localStorage.removeItem("quantityItemsArray");
-  }
 }
 
 // --------------------------------
@@ -907,8 +878,6 @@ function restoreBasketItemsAmount() {
       totalAmountGRN.textContent = totalAmount.totalGRN.toFixed(2);
       totalAmountUSDT.textContent = totalAmount.totalUSDT.toFixed(2);
     }
-
-    totalItemsAmount();
   }
 }
 
