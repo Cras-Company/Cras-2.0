@@ -10,13 +10,7 @@ export const refs = {
 
   openModalBasketBtns: document.querySelectorAll("[data-modal-basket]"),
   modalBasketMenu: document.querySelector("[data-modal-basket-menu]"),
-
-  // mobileSearchBtn: document.querySelector("[data-search-button]"),
-
-  // openModalMobileMenuBtn: document.querySelector("[data-modal-mobile-menu-open]"),
-  // modalMobileMenu: document.querySelector("[data-modal-mobile-menu]"),
-
-  // modalMobileMainMenu: document.querySelector("[data-modal-main-menu]"),
+  modalBasketOrder: document.querySelector("[data-modal-basket-order]"),
 
   openModalLot: document.querySelector("[data-modal-lot]"),
 
@@ -111,9 +105,6 @@ export function onCloseModal(modal) {
 //   });
 // });
 
-// Открытие мобильного меню
-// refs.openModalMobileMenuBtn.addEventListener("click", () => onOpenModal(refs.modalMobileMenu));
-
 // Открытие корзины
 refs.openModalBasketBtns.forEach(button => {
   button.addEventListener("click", () => {
@@ -124,16 +115,13 @@ refs.openModalBasketBtns.forEach(button => {
 // Открытие главного бургер-меню
 refs.openModalBurgerMenuBtn.addEventListener("click", () => onOpenModal(refs.openModalBurgerMenu));
 
-// Закрытие окна при клике на "поиск"
-// refs.mobileSearchBtn.addEventListener('click', () => onCloseModal(refs.modalMobileMenuSearch));
-
 refs.closeModalBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
     onCloseModal(refs.openModalBurgerMenu);
     // onCloseModal(refs.modalRegisterMenu);
     // onCloseModal(refs.modalLoginMenu);
     onCloseModal(refs.modalBasketMenu);
-    // onCloseModal(refs.modalMobileMainMenu);
+    onCloseModal(refs.modalBasketOrder);
     onCloseModal(refs.openModalLot);
   });
 });

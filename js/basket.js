@@ -247,7 +247,6 @@ basketOrderBox.style.display = "none";
 const travolta = document.querySelector(".js-travolta");
 
 let basketArray = [];
-let itemsArrayChecked = [];
 
 shopListAllLots.addEventListener('click', lotBasketHandler);
 
@@ -271,12 +270,12 @@ export function lotBasketHandler(event) {
 
       updateHeaderBasketNumber();
       setupRemoveButtons();
-      updatePriceWholesales(foundItem);
       handleClearBasketButton();
       setupQuantityButtons();
-      // updateBasketOrder();
-      // basketCheckboxChanger();
-      // restoreButtonCopy();
+      updatePriceWholesales(foundItem);
+      basketCheckboxChanger();
+      totalItemsAmount();
+      restoreButtonCopy();
     }
   }
 }
@@ -351,18 +350,6 @@ function setupQuantityButtons() {
 
   decreaseButtons.forEach((button) => button.addEventListener('click', handleQuantityDecrease));
   increaseButtons.forEach((button) => button.addEventListener('click', handleQuantityIncrease));
-
-  const totalAmountGRN = document.querySelector(".js-total-priceGRN");
-  const totalAmountUSDT = document.querySelector(".js-total-priceUSDT");
-
-  let totalGRN = 0;
-  let totalUSDT = 0;
-
-  // Записываем общие суммы в соответствующие элементы на странице
-  if (totalAmountGRN && totalAmountUSDT) {
-    totalAmountGRN.textContent = totalGRN;
-    totalAmountUSDT.textContent = totalUSDT.toFixed(2);
-  }
 }
 
 function handleQuantityDecrease(event) {
@@ -385,10 +372,10 @@ function handleQuantityDecrease(event) {
   const priceUSDTElement = item.querySelector('.js-priceUSDT');
   const priceOptUSDTElement = item.querySelector('.js-priceOptUSDT');
 
-  // const quantityItemsArrayJSON = localStorage.getItem("quantityItemsArray");
-  // const quantityItemsArray = JSON.parse(quantityItemsArrayJSON) || [];
+  const basketArrayJSON = localStorage.getItem("basketArray");
+  const basketArray = JSON.parse(basketArrayJSON) || [];
 
-  // let existingItemIndex = quantityItemsArray.findIndex(item => item.marker === marker);
+  let existingItemIndex = basketArray.findIndex(item => item.marker === marker);
 
   let priceGRNItem = 0;
   let priceUSDTItem = 0;
@@ -408,9 +395,7 @@ function handleQuantityDecrease(event) {
     priceUSDTOptItem = (priceOptUSDT * currentValue).toFixed(2);;
     priceOptUSDTElement.textContent = priceUSDTOptItem;
 
-    // quantityItemsArray[existingItemIndex].quantityItem = currentValue;
-    // quantityItemsArray[existingItemIndex].optPriceGRN = priceOptGRNItem;
-    // quantityItemsArray[existingItemIndex].optPriceUSDT = priceUSDTOptItem;
+    basketArray[existingItemIndex].quantityItem = currentValue;
   } else {
     currentValue = Math.max(currentValue - 1, 1);
     itemQuantity.textContent = currentValue;
@@ -419,12 +404,11 @@ function handleQuantityDecrease(event) {
     priceUSDTItem = (priceGRNItem / USDTRate).toFixed(2);
     priceUSDTElement.textContent = priceUSDTItem;
 
-    // quantityItemsArray[existingItemIndex].quantityItem = currentValue;
-    // quantityItemsArray[existingItemIndex].priceGRN = priceGRNItem;
-    // quantityItemsArray[existingItemIndex].priceUSDT = priceUSDTItem;
+    basketArray[existingItemIndex].quantityItem = currentValue;
   }
 
-  // localStorage.setItem("quantityItemsArray", JSON.stringify(quantityItemsArray));
+  localStorage.setItem("basketArray", JSON.stringify(basketArray));
+  totalItemsAmount();
 }
 
 function handleQuantityIncrease(event) {
@@ -448,10 +432,10 @@ function handleQuantityIncrease(event) {
   const priceUSDTElement = item.querySelector('.js-priceUSDT');
   const priceOptUSDTElement = item.querySelector('.js-priceOptUSDT');
 
-  // const quantityItemsArrayJSON = localStorage.getItem("quantityItemsArray");
-  // const quantityItemsArray = JSON.parse(quantityItemsArrayJSON) || [];
+  const basketArrayJSON = localStorage.getItem("basketArray");
+  const basketArray = JSON.parse(basketArrayJSON) || [];
 
-  // let existingItemIndex = quantityItemsArray.findIndex(item => item.marker === marker);
+  let existingItemIndex = basketArray.findIndex(item => item.marker === marker);
 
   let priceGRNItem = 0;
   let priceUSDTItem = 0;
@@ -471,9 +455,7 @@ function handleQuantityIncrease(event) {
     priceUSDTOptItem = (priceOptUSDT * currentValue).toFixed(2);;
     priceOptUSDTElement.textContent = priceUSDTOptItem;
 
-    // quantityItemsArray[existingItemIndex].quantityItem = currentValue;
-    // quantityItemsArray[existingItemIndex].optPriceGRN = priceOptGRNItem;
-    // quantityItemsArray[existingItemIndex].optPriceUSDT = priceUSDTOptItem;
+    basketArray[existingItemIndex].quantityItem = currentValue;
   } else {
     if (currentValue < quantityOnStorage || wholesaleCheckbox) {
       currentValue += 1;
@@ -483,133 +465,22 @@ function handleQuantityIncrease(event) {
       priceUSDTItem = (priceGRNItem / USDTRate).toFixed(2);
       priceUSDTElement.textContent = priceUSDTItem;
 
-      // quantityItemsArray[existingItemIndex].quantityItem = currentValue;
-      // quantityItemsArray[existingItemIndex].priceGRN = priceGRNItem;
-      // quantityItemsArray[existingItemIndex].priceUSDT = priceUSDTItem;
+      basketArray[existingItemIndex].quantityItem = currentValue;
     }
   }
 
-  // localStorage.setItem("quantityItemsArray", JSON.stringify(quantityItemsArray));
+  localStorage.setItem("basketArray", JSON.stringify(basketArray));
+  totalItemsAmount();
 }
 
-
-
-
-
-
-// Удаление лота из корзины
-function setupRemoveButtons() {
-  const removeButtons = document.querySelectorAll("[data-modal-remove-item]");
-  removeButtons.forEach((button) => {
-    button.addEventListener("click", removeBasketItem);
-  });
-}
-
-// Отображение оптовой цены
-function updatePriceWholesales(foundItem) {
-  const priceWholesales = document.querySelectorAll(".js-basket-price-wholesale");
-
-  if (foundItem && foundItem.type === "retail") {
-    priceWholesales.forEach((priceWholesale) => {
-      priceWholesale.style.display = "none";
-    });
-  }
-}
-
-function removeBasketItem(event) {
-  const basketItem = event.target.closest(".basket__item");
-  if (!basketItem) return;
-
-  const marker = basketItem.getAttribute('data-basket-marker');
-
-  // Удаляем разметку товара из корзины
-  basketItem.remove();
-
-  // Удаляем товар из localStorage
-  const basketArrayJSON = localStorage.getItem("basketArray");
-  const basketArray = JSON.parse(basketArrayJSON) || [];
-
-  // Находим индекс элемента в массиве
-  const itemIndex = basketArray.findIndex(item => item.marker === marker);
-  
-  if (itemIndex !== -1) {
-    basketArray.splice(itemIndex, 1); // Удаляем товар из массива
-  }
-
-  // Обновляем localStorage
-  if (basketArray.length > 0) {
-    localStorage.setItem("basketArray", JSON.stringify(basketArray));
-  } else {
-    localStorage.removeItem("basketArray");
-    basketOrderBox.style.display = "none";
-    travolta.style.display = "block";
-  }
-
-  updateHeaderBasketNumber();
-  restoreIcons();
-}
-
-
-
-
-
-
-
-
-
-
-// Полная очистка корзины
-function handleClearBasketButton() {
-  if (clearBasketButton) {
-    clearBasketButton.addEventListener("click", clearBasket);
-  }
-}
-
-function clearBasket() {
-  // Удаление разметки корзины
-  basketListLots.innerHTML = "";
-  basketOrderBox.style.display = "none";
-  travolta.style.display = "block";
-
-  // Удаление данных из локального хранилища, связанные с корзиной
-  const keysToRemove = Object.keys(localStorage).filter((key) =>
-    key.startsWith("basketArray")
-  );
-
-  keysToRemove.forEach((key) => {
-    localStorage.removeItem(key);
-  });
-
-  // Обновляем массивы из localStorage
-  basketArray = JSON.parse(localStorage.getItem('basketArray')) || [];
-
-  // Удаление счётчка товара в корзине
-  headerBasketNumbers.forEach((headerBasketNumber) => {
-    headerBasketNumber.textContent = "";
-  });
-
-  // Удаление классов у иконок
-  const basketInElements = document.querySelectorAll(".js-icon-close");
-  const basketOutElements = document.querySelectorAll(".js-icon-open");
-  basketInElements.forEach((element) => {
-    element.classList.remove("js-icon-close");
-  });
-  basketOutElements.forEach((element) => {
-    element.classList.remove("js-icon-open");
-  });
-}
-
-
-
-
-
-
+// Чексбокс на оптовую цену
 function basketCheckboxChanger() {
   const wholesaleCheckboxes = document.querySelectorAll('.js-basket__wholesale-сheckbox-input');
   const wholesaleCheckboxesArray = [...wholesaleCheckboxes];
 
   wholesaleCheckboxesArray.forEach(wholesaleCheckbox => {
     const item = wholesaleCheckbox.closest('.basket__item');
+
     if (!item) {
       return;
     }
@@ -653,11 +524,10 @@ function basketCheckboxChanger() {
         priceWholesale.style.display = 'block';
         itemQuantity.textContent = '12';
 
-        const quantityItemsArrayJSON = localStorage.getItem("quantityItemsArray");
-        let quantityItemsArray = JSON.parse(quantityItemsArrayJSON) || [];
-        const itemsArrayCheckedJSON = localStorage.getItem("itemsArrayChecked");
-        let itemsArrayChecked = JSON.parse(itemsArrayCheckedJSON) || [];
-        let existingItemIndex = quantityItemsArray.findIndex(item => item.marker === marker);
+        const basketArrayJSON = localStorage.getItem("basketArray");
+        const basketArray = JSON.parse(basketArrayJSON) || [];
+
+        let existingItemIndex = basketArray.findIndex(item => item.marker === marker);
 
         priceRetail.style.display = 'none';
         priceWholesale.style.display = 'block';
@@ -666,34 +536,28 @@ function basketCheckboxChanger() {
         priceOptUSDTElement.textContent = (priceOptUSDT * 12).toFixed(2);
         itemQuantity.textContent = '12';
 
-        delete quantityItemsArray[existingItemIndex].priceGRN;
-        delete quantityItemsArray[existingItemIndex].priceUSDT;
-        quantityItemsArray[existingItemIndex].quantityItem = 12;
-        quantityItemsArray[existingItemIndex].optPriceGRN = priceOptGRN * 12;
-        quantityItemsArray[existingItemIndex].optPriceUSDT = (priceOptUSDT * 12).toFixed(2);
+        basketArray[existingItemIndex].quantityItem = 12;
 
-        const itemIndex = itemsArrayChecked.findIndex(item => item.marker === marker);
         const isChecked = checkbox.checked;
-        if (isChecked && itemIndex === -1) {
-          // Чекбокс был отмечен и записи в массиве не существует, добавляем запись
-          itemsArrayChecked.push({ marker, isChecked: true });
-        } else if (!isChecked && itemIndex !== -1) {
-          // Чекбокс был снят и запись существует, удаляем её из массива
-          itemsArrayChecked.splice(itemIndex, 1);
+
+        if (isChecked) {
+          // Чекбокс был отмечен, добавляем свойство isChecked в существующий объект
+          basketArray[existingItemIndex].isChecked = true;
+        } else if (!isChecked) {
+          // Чекбокс был снят, удаляем только свойство isChecked из объекта
+          delete basketArray[existingItemIndex].isChecked;
         }
 
-        localStorage.setItem("itemsArrayChecked", JSON.stringify(itemsArrayChecked));
-        localStorage.setItem("quantityItemsArray", JSON.stringify(quantityItemsArray));
+        localStorage.setItem("basketArray", JSON.stringify(basketArray));
       });
     }
 
     // Назначаем обработчик события на чекбокс
     wholesaleCheckbox.addEventListener('change', function () {
-      const quantityItemsArrayJSON = localStorage.getItem("quantityItemsArray");
-      let quantityItemsArray = JSON.parse(quantityItemsArrayJSON) || [];
-      const itemsArrayCheckedJSON = localStorage.getItem("itemsArrayChecked");
-      let itemsArrayChecked = JSON.parse(itemsArrayCheckedJSON) || [];
-      let existingItemIndex = quantityItemsArray.findIndex(item => item.marker === marker);
+      const basketArrayJSON = localStorage.getItem("basketArray");
+      const basketArray = JSON.parse(basketArrayJSON) || [];
+
+      let existingItemIndex = basketArray.findIndex(item => item.marker === marker);
 
       if (this.checked) {
         priceRetail.style.display = 'none';
@@ -703,11 +567,8 @@ function basketCheckboxChanger() {
         priceOptUSDTElement.textContent = (priceOptUSDT * 12).toFixed(2);
         itemQuantity.textContent = '12';
 
-        delete quantityItemsArray[existingItemIndex].priceGRN;
-        delete quantityItemsArray[existingItemIndex].priceUSDT;
-        quantityItemsArray[existingItemIndex].quantityItem = 12;
-        quantityItemsArray[existingItemIndex].optPriceGRN = priceOptGRN * 12;
-        quantityItemsArray[existingItemIndex].optPriceUSDT = (priceOptUSDT * 12).toFixed(2);
+        basketArray[existingItemIndex].quantityItem = 12;
+
       } else {
         priceRetail.style.display = 'block';
         priceWholesale.style.display = 'none';
@@ -716,31 +577,156 @@ function basketCheckboxChanger() {
         priceUSDTElement.textContent = priceUSDT;
         itemQuantity.textContent = '1';
 
-        delete quantityItemsArray[existingItemIndex].optPriceGRN;
-        delete quantityItemsArray[existingItemIndex].optPriceUSDT;
-        quantityItemsArray[existingItemIndex].quantityItem = 1;
-        quantityItemsArray[existingItemIndex].priceGRN = priceGRN;
-        quantityItemsArray[existingItemIndex].priceUSDT = priceUSDT;
+        basketArray[existingItemIndex].quantityItem = 1;
       }
 
       const isChecked = this.checked;
-      const itemIndex = itemsArrayChecked.findIndex(item => item.marker === marker);
       
-      if (isChecked && itemIndex === -1) {
-        // Чекбокс был отмечен и записи в массиве не существует, добавляем запись
-        itemsArrayChecked.push({ marker, isChecked: true });
-      } else if (!isChecked && itemIndex !== -1) {
-        // Чекбокс был снят и запись существует, удаляем её из массива
-        itemsArrayChecked.splice(itemIndex, 1);
-      }
+      if (isChecked) {
+          // Чекбокс был отмечен, добавляем свойство isChecked в существующий объект
+          basketArray[existingItemIndex].isChecked = true;
+        } else if (!isChecked) {
+          // Чекбокс был снят, удаляем только свойство isChecked из объекта
+          delete basketArray[existingItemIndex].isChecked;
+        }
       
-      localStorage.setItem("itemsArrayChecked", JSON.stringify(itemsArrayChecked));
-      localStorage.setItem("quantityItemsArray", JSON.stringify(quantityItemsArray));
-
-      if (itemsArrayChecked.length === 0) {
-        localStorage.removeItem("itemsArrayChecked");
-      }
+      localStorage.setItem("basketArray", JSON.stringify(basketArray));
+      totalItemsAmount();
     });
+  });
+}
+
+// Подсчёт общей суммы товаров
+function totalItemsAmount() {
+  const totalAmountGRN = document.querySelector(".js-total-priceGRN");
+  const totalAmountUSDT = document.querySelector(".js-total-priceUSDT");
+
+  const basketArrayJSON = localStorage.getItem("basketArray");
+  const basketArray = JSON.parse(basketArrayJSON) || [];
+
+  let totalGRN = 0;
+  let totalUSDT = 0;
+
+  basketArray.forEach(({ marker, quantityItem, isChecked }) => {
+    const foundItem = arrayOfProducts.flatMap(({ items }) => items).find((item) => item.marker === marker);
+
+    let priceGRN = 0; // Объявляем переменную перед использованием
+
+    if (foundItem) {
+      if (isChecked || foundItem.priceGRN === "--") {
+        priceGRN = parseFloat(foundItem.priceGRNOpt);
+      } else {
+        priceGRN = parseFloat(foundItem.priceGRN);
+      }
+
+      // Если priceGRN не является числом (NaN), присваиваем 0
+      priceGRN = isNaN(priceGRN) ? 0 : priceGRN;
+
+      const itemTotalGRN = priceGRN * quantityItem;
+      totalGRN += itemTotalGRN;
+    }
+  });
+
+  totalUSDT = totalGRN / USDTRate;
+
+  // Отображаем корректную сумму заказа
+  if (totalAmountGRN && totalAmountUSDT) {
+    totalAmountGRN.textContent = totalGRN.toFixed(2);
+    totalAmountUSDT.textContent = totalUSDT.toFixed(2);
+  }
+}
+
+// Отображение оптовой цены
+function updatePriceWholesales(foundItem) {
+  const priceWholesales = document.querySelectorAll(".js-basket-price-wholesale");
+
+  if (foundItem && foundItem.type === "retail") {
+    priceWholesales.forEach((priceWholesale) => {
+      priceWholesale.style.display = "none";
+    });
+  }
+}
+
+// Удаление лота из корзины
+function setupRemoveButtons() {
+  const removeButtons = document.querySelectorAll("[data-modal-remove-item]");
+  removeButtons.forEach((button) => {
+    button.addEventListener("click", removeBasketItem);
+  });
+}
+
+function removeBasketItem(event) {
+  const basketItem = event.target.closest(".basket__item");
+  if (!basketItem) return;
+
+  const marker = basketItem.getAttribute('data-basket-marker');
+
+  // Удаляем разметку товара из корзины
+  basketItem.remove();
+
+  // Удаляем товар из localStorage
+  const basketArrayJSON = localStorage.getItem("basketArray");
+  const basketArray = JSON.parse(basketArrayJSON) || [];
+
+  // Находим индекс элемента в массиве
+  const itemIndex = basketArray.findIndex(item => item.marker === marker);
+  
+  if (itemIndex !== -1) {
+    basketArray.splice(itemIndex, 1); // Удаляем товар из массива
+  }
+
+  // Обновляем localStorage
+  if (basketArray.length > 0) {
+    localStorage.setItem("basketArray", JSON.stringify(basketArray));
+  } else {
+    localStorage.removeItem("basketArray");
+    basketOrderBox.style.display = "none";
+    travolta.style.display = "block";
+  }
+
+  updateHeaderBasketNumber();
+  totalItemsAmount()
+  restoreIcons();
+}
+
+// Полная очистка корзины
+function handleClearBasketButton() {
+  if (clearBasketButton) {
+    clearBasketButton.addEventListener("click", clearBasket);
+  }
+}
+
+function clearBasket() {
+  // Удаление разметки корзины
+  basketListLots.innerHTML = "";
+  basketOrderBox.style.display = "none";
+  travolta.style.display = "block";
+
+  // Удаление данных из локального хранилища, связанные с корзиной
+  const keysToRemove = Object.keys(localStorage).filter((key) =>
+    key.startsWith("basketArray")
+  );
+
+  keysToRemove.forEach((key) => {
+    localStorage.removeItem(key);
+  });
+
+  // Обновляем массивы из localStorage
+  basketArray = JSON.parse(localStorage.getItem('basketArray')) || [];
+
+  // Удаление счётчка товара в корзине
+  headerBasketNumbers.forEach((headerBasketNumber) => {
+    headerBasketNumber.textContent = "";
+  });
+
+  // Удаление классов у иконок
+  const basketInElements = document.querySelectorAll(".js-icon-close");
+  const basketOutElements = document.querySelectorAll(".js-icon-open");
+  basketInElements.forEach((element) => {
+    element.classList.remove("js-icon-close");
+  });
+  basketOutElements.forEach((element) => {
+    element.classList.remove("js-icon-open");
   });
 }
 
@@ -821,78 +807,87 @@ document.addEventListener("DOMContentLoaded", restoreIcons);
 
 // Восстановление суммы и количества товаров
 function restoreBasketItemsAmount() {
-  const quantityItemsJSON = localStorage.getItem('quantityItemsArray');
-  const totalAmountJSON = localStorage.getItem("totalAmount");
+  const basketArrayJSON = localStorage.getItem("basketArray");
+  const basketArray = JSON.parse(basketArrayJSON) || [];
 
-  if (quantityItemsJSON) {
-    const quantityItems = JSON.parse(quantityItemsJSON);
+  const totalAmountGRN = document.querySelector(".js-total-priceGRN");
+  const totalAmountUSDT = document.querySelector(".js-total-priceUSDT");
 
-    // Проходим по массиву и обновляем элементы на странице
-    quantityItems.forEach(item => {
-      const marker = item.marker;
-      const quantityItem = item.quantityItem;
-      const priceGRN = item.priceGRN;
-      const priceUSDT = item.priceUSDT;
-      const optPriceGRNiceGRN = item.optPriceGRN;
-      const optPriceUSDTpriceUSDT = item.optPriceUSDT;
+  let totalGRN = 0;
+  let totalUSDT = 0;
 
-      // Находим товар на странице по маркеру
+  basketArray.forEach(({ marker, quantityItem, isChecked }) => {
+    // Находим товар в массиве arrayOfProducts
+    const foundItem = arrayOfProducts.flatMap(({ items }) => items).find((item) => item.marker === marker);
+    
+    if (foundItem) {
+      // Если чекбокс активен, используем оптовую цену, иначе обычную
+      const priceGRN = isChecked ? parseFloat(foundItem.priceGRNOpt) : parseFloat(foundItem.priceGRN);
+      const itemTotalGRN = priceGRN * quantityItem;
+      totalGRN += itemTotalGRN;
+
+      const itemTotalUSDT = (itemTotalGRN / USDTRate).toFixed(2);
+
+      // Находим элемент товара на странице
       const itemElement = document.querySelector(`[data-basket-marker="${marker}"]`);
       
       if (itemElement) {
-        // Находим элемент с количеством товара
         const itemQuantityElement = itemElement.querySelector('.js-item-quantity');
         const priceGRNElement = itemElement.querySelector('.js-priceGRN'); 
-        const priceOptGRNElement = itemElement.querySelector('.js-priceOptGRN');
         const priceUSDTElement = itemElement.querySelector('.js-priceUSDT');
+        const priceOptGRNElement = itemElement.querySelector('.js-priceOptGRN');
         const priceOptUSDTElement = itemElement.querySelector('.js-priceOptUSDT');
+        const priceRetail = itemElement.querySelector('.js-basket-price-retail');
+        const priceWholesale = itemElement.querySelector('.js-basket-price-wholesale');
+        const wholesaleCheckbox = itemElement.querySelector('.js-basket__wholesale-сheckbox-input');
 
-        itemQuantityElement.textContent = quantityItem;
-        priceGRNElement.textContent = priceGRN;
-        priceUSDTElement.textContent = priceUSDT;
-        priceOptGRNElement.textContent = optPriceGRNiceGRN;
-        priceOptUSDTElement.textContent = optPriceUSDTpriceUSDT;
+        if (itemQuantityElement) itemQuantityElement.textContent = quantityItem;
+        if (priceGRNElement) priceGRNElement.textContent = itemTotalGRN.toFixed(2);
+        if (priceUSDTElement) priceUSDTElement.textContent = itemTotalUSDT;
+
+        // Восстанавливаем чекбокс, если он был активен
+        if (isChecked && wholesaleCheckbox) {
+          wholesaleCheckbox.checked = true;
+          priceRetail.style.display = 'none';
+          priceWholesale.style.display = 'block';
+          if (priceOptGRNElement) priceOptGRNElement.textContent = (parseFloat(foundItem.priceGRNOpt) * quantityItem).toFixed(2);
+          if (priceOptUSDTElement) priceOptUSDTElement.textContent = ((parseFloat(foundItem.priceGRNOpt) * quantityItem) / USDTRate).toFixed(2);
+        } else {
+          wholesaleCheckbox.checked = false;
+          priceRetail.style.display = 'block';
+          priceWholesale.style.display = 'none';
+        }
       }
-
-    const decreaseButtons = document.querySelectorAll('[data-price-down]');
-    const increaseButtons = document.querySelectorAll('[data-price-up]');
-      
-    decreaseButtons.forEach(function (button) {
-      button.addEventListener('click', handleQuantityDecrease);
-    });
-
-    increaseButtons.forEach(function (button) {
-      button.addEventListener('click', handleQuantityIncrease);
-    });
+    }
   });
 
-    basketCheckboxChanger();
+  // Обновляем общие суммы корзины
+  totalUSDT = (totalGRN / USDTRate).toFixed(2);
+
+  if (totalAmountGRN && totalAmountUSDT) {
+    totalAmountGRN.textContent = totalGRN.toFixed(2);
+    totalAmountUSDT.textContent = totalUSDT;
   }
 
-  if (totalAmountJSON) {
-    const totalAmount = JSON.parse(totalAmountJSON);
-    const totalAmountGRN = document.querySelector(".js-total-priceGRN");
-    const totalAmountUSDT = document.querySelector(".js-total-priceUSDT");
-
-    if (totalAmountGRN && totalAmountUSDT) {
-      totalAmountGRN.textContent = totalAmount.totalGRN.toFixed(2);
-      totalAmountUSDT.textContent = totalAmount.totalUSDT.toFixed(2);
-    }
-  }
+  // Вызов функций для обновления состояния интерфейса
+  setupQuantityButtons();
+  basketCheckboxChanger();
+  handleClearBasketButton();
 }
 
-restoreBasketItemsAmount();
+// Вызываем восстановление корзины после загрузки страницы
+document.addEventListener("DOMContentLoaded", restoreBasketItemsAmount);
+
 
 function restoreButtonCopy() {
   const buttonCopy = document.querySelector(".js-button__copy");
 
   if (buttonCopy) {
-
     buttonCopy.addEventListener("click", scaleButton);
-    
+
     function scaleButton() {
       buttonCopy.style.transform = 'scale(0.8)';
-      setTimeout(function () {
+      setTimeout(() => {
         buttonCopy.style.transform = 'scale(1)';
       }, 200);
     }
@@ -908,21 +903,16 @@ function restoreButtonCopy() {
     });
 
     buttonCopy.addEventListener("click", function () {
+      const basketArrayJSON = localStorage.getItem("basketArray");
+      const basketArray = JSON.parse(basketArrayJSON) || [];
 
-      const quantityItemsJSON = localStorage.getItem('quantityItemsArray');
-      const totalAmountDataJSON = localStorage.getItem("totalAmount");
-      
-      if (totalAmountDataJSON && quantityItemsJSON) {
-
-        const quantityItems = JSON.parse(quantityItemsJSON);
-        const totalAmountData = JSON.parse(totalAmountDataJSON);
-      
+      if (basketArray.length > 0) {
         let textToCopy = "Доброго дня. Хочу оформити замовлення №";
 
         // Получаем текущий UNIX TIME
-        const unixTime = Math.floor(Date.now() / 1000);  // текущая метка времени в UNIX TIME
+        const unixTime = Math.floor(Date.now() / 1000);
 
-        // Функция для преобразования числа в римские цифры
+        // Функция преобразования числа в римские цифры
         function intToRoman(number) {
           const romanNumerals = [
             [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
@@ -939,96 +929,55 @@ function restoreButtonCopy() {
           return result;
         }
 
-        // Получаем последние 2 цифры года
-        const year = new Date(unixTime * 1000).getFullYear();  // Конвертируем UNIX TIME в дату и извлекаем год
-        const lastTwoDigits = year % 100;  // Получаем последние 2 цифры года
+        // Последние 2 цифры года в римских цифрах
+        const year = new Date(unixTime * 1000).getFullYear();
+        const yearRoman = intToRoman(year % 100);
 
-        // Преобразуем последние 2 цифры года в римские цифры
-        const yearRoman = intToRoman(lastTwoDigits);
-
-        // Получаем последние 6 цифр UNIX TIME
+        // Последние 6 цифр UNIX TIME
         const lastSixDigits = String(unixTime).slice(-6);
 
-        // Формируем номер заказа с пробелом после № и только последние 2 цифры года в римских цифрах
+        // Формируем номер заказа
         textToCopy += ` ${yearRoman}-${lastSixDigits}:\n\n`;
 
-        quantityItems.forEach((item) => {
-          let priceGRN, priceUSDT;
+        let totalQuantity = 0; // Общее количество товаров
 
-          if ('optPriceGRN' in item) {
-            priceGRN = item.optPriceGRN;
-            priceUSDT = item.optPriceUSDT;
-          } else {
-            priceGRN = item.priceGRN;
-            priceUSDT = item.priceUSDT;
+        basketArray.forEach(({ marker, quantityItem, isChecked }) => {
+          const foundItem = arrayOfProducts.flatMap(({ items }) => items).find((item) => item.marker === marker);
+
+          if (foundItem) {
+            let priceGRN = isChecked ? parseFloat(foundItem.priceGRNOpt) : parseFloat(foundItem.priceGRN);
+            let priceUSDT = (priceGRN / USDTRate).toFixed(2);
+
+            textToCopy += `Маркер: ${marker};\nКількість: ${quantityItem}; Ціна: ${priceGRN} грн. / ${priceUSDT} USDT;\n\n`;
+
+            totalQuantity += quantityItem; // Считаем общее количество товаров
           }
-
-          textToCopy += `Маркер: ${item.marker};\nКількість: ${item.quantityItem}; Ціна: ${priceGRN} грн. / ${priceUSDT} USDT;\n\n`;
         });
 
-        const { totalAmountGRN, totalAmountUSDT } = totalAmountData[0];
-        
-        textToCopy += `Загальна сумма замовлення: ${totalAmountGRN} грн. / ${totalAmountUSDT} USDT.`;
-        
-        // Создаем временный элемент textarea для копирования текста в буфер обмена
+        // Считаем общую сумму заказа
+        let totalAmountGRN = basketArray.reduce((sum, { marker, quantityItem, isChecked }) => {
+          const foundItem = arrayOfProducts.flatMap(({ items }) => items).find((item) => item.marker === marker);
+          if (!foundItem) return sum;
+
+          let priceGRN = isChecked ? parseFloat(foundItem.priceGRNOpt) : parseFloat(foundItem.priceGRN);
+          return sum + priceGRN * quantityItem;
+        }, 0);
+
+        let totalAmountUSDT = (totalAmountGRN / USDTRate).toFixed(2);
+
+        // Добавляем итоговое количество и сумму заказа
+        textToCopy += `Загальна сума замовлення: ${totalAmountGRN.toFixed(2)} грн. / ${totalAmountUSDT} USDT.`;
+
+        // Копируем текст в буфер обмена
         const textarea = document.createElement("textarea");
         textarea.value = textToCopy;
         document.body.appendChild(textarea);
-        
-        // Выделяем текст в textarea
         textarea.select();
-        
-        // Копируем выделенный текст в буфер обмена
         document.execCommand("copy");
-        
-        // Удаляем временный элемент textarea
         document.body.removeChild(textarea);
-        
-        // Оповещаем пользователя о успешном копировании (можно заменить на свою логику)
-        // alert("Ваше замовлення збережено! Відправте його нам у Telegram, Instagram або Messenger знизу кошика.");
       }
     });
   }
 }
 
 restoreButtonCopy();
-
-// Восстановление разметки не активного блока
-document.addEventListener('DOMContentLoaded', function() {
-  const priceWholesales = document.querySelectorAll(".js-basket-price-wholesale");
-
-  priceWholesales.forEach((priceWholesale) => {
-    const item = priceWholesale.closest(".basket__item");
-    if (item) {
-      const marker = item.getAttribute('data-basket-marker');
-      const foundItem = arrayOfProducts.flatMap(({ items }) => items).find((item) => item.marker === marker);
-      
-      if (foundItem && foundItem.type === "retail") {
-        priceWholesale.style.display = "none";
-      }
-    }
-  });
-
-  const wholesaleCheckboxes = document.querySelectorAll('.js-basket__wholesale-сheckbox-input');
-  const itemsArrayCheckedJSON = localStorage.getItem("itemsArrayChecked");
-  itemsArrayChecked = JSON.parse(itemsArrayCheckedJSON) || [];
-
-  wholesaleCheckboxes.forEach(wholesaleCheckbox => {
-
-    if (wholesaleCheckbox) {
-
-      const itemElement = wholesaleCheckbox.closest('.basket__item');
-      const marker = wholesaleCheckbox.closest('.basket__item').getAttribute('data-basket-marker');
-      const itemState = itemsArrayChecked.find(item => item.marker === marker);
-      const priceRetail = itemElement.querySelector(".js-basket-price-retail")
-      const priceWholesale = itemElement.querySelector('.js-basket-price-wholesale');
-
-      if (itemState) {
-        wholesaleCheckbox.checked = itemState.isChecked;
-          priceRetail.style.display = 'none';
-          priceWholesale.style.display = 'block';
-      }
-    }
-  });
-});
-
