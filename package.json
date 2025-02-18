@@ -2,5 +2,8 @@
   "name": "cras.company",
   "version": "1.0.0",
   "description": "Компанія «Cras» - товари з Європи",
-  "main": "index.html"
+  "main": "index.html",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
